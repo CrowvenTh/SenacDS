@@ -3,4 +3,5 @@
 string = "Artificial Intelligence"
 
 for i in range(1, len(string), 2):
-    print([i], end="")
+    print(string[i], end=" ")
+    
