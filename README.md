@@ -80,7 +80,7 @@ resultado_arredondado = round(resultado, 2)
 
 
 <details>
-    <summary> 💠 Aula 2 - Exercicios (1 a 10) 📝 </summary>
+    <summary> 💠 Aula 2 - Exercicios de Lógica 📝 </summary>
 
 ## Exercicio #1 - Olá mundo!
 
