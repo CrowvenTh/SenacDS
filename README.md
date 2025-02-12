@@ -256,6 +256,64 @@ print(palavra.capitalize())
 </details>
 
 
+<details>
+    <summary> 💠 Aula 3 - Exercicios de Lógica II 📝 </summary>
+
+## Exercicio #13 - strip
+#### Escreva um programa em Python que remove os espaços em branco do início e do final de uma variável frase =  " Hoje a noite está ótima ". Após remover os espaços em branco do início e do final, exiba o conteúdo da variável frase.
+
+~~~~ python
+
+~~~~
+
+## Exercicio #14 - Strip & replace
+#### 
+
+~~~~ python
+
+~~~~
+
+## Exercicio #15 - input com String
+#### 
+
+~~~~ python
+
+~~~~
+
+## Exercicio #16 - input com adição
+#### 
+
+~~~~ python
+
+~~~~
+
+## Exercicio #17 - input com subtração
+#### 
+
+~~~~ python
+
+~~~~
+
+## Exercicio #18 - input com divisão e arredondamento
+#### 
+
+~~~~ python
+
+~~~~
+
+## Exercicio #19 - 
+#### 
+
+~~~~ python
+
+~~~~
+
+
+<p align="center"> 12/02/25 <p>
+</details>
+
+
+
 ---
 <br>
 <p align="center">@2025</p>
