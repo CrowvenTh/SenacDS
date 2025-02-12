@@ -435,7 +435,7 @@ print(f"{number1} X {number2} é igual a {produto}")
     Insira o segundo número: 3
     7 x 3 é igual a 21
 
-## Exercicio 20 - sep
+## Exercicio 20 - sep data
 #### Escreva um programa em Python que solicite ao usuário informações sobre uma data (dia, mês e ano) e utilize o parâmetro sep na função print() para imprimir a data no formato "DD/MM/AAAA".
     Dia = 10
     Mês = 5
@@ -455,6 +455,23 @@ print(day, month, year, sep="/")
     Insira o mês: 02
     Insira o ano: 2025
     12/2/2025
+
+## Exercicio #21 - sep pessoa
+#### Escreva um programa em Python que use o parâmetro sep na função print() para imprimir o nome, idade e altura de uma pessoa separados por um hífen.
+
+~~~~ python
+nome = str(input("Insira seu nome: "))
+idade = int(input("Insira sua idade: "))
+altura = float(input("Insira sua altura: "))
+
+print(f"{nome} - {idade} - {altura}")
+~~~~
+#### resultado:
+    Insira seu nome: Fulano
+    Insira sua idade: 25
+    Insira sua altura: 1.75
+    Fulano - 25 - 1.75
+
 
 <br>
 <p align="center"> 12/02/25 <p>
