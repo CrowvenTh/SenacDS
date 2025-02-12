@@ -94,7 +94,7 @@ resultado_arredondado = round(resultado, 2)
 
 
 <details>
-    <summary> 💠 Aula 2 - Exercicios de Lógica 📝 </summary>
+    <summary> 💠 Aula 2 - Exercicios de Lógica (1 a 12)📝 </summary>
 
 ## Exercicio #1 - Olá mundo!
 
@@ -257,7 +257,7 @@ print(palavra.capitalize())
 
 
 <details>
-    <summary> 💠 Aula 3 - Exercicios de Lógica II 📝 </summary>
+    <summary> 💠 Aula 3 - Exercicios de Lógica II (13 a 20)📝 </summary>
 
 ## Exercicio #13 - strip
 #### Escreva um programa em Python que remove os espaços em branco do início e do final de uma variável frase =  " Hoje a noite está ótima ". Após remover os espaços em branco do início e do final, exiba o conteúdo da variável frase.
@@ -406,7 +406,7 @@ print(f"{n1} dividido por {n2} é igual a {divArredondada}")
     Insira o segundo número: 3.0
     21 dividido por 3 é igual a 7.0
 
-## Exercicio #19 - 
+## Exercicio #19 - input com multiplicação
 #### Instruções
 O comando input() é usado para receber entrada do usuário em um programa Python. Ele solicita que o usuário insira algum valor a partir do teclado.
 
@@ -435,12 +435,30 @@ print(f"{number1} X {number2} é igual a {produto}")
     Insira o segundo número: 3
     7 x 3 é igual a 21
 
+## Exercicio 20 - sep
+#### Escreva um programa em Python que solicite ao usuário informações sobre uma data (dia, mês e ano) e utilize o parâmetro sep na função print() para imprimir a data no formato "DD/MM/AAAA".
+    Dia = 10
+    Mês = 5
+    Ano = 2014
+    Exemplo: print(a , b , c ,sep='-')
 
+~~~~ python
+day = int(input("Insira o dia: "))
+month = int(input("Insira o mês: "))
+year = int(input("Insira o ano: "))
 
+print(day, month, year, sep="/")
+
+~~~~
+#### resultado:
+    Insira o dia: 12
+    Insira o mês: 02
+    Insira o ano: 2025
+    12/2/2025
+
+<br>
 <p align="center"> 12/02/25 <p>
 </details>
-
-
 
 ---
 <br>
