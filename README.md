@@ -397,21 +397,44 @@ Escreva um programa em Python que peça ao usuário para inserir dois números e
 n1 = float(input("Insira o primeiro número: "))
 n2 = float(input("Insira o segundo número: "))
 
-divArredondada = round(n1 / n2)
+divArredondada = round(n1 / n2, 2)
 
 print(f"{n1} dividido por {n2} é igual a {divArredondada}")
 ~~~~
 #### resultado :
-    Insira o primeiro número: 21
-    Insira o segundo número: 3
-    21 dividido por 3 é igual a 7
+    Insira o primeiro número: 21.0
+    Insira o segundo número: 3.0
+    21 dividido por 3 é igual a 7.0
 
 ## Exercicio #19 - 
-#### 
+#### Instruções
+O comando input() é usado para receber entrada do usuário em um programa Python. Ele solicita que o usuário insira algum valor a partir do teclado.
+
+Exemplo:
+~~~~ python
+nome = input("Por favor, insira seu nome: ")
+~~~~
+
+É importante notar que o input() sempre retorna uma string, então se você precisa de um número, deve converter o valor retornado para o tipo numérico apropriado (por exemplo, usando int() ou float()).
+
+            str(valor): Converte o valor para uma string.
+            int(valor): Converte uma string em um número inteiro.
+            float(valor): Converte o valor para um número de ponto flutuante.
+
+Escreva um programa em Python que peça ao usuário para inserir dois números reais e calcule o produto desses números. Em seguida, exiba o resultado da multiplicação.
 
 ~~~~ python
+number1 = int(input("Insira o primeiro número: "))
+number2 = int(input("Insira o segundo número: "))
+produto = (number1 * number2)
 
+print(f"{number1} X {number2} é igual a {produto}")
 ~~~~
+#### resultado:
+    Insira o primeiro número: 7
+    Insira o segundo número: 3
+    7 x 3 é igual a 21
+
 
 
 <p align="center"> 12/02/25 <p>
