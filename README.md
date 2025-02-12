@@ -263,43 +263,148 @@ print(palavra.capitalize())
 #### Escreva um programa em Python que remove os espaços em branco do início e do final de uma variável frase =  " Hoje a noite está ótima ". Após remover os espaços em branco do início e do final, exiba o conteúdo da variável frase.
 
 ~~~~ python
-
+frase = " Hoje a noite está ótima "
+print(frase.strip())
 ~~~~
+#### resultado: 
+    Hoje a noite está ótima
 
 ## Exercicio #14 - Strip & replace
-#### 
+#### Escreva um programa em Python que realize as seguintes operações em uma frase pré-definida:
+
+- A frase fornecida é: " O dia está bom, mas o tempo está chuvoso. "
+
+- Remova quaisquer espaços em branco extras no início e no final da frase.
+
+- Substitua todas as ocorrências da palavra "bom" por "ótimo".
+
+- Ao final, o programa deve exibir a frase sem espaços extras e com as substituições realizadas.
 
 ~~~~ python
-
+frase =  " O dia está bom, mas o tempo está chuvoso. "
+print(frase.strip().replace("bom", "ótimo"))
 ~~~~
+#### resultado:
+    O dia está ótimo, mas o tempo está chuvoso. 
 
 ## Exercicio #15 - input com String
-#### 
+#### Instruções
+O comando input() é usado para receber entrada do usuário em um programa Python. Ele solicita que o usuário insira algum valor a partir do teclado.
+
+Exemplo:
+~~~~ python
+nome = input("Por favor, insira seu nome: ")
+~~~~~
+É importante notar que o input() sempre retorna uma string, então se você precisa de um número, deve converter o valor retornado para o tipo numérico apropriado (por exemplo, usando int() ou float()).
+
+    str(valor): Converte o valor para uma string.
+    int(valor): Converte uma string em um número inteiro.
+    float(valor): Converte o valor para um número de ponto flutuante.
+
+Escreva um programa em Python que solicite ao usuário para inserir seu nome. O programa deve exibir uma mensagem de boas-vindas personalizada, incluindo o nome inserido pelo usuário.
 
 ~~~~ python
-
+nome = input("Bem vindo, insira seu nome: ")
+print("O nome inserido foi:",nome)
 ~~~~
+#### resultado
+    Bem vindo, insira seu nome: Thiago 
+    O nome inserido foi:  Thiago
 
 ## Exercicio #16 - input com adição
-#### 
+#### Instruções
+O comando input() é usado para receber entrada do usuário em um programa Python. Ele solicita que o usuário insira algum valor a partir do teclado.
+
+Exemplo:
+~~~~ python
+nome = input("Por favor, insira seu nome: ")
+~~~~
+É importante notar que o input() sempre retorna uma string, então se você precisa de um número, deve converter o valor retornado para o tipo numérico apropriado (por exemplo, usando int() ou float()).
+
+    str(valor): Converte o valor para uma string.
+    int(valor): Converte uma string em um número inteiro.
+    float(valor): Converte o valor para um número de ponto flutuante.
+
+Escreva um programa em Python que peça ao usuário para inserir dois números e calcule a soma desses números. Em seguida, exiba o resultado da soma.
 
 ~~~~ python
+n1 = int(input("Insira o primeiro numero: "))
+n2 = int(input("Insira o segundo numero: "))
+soma = (n1 + n2)
 
+print(f"{n1} + {n2} é igual a {soma}")
 ~~~~
+#### resultado:
+    Insira o primeiro numero: 21
+    Insira o segundo numero: 7
+    21 + 7 é igual a 28
 
 ## Exercicio #17 - input com subtração
-#### 
+#### Instruções
+O comando input() é usado para receber entrada do usuário em um programa Python. Ele solicita que o usuário insira algum valor a partir do teclado.
+
+Exemplo:
+~~~~ python
+nome = input("Por favor, insira seu nome: ")
+~~~~
+É importante notar que o input() sempre retorna uma string, então se você precisa de um número, deve converter o valor retornado para o tipo numérico apropriado (por exemplo, usando int() ou float()).
+
+    str(valor): Converte o valor para uma string.
+    int(valor): Converte uma string em um número inteiro.
+    float(valor): Converte o valor para um número de ponto flutuante.
+
+Escreva um programa em Python que peça ao usuário para inserir dois números e calcule a subtração do segundo número pelo primeiro. Em seguida, exiba o resultado da subtração.
 
 ~~~~ python
+n1 = int(input("Insira o primeiro número: "))
+n2 = int(input("Insira o segundo número: "))
+sub = (n1 - n2)
 
+print(f"{n1} - {n2} é igual a {sub}")
 ~~~~
+#### resultado:
+    Insira o primeiro número: 28
+    Insira o segundo número: 7
+    28 - 7 é igual a 21
 
 ## Exercicio #18 - input com divisão e arredondamento
-#### 
+#### Instruções
+O comando input() é usado para receber entrada do usuário em um programa Python. Ele solicita que o usuário insira algum valor a partir do teclado.
+
+Exemplo:
+~~~~ python
+nome = input("Por favor, insira seu nome: ")
+~~~~
+
+É importante notar que o input() sempre retorna uma string, então se você precisa de um número, deve converter o valor retornado para o tipo numérico apropriado (por exemplo, usando int() ou float()).
+
+    str(valor): Converte o valor para uma string.
+    int(valor): Converte uma string em um número inteiro.
+    float(valor): Converte o valor para um número de ponto flutuante.
+
+Escreva um programa em Python que peça ao usuário para inserir dois números e calcule a divisão do primeiro número pelo segundo número. Certifique-se de verificar se o segundo número não é zero antes de realizar a divisão. Em seguida, exiba o resultado da divisão.
+
+    #Arredondar
+    dividendo = 10
+    divisor = 3
+    resultado = dividendo / divisor
+
+    resultado_arredondado = round(resultado, 2)
+
+    print("O resultado da divisão é:", resultado_arredondado)
 
 ~~~~ python
+n1 = float(input("Insira o primeiro número: "))
+n2 = float(input("Insira o segundo número: "))
 
+divArredondada = round(n1 / n2)
+
+print(f"{n1} dividido por {n2} é igual a {divArredondada}")
 ~~~~
+#### resultado :
+    Insira o primeiro número: 21
+    Insira o segundo número: 3
+    21 dividido por 3 é igual a 7
 
 ## Exercicio #19 - 
 #### 
