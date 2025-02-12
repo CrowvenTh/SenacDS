@@ -6,12 +6,14 @@ Repositório destinado as atividades realizadas no curso de Desenvolvimento de s
 ### 🗂️ Material
 
 <details>
-    <summary> Conteúdo </summary>
+    <summary> 🔗 Conteúdo </summary>
 
 - 📁 <a href="algoritmo/Material/python_aula01.pdf">Lógica & interpretadores </a> 
 - 📁 <a href="algoritmo/Material/python_aula02.pdf">Operadores Lógicos </a> 
 - 📁 <a href="algoritmo/Material/python_aula03.pdf">Tipos de dados & condicionais </a> 
 - 📁 <a href="algoritmo/Material/python_aula04.pdf"> Variáveis & Exercicios</a> 
+
+---
   
 </details>
 
