@@ -588,8 +588,37 @@ print(f"A palavra {var} tem {len(var)} caracteres")
 #### resultado:
     A palavra antonio tem 7 caracteres
 
+## Exercicio #25 - Lista []
+#### Crie um programa que receba a lista abaixo e imprima a linguaguem de programação:
+~~~~ python
+lista: ["Python","Java","C#","C++","PHP"]
+print(lista[índice])
+~~~~
+
+#### resolução:
+~~~~ python
+lista = ["Python","Java","C#","C++","PHP"]
+print(lista[1])
+~~~~
+#### resultado:
+    Java
+
+## Exercicio #26 - Tupla
+#### Crie um programa que receba a tupla abaixo e imprima a linguem de programação: C++
+
+    tupla: "Python","Java","C#","C++","PHP"
+
+#### resolução: 
+~~~~ python
+tupla = "Python","Java","C#","C++","PHP"
+print(tupla[3])
+~~~~
+#### resultado:
+    C++
+
+
 <br>
-<p align="center"> 12/02/25 <p>
+<p align="center"> 13/02/25 <p>
 </details>
 
 ---
