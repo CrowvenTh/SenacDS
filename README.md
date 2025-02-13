@@ -581,7 +581,7 @@ A palavra tem 6 caracteres.
 ~~~~ 
 
 ~~~~ python
-var = str(input="Escreva uma palavra")
+var = str(input("Escreva uma palavra: "))
 
 print(f"A palavra {var} tem {len(var)} caracteres")
 ~~~~
