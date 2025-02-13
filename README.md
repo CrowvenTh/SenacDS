@@ -257,7 +257,7 @@ print(palavra.capitalize())
 
 
 <details>
-    <summary> 💠 Aula 3 - Exercicios de Lógica II (13 a 20)📝 </summary>
+    <summary> 💠 Aula 3 - Exercicios de Lógica II (13 a 21)📝 </summary>
 
 ## Exercicio #13 - strip
 #### Escreva um programa em Python que remove os espaços em branco do início e do final de uma variável frase =  " Hoje a noite está ótima ". Após remover os espaços em branco do início e do final, exiba o conteúdo da variável frase.
@@ -472,6 +472,121 @@ print(f"{nome} - {idade} - {altura}")
     Insira sua altura: 1.75
     Fulano - 25 - 1.75
 
+
+<br>
+<p align="center"> 12/02/25 <p>
+</details>
+
+<details>
+    <summary> 💠 Aula 4 - Exercicios de Lógica III (22 a 30)📝 </summary>
+
+## Exercicio #22 - join
+### 1 - Crie um programa em Python que aceite uma TUPLA de linguagens de programação e as junte em uma única String separada por hífens, verificar o tipo da variável antes e após a operação:
+
+### Tupla -  É uma sequência de valores ordenados e imutáveis
+~~~~ python
+tupla = "Python", "Java", "C#", "C++", "PHP"
+~~~~
+
+#### resolução:
+~~~~ python
+tupla = "Python", "Java", "C#", "PHP"
+print(tupla)
+print(type(tupla))
+tupla_join = "-".join(tupla)
+print(tupla_join)
+print(type(tupla_join))
+~~~~
+#### resultado: 
+    ('Python', 'Java', 'C#', 'PHP')
+    <class 'tuple'>
+    Python-Java-C#-PHP
+    <class 'str'>
+
+### 2 - Crie um programa em Python que aceite uma Lista de linguagens de programação e as junte em uma  String separada por hífens, verificar o tipo da variável antes e após a operação: 
+
+#### Lista -  É uma sequência de valores ordenados e mutáveis
+~~~~ python
+lista= ["Python", "Java", "C#", "C++", "PHP"]
+~~~~ 
+
+#### resolução:
+~~~~ python
+lista = ["Python", "Java", "C#", "PHP"]
+print(lista)
+print(type(lista))
+lista_join = " - ".join(lista)
+print(lista_join)
+print(type(lista_join))
+~~~~
+#### resultado:
+    ['Python', 'Java', 'C#', 'PHP']
+    <class 'list'>
+    Python - Java - C# - PHP
+    <class 'str'>
+
+### Instruções
+Defina uma lista de linguagens de programação.
+Utilize o método join() para juntar os elementos da lista/tupla em uma única String, separados por hífens.  
+
+~~~~ python
+x = " - ".join(lista)
+~~~~
+Imprima as Strings resultantes.
+
+Para verificar o tipo de uma variável em Python, você pode usar a função embutida type(). Aqui está um exemplo:
+~~~~ python
+variavel = "Olá, mundo!"
+print(type(variavel))  # Saída: <class 'str'>
+~~~~
+
+## Exercicio 23 - Split
+#### Escreva um programa em Python que aceite uma sequência de linguagens de programação separadas por espaços. O programa deve dividir essa sequência em uma lista de linguagens individuais e imprimir a lista resultante. Ao final imprimir o tipo da variável.
+~~~~ python
+Linguagens  - "Python,Java,C#,C++,PHP"
+~~~~~
+Utilize o método split() para dividir a sequência em uma lista. split(", ")
+
+    Split(",") - Determina o marcador de separação de palavras para compor lista
+
+## ou 
+
+~~~~ python
+Linguagens  - "Python Java C# C++ PHP"
+~~~~
+Utilize o método split() para dividir a sequência em uma lista. split(" ")
+
+    Split( ) - Determina o marcador de separação de palavras para compor lista
+
+Imprima a lista resultante.
+
+#### resolução:
+~~~~ python
+Linguagens = "Python Java C# C++ PHP"
+l = Linguagens.split(" ")
+print(l)
+~~~~
+### resultado:
+    ['Python', 'Java', 'C#', 'C++', 'PHP']
+
+
+## Exercicio #24 - len
+#### Escreva um programa que solicite ao usuário para inserir uma palavra e imprima o número de caracteres na palavra, utilizando a função len().
+
+Exemplo de saída:
+~~~~ python
+x = len(variável)
+Digite uma palavra: Python
+A palavra tem 6 caracteres.
+~~~~ 
+
+~~~~ python
+var = str(input="Escreva uma palavra")
+
+print(f"A palavra {var} tem {len(var)} caracteres")
+~~~~
+#### resultado:
+    A palavra antonio tem 7 caracteres
 
 <br>
 <p align="center"> 12/02/25 <p>
