@@ -637,7 +637,7 @@ Código Python que utiliza o método format() para formatar uma mensagem com inf
     nome = "João"
     idade = 30
 
-# Utilizando format() para inserir valores em uma string
+ Utilizando format() para inserir valores em uma string
 
     mensagem = "Olá, meu nome é {} e tenho {} anos.".format(nome, idade)
     print(mensagem)
@@ -722,7 +722,8 @@ Solicita ao usuário que insira seu nome
     
     nome = input("Digite seu nome: ")
 
-# Exibe uma mensagem de saudação personalizada usando uma f-string
+Exibe uma mensagem de saudação personalizada usando uma f-string
+
     mensagem = f"Olá, {nome}! Bem-vindo ao nosso programa."
     print(mensagem)
 
@@ -738,7 +739,7 @@ print(f"Olá {nome}, seja bem vindo!")
     Insira seu nome: Thiago
     Olá Thiago, seja bem vindo!
     
-## Exercicio #27 - 
+## Exercicio #31 - 
 ####
 
 ### resolução: 
