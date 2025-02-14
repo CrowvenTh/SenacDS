@@ -738,15 +738,64 @@ print(f"Olá {nome}, seja bem vindo!")
     Insira seu nome: Thiago
     Olá Thiago, seja bem vindo!
     
-## Exercicio #27 - 
-####
+## Exercicio #31 - f-string pessoa 
+#### Peça ao usuário para inserir seu nome, idade e cidade. Em seguida, use uma f-string para exibir essas informações formatadas.
+    
+    nome = "João"
+    idade = 30
+    Cidade="Brasília"
 
 ### resolução: 
 ~~~~ python
+nome =  input("insira seu nome: ")
+idade = input("insira sua idade: ")
+Cidade =  input("insira sua cidade: ")
+
+print(f"Seu nome é {nome}, sua  idade é {idade} e você mora em {Cidade}")
 ~~~~
 
 #### resultado: 
 
+    insira seu nome: Thiago
+    insira sua idade: 20
+    insira sua cidade: Belém
+    Seu nome é Thiago, sua  idade é 20 e você mora em Belém
+    
+## Exercicio #32 - condicional IF, ELSE
+#### Utilizando if e else em Python:
+
+    if condição:
+        # Código a ser executado se a condição for verdadeira
+    else:
+        # Código a ser executado se a condição for falsa
+
+Em Python, a indentação é fundamental para definir o bloco de código dentro das estruturas de controle. O código dentro do bloco if e else deve ser indentado para indicar que ele está condicionado àquela estrutura.
+
+Os operadores de comparação (==, !=, <, >, <=, >=) são usados para comparar valores. Eles retornam True se a comparação for verdadeira e False caso contrário.
+
+Você pode usar operadores lógicos (and, or, not) para combinar múltiplas condições em uma única instrução if.
+
+Escreva um programa que solicite ao usuário para inserir dois números inteiros. O programa deve então verificar qual número é maior e imprimir uma mensagem correspondente.
+    
+### resolução: 
+~~~~ python
+num1 = int(input("Insira um número: "))
+num2 = int(input("Insira outro número: "))
+
+if num1 > num2:
+    print(f"{num1} é maior que {num2}")
+elif(num1 == num2):
+    print(f"{num1} é igual a {num2}")
+else: 
+    print(f"{num1} é menor que {num2}")
+~~~~
+
+#### resultado: 
+    
+    Insira um número: 21
+    Insira outro número: 07
+    21 é maior que 7
+    
 <br>
 <p align="center"> 14/02/25 <p>
 </details>
