@@ -94,7 +94,7 @@ resultado_arredondado = round(resultado, 2)
 
 
 <details>
-    <summary> 💠 Aula 2 - Exercicios de Lógica (1 a 12)📝 </summary>
+    <summary> 💠 Aula 2 - 📝 Exercicios de Lógica (1 a 12) </summary>
 
 ## Exercicio #1 - Olá mundo!
 
@@ -257,7 +257,7 @@ print(palavra.capitalize())
 
 
 <details>
-    <summary> 💠 Aula 3 - Exercicios de Lógica II (13 a 21)📝 </summary>
+    <summary> 💠 Aula 3 - 📝 Exercicios de Lógica II (13 a 21) </summary>
 
 ## Exercicio #13 - strip
 #### Escreva um programa em Python que remove os espaços em branco do início e do final de uma variável frase =  " Hoje a noite está ótima ". Após remover os espaços em branco do início e do final, exiba o conteúdo da variável frase.
@@ -478,7 +478,7 @@ print(f"{nome} - {idade} - {altura}")
 </details>
 
 <details>
-    <summary> 💠 Aula 4 - Exercicios de Lógica III (22 a 30)📝 </summary>
+    <summary> 💠 Aula 4 - 📝 Exercicios de Lógica III (22 a 30) </summary>
 
 ## Exercicio #22 - join
 ### 1 - Crie um programa em Python que aceite uma TUPLA de linguagens de programação e as junte em uma única String separada por hífens, verificar o tipo da variável antes e após a operação:
@@ -619,6 +619,136 @@ print(tupla[3])
 
 <br>
 <p align="center"> 13/02/25 <p>
+</details>
+
+<details>
+    <summary> 💠 Aula 5 - 📝 Exercicios de Lógica (27 a 30) </summary>
+
+## Exercicio #27 - Format()
+#### Escreva um programa em Python que utilize o método format() para formatar uma mensagem com informações pessoais. Você deve criar um dicionário chamado informacoes com as seguintes chaves e valores:
+
+    Nome: "Ana"
+    Idade: 35
+    Cidade: "São Paulo"
+
+Em seguida, utilize o método format() para imprimir uma mensagem no seguinte formato: "Olá, meu nome é [Nome], tenho [Idade] anos e moro em [Cidade].", onde [Nome], [Idade] e [Cidade] são espaços reservados que devem ser substituídos pelas informações contidas no dicionário informacoes.
+Código Python que utiliza o método format() para formatar uma mensagem com informações pessoais:
+
+    nome = "João"
+    idade = 30
+
+# Utilizando format() para inserir valores em uma string
+
+    mensagem = "Olá, meu nome é {} e tenho {} anos.".format(nome, idade)
+    print(mensagem)
+
+### resolução: 
+~~~~ python
+Nome = input("Insira seu nome: ")
+Idade = int(input("Insira sua idade: "))
+Cidade = str(input("Digite uma cidade: "))
+
+mensagem = "Olá, meu nome é {} e tenho {} anos, e moro em {}".format(Nome, Idade, Cidade)
+print(mensagem)
+~~~~
+
+#### resultado: 
+    Insira seu nome: Thiago
+    Insira sua idade: 20
+    Digite uma cidade: Belém
+    Olá, meu nome é Thiago e tenho 20 anos, e moro em Belém
+
+## Exercicio #28 - Format() II
+#### Escreva um programa em Python que utilize o método format() para formatar uma mensagem com informações sobre um livro. Você deve criar variáveis para armazenar as seguintes informações:
+- Título do livro: "O Pequeno Príncipe"
+- Autor do livro: "Antoine de Saint-Exupéry"
+- Ano de publicação: 1943
+- Preço do livro (em reais): 39.90
+Em seguida, utilize o método format() para imprimir uma mensagem no seguinte formato: "'{}' é um livro escrito por {}. Foi publicado em {} e custa R${}.". Substitua os espaços reservados pelos valores correspondentes das variáveis.
+
+#### Definição de casas decimais
+    
+    print("A média das notas é: {:.2f}".format(media))
+
+- : Indica o início da especificação de formatação.
+- .2: Especifica o número de casas decimais que você deseja manter após o ponto decimal. No caso, .2 significa que você quer manter duas casas decimais.
+- f: Indica que o valor a ser formatado é um número decimal (float).
+
+### resolução: 
+~~~~ python
+lTitulo = "The witcher"
+lAutor = "Andrzej Sapkowski"
+anoPublicacao = 1990
+lPreco = 79.90
+
+livro = "'{}' é um livro escrito por {}. Foi publicado em {} e custa R${}.".format(lTitulo, lAutor, anoPublicacao, lPreco)
+print(livro)
+~~~~
+
+#### resultado: 
+    'The witcher' é um livro escrito por Andrzej Sapkowski. Foi publicado em 1990 e custa R$79.9.
+
+## Exercicio #29 - Format() III
+#### Escreva um programa em Python que utilize o método format() para formatar uma mensagem com informações sobre um produto. Você deve criar variáveis para armazenar as seguintes informações:
+    
+    Nome do produto: "Camiseta"
+    Preço do produto: R$29.99
+    Quantidade disponível: 100
+
+Em seguida, utilize o método format() para imprimir uma mensagem no seguinte formato: 
+    
+    "Produto: [Nome], Preço: R$[Preço], Quantidade disponível: [Quantidade]. O valor total do estoque é R$[ValorEstoque]."
+
+.Onde [Nome], [Preço] e [Quantidade] são espaços reservados que devem ser substituídos pelas informações corretas. Além disso, [ValorEstoque] representa o valor total do estoque, calculado multiplicando o preço pela quantidade disponível.
+
+### resolução: 
+~~~~ python
+nomeProduto = "Camiseta"
+precoProduto = 29.99
+qtd = 100
+valorEstoque = precoProduto * qtd
+
+mensagem = "Produto: {}, Preço: R${}, Quantidade disponível: {}. O valor total do estoque é R${}.".format(nomeProduto, precoProduto, qtd, valorEstoque)
+print(mensagem)
+~~~~
+
+#### resultado: 
+    Produto: Camiseta, Preço: R$29.99, Quantidade disponível: 100. O valor total do estoque é R$2999.0.
+
+## Exercicio #30 - F-String
+#### Peça ao usuário para inserir seu nome. Em seguida, use uma f-string para exibir uma mensagem de saudação personalizada.
+
+Solicita ao usuário que insira seu nome
+    
+    nome = input("Digite seu nome: ")
+
+# Exibe uma mensagem de saudação personalizada usando uma f-string
+    mensagem = f"Olá, {nome}! Bem-vindo ao nosso programa."
+    print(mensagem)
+
+Casas decimais f" {valor:.2f}"
+
+### resolução: 
+~~~~ python
+nome = input("Insira seu nome: ")
+print(f"Olá {nome}, seja bem vindo!")
+~~~~
+
+#### resultado: 
+    Insira seu nome: Thiago
+    Olá Thiago, seja bem vindo!
+    
+## Exercicio #27 - 
+####
+
+### resolução: 
+~~~~ python
+~~~~
+
+#### resultado: 
+
+<br>
+<p align="center"> 14/02/25 <p>
 </details>
 
 ---
