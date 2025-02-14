@@ -796,7 +796,27 @@ else:
     Insira um número: 21
     Insira outro número: 07
     21 é maior que 7
-    
+
+## Exercicio #33 - Número positivo
+#### Escreva um programa em Python que verifique se um número é positivo.
+
+#### resolução:
+~~~~ python
+num = int(input("Insira um número: "))
+
+if num > 0:
+    print(num, "é número positivo")
+elif num == 0:
+    print(num, "é número neutro")
+else:
+    print(num, "é número negativo")
+~~~~
+
+#### resultado:
+    Insira um número: 21
+    21 é número positivo
+
+
 <br>
 <p align="center"> 14/02/25 <p>
 </details>
