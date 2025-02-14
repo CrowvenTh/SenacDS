@@ -622,7 +622,7 @@ print(tupla[3])
 </details>
 
 <details>
-    <summary> 💠 Aula 5 - 📝 Exercicios de Lógica (27 a 30) </summary>
+    <summary> 💠 Aula 5 - 📝 Exercicios de Lógica (27 a 33) </summary>
 
 ## Exercicio #27 - Format()
 #### Escreva um programa em Python que utilize o método format() para formatar uma mensagem com informações pessoais. Você deve criar um dicionário chamado informacoes com as seguintes chaves e valores:
