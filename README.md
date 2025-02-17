@@ -978,15 +978,55 @@ if palavra != palavra.capitalize():
 #### resultado:
     Digite uma palavra: cachorro
     Cachorro
-## Exercicio # -
-####
+
+## Exercicio #41 - Elif()
+#### 
+
+    if condição_externa:
+        # Código a ser executado se a condição externa for verdadeira
+        if condição_interna:
+            # Código a ser executado se a condição interna for verdadeira
+        else:
+            # Código a ser executado se a condição interna for falsa
+    else:
+        # Código a ser executado se a condição externa for falsa
+
+Ou
+
+    if condição_1:
+        # Código a ser executado se condição_1 for verdadeira
+    elif condição_2:
+        # Código a ser executado se condição_1 for falsa e condição_2 for   verdadeira
+    else:
+        # Código a ser executado se nenhuma das condições anteriores for    verdadeira
 
 #### resolução:
 ~~~~ python
+numero = int(input("Digite um número: "))
 
+if numero > 0:
+    print("é número positivo")
+elif numero < 0:
+    print("é número negativo")
+else: 
+    print("é número neutro")
 ~~~~
 #### resultado:
+se a variavel for maior que 0
 
+    Digite um número: 7
+    é número positivo
+
+se a variavel for menor que 0
+    
+    Digite um número: -1
+    é número negativo
+
+se a variavel for igual a 0
+    
+    Digite um número: 0
+    é número neutro
+    
 ## Exercicio # -
 ####
 
