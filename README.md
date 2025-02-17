@@ -857,7 +857,7 @@ else:
 </details>
 
 <details>
-    <summary> 💠 Aula 6 - 📝 Exercicios de Lógica V (36 a --) </summary>
+    <summary> 💠 Aula 6 - 📝 Exercicios de Lógica V (36 a 41) </summary>
 
 ## Exercicio #36 - If upper
 #### Escreva um programa que verifique se uma palavra está toda em letras maiúsculas.
@@ -1026,15 +1026,6 @@ se a variavel for igual a 0
     
     Digite um número: 0
     é número neutro
-    
-## Exercicio # -
-####
-
-#### resolução:
-~~~~ python
-
-~~~~
-#### resultado:
 
 ## Exercicio # -
 ####
@@ -1045,23 +1036,6 @@ se a variavel for igual a 0
 ~~~~
 #### resultado:
 
-## Exercicio # -
-####
-
-#### resolução:
-~~~~ python
-
-~~~~
-#### resultado:
-
-## Exercicio # -
-####
-
-#### resolução:
-~~~~ python
-
-~~~~
-#### resultado:
 
 <br>
 <p align="center"> 17/02/25 <p>
