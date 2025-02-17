@@ -934,7 +934,7 @@ print(palavra.upper().count("A"))
 #### resultado:
 
 <br>
-<p align="center"> 14/02/25 <p>
+<p align="center"> 17/02/25 <p>
 </details>
 
 ---
