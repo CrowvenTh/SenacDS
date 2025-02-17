@@ -944,7 +944,7 @@ else:
     Digite um texto: Pelo futuro do conhecimento
     O texto 'pelo futuro do conhecimento' contém 3 letras 'e' 
 
-## Exercicio #40 (desafio) - palindromo
+## Exercicio #40 Desafio - palindromo
 #### Crie um programa que verifique se um palavra é um palíndromo(Igual, quando lida de trás para frente).
 
 #### resolução:
@@ -965,14 +965,62 @@ else:
     escreva uma palavra: caqui
     A palavra caqui não é um palíndromo
 
+## Exercicio #40 - If capitalize()
+#### Crie um programa que verifique se a primeira letra é maiúscula, caso não seja, capitalize a primeira letra de uma palavra.
+
+#### resolução:
+~~~~ python
+palavra = input("Digite uma palavra: ")
+
+if palavra != palavra.capitalize():
+    print(palavra.capitalize())
+~~~~
+#### resultado:
+    Digite uma palavra: cachorro
+    Cachorro
 ## Exercicio # -
 ####
 
 #### resolução:
 ~~~~ python
+
 ~~~~
+#### resultado:
 
+## Exercicio # -
+####
 
+#### resolução:
+~~~~ python
+
+~~~~
+#### resultado:
+
+## Exercicio # -
+####
+
+#### resolução:
+~~~~ python
+
+~~~~
+#### resultado:
+
+## Exercicio # -
+####
+
+#### resolução:
+~~~~ python
+
+~~~~
+#### resultado:
+
+## Exercicio # -
+####
+
+#### resolução:
+~~~~ python
+
+~~~~
 #### resultado:
 
 <br>
