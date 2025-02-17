@@ -5,4 +5,7 @@
 # print(palavra.upper().count("A"))
 palavra = input("Insira uma palavra: ").upper()
 contagem = palavra.count("A")
-print(f"a palavra {palavra} contém {contagem} letras 'A'")
+if contagem > 0:
+    print(f"a palavra {palavra} contém {contagem} letras 'A'")
+else: 
+    print(f"a palavra {palavra} contém {contagem} letras 'A'")
