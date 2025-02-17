@@ -890,11 +890,12 @@ palavra = input("Insira uma palavra: ")
 print(palavra.upper().count("A"))
 
 # Outro jeito de fazer:
-
 palavra = input("Insira uma palavra: ").upper()
 contagem = palavra.count("A")
-
-print(f"a palavra {palavra} contém {contagem} letras 'A'")
+if contagem > 0:
+    print(f"a palavra {palavra} contém {contagem} letras 'A'")
+else: 
+    print(f"a palavra {palavra} contém {contagem} letras 'A'")
 ~~~~
 #### resultado:
     Insira uma palavra: banana 
@@ -927,17 +928,23 @@ OU se a validação do IF for falsa:
     Insira uma palavra: BANANA
     A palavra BANANA está escrita em letras maiúsculas!
 
-## Exercicio #39 -
-####
+## Exercicio #39 - Lower() & count()
+#### Faça um programa que transforme um texto todo em letras minúsculas e conte quantas letras 'e' ele possui.
 
 #### resolução:
 ~~~~ python
+texto = input("Digite um texto: ").lower()
+contE = texto.count("e")
+if contE > 0:
+    print(f"O texto '{texto}' contém {contE} letras 'e' ")
+else: 
+    print(f"O texto '{texto}' contém {contE} letras 'e' ")
 ~~~~
-
-
 #### resultado:
+    Digite um texto: Pelo futuro do conhecimento
+    O texto 'pelo futuro do conhecimento' contém 3 letras 'e' 
 
-## Exercicio # -
+## Exercicio #40 - 
 ####
 
 #### resolução:
