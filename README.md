@@ -944,15 +944,26 @@ else:
     Digite um texto: Pelo futuro do conhecimento
     O texto 'pelo futuro do conhecimento' contém 3 letras 'e' 
 
-## Exercicio #40 - 
-####
+## Exercicio #40 (desafio) - palindromo
+#### Crie um programa que verifique se um palavra é um palíndromo(Igual, quando lida de trás para frente).
 
 #### resolução:
 ~~~~ python
+palavra = input("escreva uma palavra: ")
+
+if palavra == palavra[::-1]:
+    print(f"A palavra {palavra} é um palíndromo")
+else:
+    print(f"A palavra {palavra} não é um palíndromo")
 ~~~~
-
-
 #### resultado:
+    escreva uma palavra: ovo
+    A palavra ovo é um palíndromo
+
+    # se não:
+
+    escreva uma palavra: caqui
+    A palavra caqui não é um palíndromo
 
 ## Exercicio # -
 ####
