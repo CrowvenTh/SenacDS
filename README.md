@@ -857,7 +857,7 @@ else:
 </details>
 
 <details>
-    <summary> 💠 Aula 6 - 📝 Exercicios de  V (36 a --) </summary>
+    <summary> 💠 Aula 6 - 📝 Exercicios de Lógica V (36 a --) </summary>
 
 ## Exercicio #36 - If upper
 #### Escreva um programa que verifique se uma palavra está toda em letras maiúsculas.
