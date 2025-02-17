@@ -888,10 +888,22 @@ OU se a validação do IF for falsa:
 palavra = input("Insira uma palavra: ")
 
 print(palavra.upper().count("A"))
+
+# Outro jeito de fazer:
+
+palavra = input("Insira uma palavra: ").upper()
+contagem = palavra.count("A")
+
+print(f"a palavra {palavra} contém {contagem} letras 'A'")
 ~~~~
 #### resultado:
     Insira uma palavra: banana 
     3
+
+resolução da segunda forma:
+
+    Insira uma palavra: banana
+    a palavra BANANA contém 3 letras 'A'
 
 ## Exercicio # -
 ####
