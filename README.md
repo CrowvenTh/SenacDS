@@ -905,17 +905,29 @@ resolução da segunda forma:
     Insira uma palavra: banana
     a palavra BANANA contém 3 letras 'A'
 
-## Exercicio # -
-####
+## Exercicio #38 - lowerCase
+#### Escreva um programa que verifique se uma palavra está toda em letras minúsculas.
 
 #### resolução:
 ~~~~ python
+palabra = str(input("Insira uma palavra: "))
+
+if(palabra.islower()):
+    print(f"A palavra {palabra} está escrita em letras minúsculas!")
+else:
+    print(f"A palavra {palabra} está escrita em letras maiúsculas!")
 ~~~~
 
-
 #### resultado:
+    Insira uma palavra: banana 
+    A palavra banana está escrita em letras minúsculas!
 
-## Exercicio # -
+OU se a validação do IF for falsa:
+
+    Insira uma palavra: BANANA
+    A palavra BANANA está escrita em letras maiúsculas!
+
+## Exercicio #39 -
 ####
 
 #### resolução:
