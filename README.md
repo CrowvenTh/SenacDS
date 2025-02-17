@@ -622,7 +622,7 @@ print(tupla[3])
 </details>
 
 <details>
-    <summary> 💠 Aula 5 - 📝 Exercicios de Lógica (27 a 33) </summary>
+    <summary> 💠 Aula 5 - 📝 Exercicios de Lógica (27 a 35) </summary>
 
 ## Exercicio #27 - Format()
 #### Escreva um programa em Python que utilize o método format() para formatar uma mensagem com informações pessoais. Você deve criar um dicionário chamado informacoes com as seguintes chaves e valores:
@@ -815,8 +815,22 @@ else:
 #### resultado:
     Insira um número: 21
     21 é número positivo
+## Exercicio #34 - Maior Idade
+#### Crie um programa que verifique se uma pessoa pode votar com base em sua idade (idade >= 16).
 
+#### resolução: 
+~~~~ python
+idade = int(input("Insira sua idade: "))
 
+if(idade >= 18):
+    print("Você é maior de idade!")
+else:
+    print("Você é menor de idade!")
+~~~~
+
+#### resultado:
+    Insira sua idade: 16
+    Você é menor de idade!
 <br>
 <p align="center"> 14/02/25 <p>
 </details>
