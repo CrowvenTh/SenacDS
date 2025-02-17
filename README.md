@@ -94,7 +94,7 @@ resultado_arredondado = round(resultado, 2)
 
 
 <details>
-    <summary> 💠 Aula 2 - 📝 Exercicios de Lógica (1 a 12) </summary>
+    <summary> 💠 Aula 2 - 📝 Exercicios de Lógica I (1 a 12) </summary>
 
 ## Exercicio #1 - Olá mundo!
 
@@ -622,7 +622,7 @@ print(tupla[3])
 </details>
 
 <details>
-    <summary> 💠 Aula 5 - 📝 Exercicios de Lógica (27 a 35) </summary>
+    <summary> 💠 Aula 5 - 📝 Exercicios de Lógica IV (27 a 35) </summary>
 
 ## Exercicio #27 - Format()
 #### Escreva um programa em Python que utilize o método format() para formatar uma mensagem com informações pessoais. Você deve criar um dicionário chamado informacoes com as seguintes chaves e valores:
@@ -831,6 +831,108 @@ else:
 #### resultado:
     Insira sua idade: 16
     Você é menor de idade!
+
+# Exercicio #35 - Par ou Impar
+#### Crie um programa que determine se um número é par ou ímpar.
+    Instrução
+    resultado = 10 % 3 
+    print(resultado) # Saída será 1, porque 10 dividido por 3 é igual a 3 com um resto de 1
+
+#### resolução:
+~~~~ python
+number = int(input("insira um número: "))
+
+if(number % 2 == 0):
+    print("O número",number,"é par!")
+else: 
+    print("O número",number,"é impar!")
+~~~~
+
+#### resultado:
+    insira um número: 21
+    O número 21 é impar!
+
+<br>
+<p align="center"> 14/02/25 <p>
+</details>
+
+<details>
+    <summary> 💠 Aula 6 - 📝 Exercicios de  V (36 a --) </summary>
+
+## Exercicio #36 - If upper
+#### Escreva um programa que verifique se uma palavra está toda em letras maiúsculas.
+
+#### resolução:
+~~~~ python
+word = input("Insira uma palavra: ")
+
+if word == word.upper(): #ou if word.isupper():
+    print("A palavra está em letras maiúsculas")
+else:
+    print("A palavra está em letras minúsculas")
+~~~~
+
+#### resultado:
+    Insira uma palavra: THIAGO
+    A palavra está em letras maiúsculas
+OU se a validação do IF for falsa:
+
+    Insira uma palavra: thiago
+    A palavra está em letras minúsculas
+
+## Exercicio #37 - Count()
+#### Faça um programa que transforme um texto todo em letras maiúsculas e conte quantas letras 'A' ele possui.
+
+#### resolução:
+~~~~ python
+palavra = input("Insira uma palavra: ")
+
+print(palavra.upper().count("A"))
+~~~~
+#### resultado:
+    Insira uma palavra: banana 
+    3
+
+## Exercicio # -
+####
+
+#### resolução:
+~~~~ python
+~~~~
+
+
+#### resultado:
+
+## Exercicio # -
+####
+
+#### resolução:
+~~~~ python
+~~~~
+
+
+#### resultado:
+
+## Exercicio # -
+####
+
+#### resolução:
+~~~~ python
+~~~~
+
+
+#### resultado:
+
+## Exercicio # -
+####
+
+#### resolução:
+~~~~ python
+~~~~
+
+
+#### resultado:
+
 <br>
 <p align="center"> 14/02/25 <p>
 </details>
