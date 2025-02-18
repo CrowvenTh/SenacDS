@@ -1163,16 +1163,31 @@ else:
     Digite uma palavra: 721
     A palavra '721' não contém apenas letras
 
-## Exercicio # - 
-#### 
+## Exercicio #45 - isdigit()
+#### Escreva um programa em Python que determine se os números  digitados pelo usuário contém somente números, caso contenha algum valor não numérico, informar que é permitido somente números
+    numeros.isdigit()
+verificar se todos os caracteres na frase são dígitos de (0 a 9). Se todos os caracteres forem dígitos, a função retorna True, caso contrário, retorna False.
 
 #### resolução:
 ~~~~ python
+numero = input("digite um número: ")
 
+if(numero == ""):
+    print("nenhum número foi digitado")
+elif(numero.isdigit()):
+    print(f"o número digitado foi {numero}")
+else:
+    print(f"valor inválido o número não deve conter letras")
 ~~~~
 #### resultado:
-
-#### resultado:
+    digite um número: 
+    nenhum número foi digitado
+    ---
+    digite um número: 21
+    o número digitado foi 21
+    ---
+    digite um número: thiago
+    valor inválido o número não deve conter letras
 
 ## Exercicio # - 
 #### 
