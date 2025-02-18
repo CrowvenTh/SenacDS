@@ -1027,8 +1027,113 @@ se a variavel for igual a 0
     Digite um número: 0
     é número neutro
 
-## Exercicio # -
-####
+<br>
+<p align="center"> 17/02/25 <p>
+</details>
+
+<details>
+   <summary> 💠 Aula 7 - 📝 Exercicios de Lógica VI (42 a --) </summary>
+
+## Exercicio #42 - Média de notas
+#### Crie um programa que receba 4 notas de um aluno e calcule a média:
+- Nota >= 6 Aprovado
+- Nota < 6 e nota > 4 Recuperação
+- Nota <= 4 Reprovado
+
+#### resolução:
+~~~~ python
+
+count = 0
+notaTotal = 0
+while count < 4:
+        nota = 0
+        count += 1
+        nota = float(input(f"Insira a {count}° nota: "))
+        notaTotal += nota
+        if(count == 4):
+                media = (notaTotal / count)
+                print(f"A média das nota é: {media:.1f}")
+                if(media >= 6):
+                        print("O aluno está aprovado!")
+                elif(media < 6 and media > 4):
+                        print("O aluno está de recuperação!")
+                else:
+                        print("O aluno está reprovado!")
+~~~~
+#### resultado:
+Primeira validação do IF:
+
+    Insira a 1° nota: 8.7
+    Insira a 2° nota: 8.9
+    Insira a 3° nota: 7.6
+    Insira a 4° nota: 8.8
+    A média das nota é: 8.5
+    O aluno está aprovado!
+
+Segunda validção ELIF:
+
+    Insira a 1° nota: 6.4
+    Insira a 2° nota: 5.7
+    Insira a 3° nota: 6.1
+    Insira a 4° nota: 3.8
+    A média das nota é: 5.5
+    O aluno está de recuperação!
+
+Terceira validação ELSE:
+
+    Insira a 1° nota: 2.3
+    Insira a 2° nota: 4.6
+    Insira a 3° nota: 5.0
+    Insira a 4° nota: 1.6
+    A média das nota é: 3.4
+    O aluno está reprovado!
+
+## Exercicio # - 
+#### 
+
+#### resolução:
+~~~~ python
+
+~~~~
+#### resultado:
+
+#### resultado:
+
+## Exercicio # - 
+#### 
+
+#### resolução:
+~~~~ python
+
+~~~~
+#### resultado:
+
+#### resultado:
+
+## Exercicio # - 
+#### 
+
+#### resolução:
+~~~~ python
+
+~~~~
+#### resultado:
+
+#### resultado:
+
+## Exercicio # - 
+#### 
+
+#### resolução:
+~~~~ python
+
+~~~~
+#### resultado:
+
+#### resultado:
+
+## Exercicio # - 
+#### 
 
 #### resolução:
 ~~~~ python
@@ -1038,7 +1143,7 @@ se a variavel for igual a 0
 
 
 <br>
-<p align="center"> 17/02/25 <p>
+<p align="center"> 18/02/25 <p>
 </details>
 
 ---
