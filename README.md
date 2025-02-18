@@ -1247,6 +1247,34 @@ while contador > 0:
     2
     1
 
+# Exercicio #48 - contagem de pares
+#### Escreva um programa que solicite ao usuário um número e depois imprima todos os números pares de 1 até esse número, usando um loop while
+
+#### resolução:
+~~~~ python
+numero = int(input("Insira um número: "))
+contador = 0
+while contador < numero:
+    contador += 2
+    print(contador)
+~~~~
+#### resultado:
+    2
+    4
+    6
+    8
+    10
+
+## Exercicio #49 -
+####
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+
 <br>
 <p align="center"> 18/02/25 <p>
 </details>
