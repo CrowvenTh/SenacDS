@@ -1051,7 +1051,7 @@ se a variavel for igual a 0
 </details>
 
 <details>
-   <summary> 💠 Aula 7 - 📝 Exercicios de Lógica VI (42 a --) </summary>
+   <summary> 💠 Aula 7 - 📝 Exercicios de Lógica VI (42 a 49) </summary>
 <br>
 <p> 18/02/25 <p>
 
