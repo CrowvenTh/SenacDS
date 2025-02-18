@@ -22,6 +22,9 @@ Repositório destinado as atividades realizadas no curso de Desenvolvimento de s
 <details>
     <summary> 💠 Aula 1 - Introdução a python 🐍 </summary>
 
+<br>
+<p> 10/02/25 <p>
+
 #### upper(): converte todas as letras para maiúsculas
 ~~~~ python
 print(texto.upper())
@@ -95,6 +98,9 @@ resultado_arredondado = round(resultado, 2)
 
 <details>
     <summary> 💠 Aula 2 - 📝 Exercicios de Lógica I (1 a 12) </summary>
+
+<br>
+<p> 11/02/25 <p>
 
 ## Exercicio #1 - Olá mundo!
 
@@ -258,6 +264,9 @@ print(palavra.capitalize())
 
 <details>
     <summary> 💠 Aula 3 - 📝 Exercicios de Lógica II (13 a 21) </summary>
+
+<br>
+<p> 12/02/25 <p>
 
 ## Exercicio #13 - strip
 #### Escreva um programa em Python que remove os espaços em branco do início e do final de uma variável frase =  " Hoje a noite está ótima ". Após remover os espaços em branco do início e do final, exiba o conteúdo da variável frase.
@@ -480,6 +489,9 @@ print(f"{nome} - {idade} - {altura}")
 <details>
     <summary> 💠 Aula 4 - 📝 Exercicios de Lógica III (22 a 26) </summary>
 
+<br>
+<p> 13/02/25 <p>
+
 ## Exercicio #22 - join
 ### 1 - Crie um programa em Python que aceite uma TUPLA de linguagens de programação e as junte em uma única String separada por hífens, verificar o tipo da variável antes e após a operação:
 
@@ -623,6 +635,9 @@ print(tupla[3])
 
 <details>
     <summary> 💠 Aula 5 - 📝 Exercicios de Lógica IV (27 a 35) </summary>
+
+<br>
+<p> 14/02/25 <p>
 
 ## Exercicio #27 - Format()
 #### Escreva um programa em Python que utilize o método format() para formatar uma mensagem com informações pessoais. Você deve criar um dicionário chamado informacoes com as seguintes chaves e valores:
@@ -859,6 +874,9 @@ else:
 <details>
     <summary> 💠 Aula 6 - 📝 Exercicios de Lógica V (36 a 41) </summary>
 
+<br>
+<p> 17/02/25 <p>
+
 ## Exercicio #36 - If upper
 #### Escreva um programa que verifique se uma palavra está toda em letras maiúsculas.
 
@@ -1033,6 +1051,8 @@ se a variavel for igual a 0
 
 <details>
    <summary> 💠 Aula 7 - 📝 Exercicios de Lógica VI (42 a --) </summary>
+<br>
+<p> 18/02/25 <p>
 
 ## Exercicio #42 - Média de notas
 #### Crie um programa que receba 4 notas de um aluno e calcule a média:
@@ -1088,8 +1108,8 @@ Terceira validação ELSE:
     A média das nota é: 3.4
     O aluno está reprovado!
 
-## Exercicio # - 
-#### 
+## Exercicio #43 - Positivo & impar 
+#### Escreva um programa em Python que determine se um número digitado pelo usuário é um número positivo e ímpar.
 
 #### resolução:
 ~~~~ python
