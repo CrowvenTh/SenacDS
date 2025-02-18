@@ -1259,6 +1259,7 @@ while contador < numero:
     print(contador)
 ~~~~
 #### resultado:
+    Insira um número: 10
     2
     4
     6
