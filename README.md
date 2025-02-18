@@ -1276,11 +1276,12 @@ while contador < numero:
     8
     10
 
-## Exercicio #49 -
-####
+## Exercicio #49 - contagem de impares
+#### Escreva um programa que solicite ao usuário um número e depois imprima todos os números pares de 1 até esse número, imprimir em ordem decresce, usando um loop while.
 
 #### resolução:
 ~~~~ python
+
 ~~~~
 
 #### resultado:
