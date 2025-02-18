@@ -3,7 +3,7 @@
 Repositório destinado as atividades realizadas no curso de Desenvolvimento de sistemas no SENAC Taguatinga
 
 ---
-### 🗂️ Material
+### 🗂️ Material de Apoio
 
 <details>
     <summary> 🔗 Conteúdo </summary>
@@ -12,6 +12,7 @@ Repositório destinado as atividades realizadas no curso de Desenvolvimento de s
 - 📁 <a href="algoritmo/Material/python_aula02.pdf">Operadores Lógicos </a> 
 - 📁 <a href="algoritmo/Material/python_aula03.pdf">Tipos de dados & condicionais </a> 
 - 📁 <a href="algoritmo/Material/python_aula04.pdf"> Variáveis & Exercicios</a> 
+- 💾 <a href="https://github.com/CrowvenTh/Santander-Python">Repositório de apoio</a>
 
 ---
   
