@@ -1113,9 +1113,29 @@ Terceira validação ELSE:
 
 #### resolução:
 ~~~~ python
+numero = int(input("Insira um número: "))
 
+if(numero % 2 != 0 and numero > 0):
+    print(f"O número {numero} é impar e positivo")
+elif(numero % 2 != 0 and numero < 0):
+    print(f"O número {numero} é impar e negativo")
+elif(numero % 2 == 0 and numero < 0):
+    print(f"O número {numero} é par e negativo")
+else:
+    print(f"O número {numero} é par e positivo")
 ~~~~
 #### resultado:
+    Insira um número: 7
+    O número 7 é impar e positivo
+    ---
+    Insira um número: -7
+    O número -7 é impar e negativo
+    ---
+    Insira um número: -4
+    O número -4 é par e negativo
+    ---
+    Insira um número: 4
+    O número 4 é par e positivo
 
 #### resultado:
 
