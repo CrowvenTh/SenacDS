@@ -1282,25 +1282,22 @@ while contador < numero:
 
 #### resolução:
 ~~~~ python
-contador = 0
 numero = int(input("Insira um número: "))
+contador = numero
 
-while (contador < numero):
-    if(contador % 2 != 0):
+while (contador > 0):
+    if(contador % 2 == 0):
         print(contador)
-    contador += 1
-
+    contador -= 1
 ~~~~
 
 #### resultado:
-    Insira um número: 15
-    1
-    3
-    5
-    7
-    9
-    11
-    13
+    Insira um número: 10
+    10
+    8
+    6
+    4
+    2
 
 <br>
 <p align="center"> 18/02/25 <p>
