@@ -1189,10 +1189,43 @@ else:
     digite um número: thiago
     valor inválido o número não deve conter letras
 
-## Exercicio #46 - Contagem Regressiva while()
+## Exercicio #46 - Contagem progressiva while()
 #### Escreva um programa que conte de 1 a 10 usando um loop while e imprima cada número.
     while condição: 
         # Código a ser executado enquanto a condição for verdadeira
+
+#### resolução:
+~~~~ python
+contador = 0
+while contador < 10:
+    contador += 1 # nessa posição o contador vai do 10 ao 1
+    print(contador)
+    # contador += 1 nessa posição o contador vai do 0 ao 9
+
+# OU
+    
+for i in range(1, 11, +1):
+    print(i)
+~~~~
+#### resultado:
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+
+## Exercicio #47 - Contagem Regressiva while()
+#### Escreva um programa faça a contagem regressiva de 1 a 10 usando um loop while e imprima cada número.
+
+
+while condição: 
+      # Código a ser executado enquanto a condição for verdadeira
+
 
 #### resolução:
 ~~~~ python
@@ -1213,16 +1246,6 @@ while contador > 0:
     3
     2
     1
-
-## Exercicio # - 
-#### 
-
-#### resolução:
-~~~~ python
-
-~~~~
-#### resultado:
-
 
 <br>
 <p align="center"> 18/02/25 <p>
