@@ -1137,18 +1137,31 @@ else:
     Insira um número: 4
     O número 4 é par e positivo
 
-#### resultado:
-
-## Exercicio # - 
-#### 
+## Exercicio #44 - isalpha() 
+#### Escreva um programa em Python que determine se uma palavra digitada pelo usuário somente contém letras, caso contenha algum valor numérico, informar que não contem apenas letras ou nenhuma letra.
+    texto.isalpha()
+- Ele retorna True se todos os caracteres são letras e False se pelo menos um caractere não for uma letra.
 
 #### resolução:
 ~~~~ python
+ut("Digite uma palavra: ")
 
+if(palavra.isalpha()):
+    print(f"A palavra '{palavra}' contém apenas letras")
+elif(palavra == ""):
+    print(f"A palavra não foi digitada")
+else: 
+    print(f"A palavra '{palavra}' não contém apenas letras")
 ~~~~
 #### resultado:
-
-#### resultado:
+    Digite uma palavra: thiago
+    A palavra 'thiago' contém apenas letras
+    ---
+    Digite uma palavra: 
+    A palavra não foi digitada
+    ---
+    Digite uma palavra: 721
+    A palavra '721' não contém apenas letras
 
 ## Exercicio # - 
 #### 
