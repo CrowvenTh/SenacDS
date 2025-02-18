@@ -478,7 +478,7 @@ print(f"{nome} - {idade} - {altura}")
 </details>
 
 <details>
-    <summary> 💠 Aula 4 - 📝 Exercicios de Lógica III (22 a 30) </summary>
+    <summary> 💠 Aula 4 - 📝 Exercicios de Lógica III (22 a 26) </summary>
 
 ## Exercicio #22 - join
 ### 1 - Crie um programa em Python que aceite uma TUPLA de linguagens de programação e as junte em uma única String separada por hífens, verificar o tipo da variável antes e após a operação:
