@@ -1365,11 +1365,38 @@ while True:
 
 #### resolução:
 ~~~~ python
+on = True
+somaIterada = 0
+limite = int(input("Insira um resultado limite: "))
+while on:
+    numero = int(input("Insira um número: "))
+    numero1 = int(input("Insira outro número: "))
+    soma = (numero + numero1)
+    somaIterada += soma
+    if(somaIterada < limite):
+            print(f"{somaIterada} | {limite}")
+    if(somaIterada > limite):
+        print(f"{somaIterada} | {limite}")
+        on = False
 ~~~~
 
 #### resultado:
+    Insira um resultado limite: 10
+    Insira um número: 5
+    Insira outro número: 5
+    Insira um número: 1
+    Insira outro número: 1
+    12 | 10
 
 
+## Exercicio # -
+####
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
 
 <p align="center"> 19/02/25 <p>
 </details>
