@@ -1304,7 +1304,7 @@ while (contador > 0):
 </details>
 
 <details>
-    <summary> 💠 Aula 8 - 📝 Exercicios de Lógica VII (50 a --) </summary>
+    <summary> 💠 Aula 8 - 📝 Exercicios de Lógica VII (50 a 52) </summary>
 <br>
 <p> 19/02/25 <p>
 
@@ -1336,7 +1336,29 @@ while cont <= 10:
     2 x 9 = 18
     2 x 10 = 20
 
-<p align="center"> 18/02/25 <p>
+
+## Exercicio #51 - validação de senha simples
+#### Escreva um programa que solicite ao usuário que insira uma senha correta e continue pedindo até que a senha correta seja inserida, usando um loop while.
+#### resolução:
+~~~~ python
+
+~~~~
+
+#### resultado:
+
+
+## Exercicio #52 - soma acumulada
+#### Escreva um programa que solicite ao usuário que insira números e calcule a soma desses números até que a soma ultrapasse um limite específico, usando um loop while
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+
+
+<p align="center"> 19/02/25 <p>
 </details>
 
 ---
