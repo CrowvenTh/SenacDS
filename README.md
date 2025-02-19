@@ -1341,11 +1341,24 @@ while cont <= 10:
 #### Escreva um programa que solicite ao usuário que insira uma senha correta e continue pedindo até que a senha correta seja inserida, usando um loop while.
 #### resolução:
 ~~~~ python
+senha = input("Cadastre sua senha: ")
+userSenha = input("Digite sua senha: ")
 
+while True:
+    if(senha != userSenha):
+        print("Senha incorreta!")
+        userSenha = input("Digite sua senha: ")
+    else: 
+        print("Senha Correta!")
+        break
 ~~~~
 
 #### resultado:
-
+    Cadastre sua senha: thigs
+    Digite sua senha: 123
+    Senha incorreta!
+    Digite sua senha: thigs
+    Senha Correta!
 
 ## Exercicio #52 - soma acumulada
 #### Escreva um programa que solicite ao usuário que insira números e calcule a soma desses números até que a soma ultrapasse um limite específico, usando um loop while
