@@ -1277,7 +1277,7 @@ while contador < numero:
     8
     10
 
-## Exercicio #49 - contagem de impares
+## Exercicio #49 - contagem de par regressivo
 #### Escreva um programa que solicite ao usuário um número e depois imprima todos os números pares de 1 até esse número, imprimir em ordem decresce, usando um loop while.
 
 #### resolução:
@@ -1300,6 +1300,42 @@ while (contador > 0):
     2
 
 <br>
+<p align="center"> 18/02/25 <p>
+</details>
+
+<details>
+    <summary> 💠 Aula 8 - 📝 Exercicios de Lógica VII (50 a --) </summary>
+<br>
+<p> 19/02/25 <p>
+
+
+## Exercicio #50 - tabuada com while
+#### Escreva um programa que imprima a tabuada de multiplicação de um número específico até 10, usando um loop while.
+
+#### resolução:
+~~~~ python
+numero = int(input("Insira um número: "))
+cont = 0
+
+while cont <= 10:
+    print(f"{numero} x {cont} = {numero * cont}")
+    cont +=1
+~~~~
+
+#### resultado:
+    Insira um número: 2
+    2 x 0 = 0
+    2 x 1 = 2
+    2 x 2 = 4
+    2 x 3 = 6
+    2 x 4 = 8
+    2 x 5 = 10
+    2 x 6 = 12
+    2 x 7 = 14
+    2 x 8 = 16
+    2 x 9 = 18
+    2 x 10 = 20
+
 <p align="center"> 18/02/25 <p>
 </details>
 
