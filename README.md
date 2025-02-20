@@ -1566,14 +1566,33 @@ while cont <= limite:
 
 
 ## Exercicio #57 - !Fatorial
-#### 
+#### Implemente um programa que imprima o fatorial do número informado pelo usuário.
+
+#### resolução:
+~~~~ python
+n = int(input("Insira um número: "))
+fatorial = 0
+cont = 1
+while cont <= n:
+    fatorial += cont
+    cont += 1
+print(fatorial)
+    
+~~~~
+
+#### resultado:
+    Insira um número: 3
+    6
+
+
+## Exercicio #58 -
+####
 
 #### resolução:
 ~~~~ python
 ~~~~
 
 #### resultado:
-
 
 <p align="center"> 20/02/25 <p>
 </details>
