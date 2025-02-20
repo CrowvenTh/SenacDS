@@ -1433,21 +1433,27 @@ Esta função retorna um elemento aleatório de uma sequência não vazia.
 import random
 
 randomNumber = random.randint(1, 100)
-# print(randomNumber)
+print(randomNumber)
 numero = int(input("Adivinhe o número: "))
 
-while randomNumber != numero:
-    print("número incorreto, tente novamente!")
-    numero = int(input("Adivinhe o número: "))
-    if(randomNumber == numero):
+while True:
+    if(randomNumber > numero):
+        print("Número incorreto, tente um palpilte maior")
+    elif(randomNumber < numero):
+        print("Número incorreto, tente um palpilte menor")
+    elif(randomNumber == numero):
         print(f"{randomNumber}, número correto!")
+        break
+    numero = int(input("Adivinhe o número: "))
 ~~~~
 
 #### resultado:
-    Adivinhe o número: 3
-    número incorreto, tente novamente!
-    Adivinhe o número: 34
-    34, número correto!
+    Adivinhe o número: 50
+    Número incorreto, tente um palpilte menor
+    Adivinhe o número: 20
+    Número incorreto, tente um palpilte maior
+    Adivinhe o número: 24
+    24, número correto!
 
 <p align="center"> 19/02/25 <p>
 </details>

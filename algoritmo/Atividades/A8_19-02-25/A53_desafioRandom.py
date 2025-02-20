@@ -2,11 +2,15 @@
 import random
 
 randomNumber = random.randint(1, 100)
-# print(randomNumber)
+print(randomNumber)
 numero = int(input("Adivinhe o número: "))
 
-while randomNumber != numero:
-    print("número incorreto, tente novamente!")
-    numero = int(input("Adivinhe o número: "))
-    if(randomNumber == numero):
+while True:
+    if(randomNumber > numero):
+        print("Número incorreto, tente um palpilte maior")
+    elif(randomNumber < numero):
+        print("Número incorreto, tente um palpilte menor")
+    elif(randomNumber == numero):
         print(f"{randomNumber}, número correto!")
+        break
+    numero = int(input("Adivinhe o número: "))
