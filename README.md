@@ -1304,7 +1304,7 @@ while (contador > 0):
 </details>
 
 <details>
-    <summary> 💠 Aula 8 - 📝 Exercicios de Lógica VII (50 a 52) </summary>
+    <summary> 💠 Aula 8 - 📝 Exercicios de Lógica VII (50 a 53) </summary>
 <br>
 <p> 19/02/25 <p>
 
@@ -1430,12 +1430,45 @@ Esta função retorna um elemento aleatório de uma sequência não vazia.
 
 #### resolução:
 ~~~~ python
+import random
 
+randomNumber = random.randint(1, 100)
+# print(randomNumber)
+numero = int(input("Adivinhe o número: "))
+
+while randomNumber != numero:
+    print("número incorreto, tente novamente!")
+    numero = int(input("Adivinhe o número: "))
+    if(randomNumber == numero):
+        print(f"{randomNumber}, número correto!")
+~~~~
+
+#### resultado:
+    Adivinhe o número: 3
+    número incorreto, tente novamente!
+    Adivinhe o número: 34
+    34, número correto!
+
+<p align="center"> 19/02/25 <p>
+</details>
+
+<details>
+    <summary> 💠 Aula 9 - 📝 Exercicios de Lógica VIII (54 a --) </summary>
+<br>
+<p> 20/02/25 <p>
+
+
+## Exercicio # -
+####
+
+#### resolução:
+~~~~ python
 ~~~~
 
 #### resultado:
 
-<p align="center"> 19/02/25 <p>
+
+<p align="center"> 20/02/25 <p>
 </details>
 
 ---
