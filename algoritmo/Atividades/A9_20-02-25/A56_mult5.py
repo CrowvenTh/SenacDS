@@ -7,3 +7,11 @@ while True:
     else: 
         print(f"O número {n} não é múltiplo de 5")
         break
+# OU
+limite = int(input("Insira um número limite: "))
+cont = 1
+
+while cont <= limite:
+    if(cont % 5 == 0):
+        print(cont)
+    cont += 1

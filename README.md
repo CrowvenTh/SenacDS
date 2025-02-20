@@ -1547,15 +1547,33 @@ while True:
     else: 
         print(f"O número {n} não é múltiplo de 5")
         break
+# OU
+limite = int(input("Insira um número limite: "))
+cont = 1
+
+while cont <= limite:
+    if(cont % 5 == 0):
+        print(cont)
+    cont += 1
 ~~~~
 
 #### resultado:
-    insira um número: 5
-    O número 5 é múltiplo de 5
-    insira um número: 525
-    O número 525 é múltiplo de 5
-    insira um número: 353
-    O número 353 não é múltiplo de 5
+    Insira um número limite: 15
+    0
+    5
+    10
+    15
+
+
+## Exercicio #57 - !Fatorial
+#### 
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
 
 <p align="center"> 20/02/25 <p>
 </details>
