@@ -1513,6 +1513,18 @@ print(numero)
 #### resultado:
     5050
 
+
+## Exercicio #55 - sequencia de numeros
+#### Crie um programa que peça ao usuário para digitar números até que ele digite um número negativo. Em seguida, imprima a soma dos números digitados.
+
+#### resolução:
+~~~~ python
+
+~~~~
+
+#### resultado:
+
+
 <p align="center"> 20/02/25 <p>
 </details>
 
