@@ -1459,7 +1459,7 @@ while True:
 </details>
 
 <details>
-    <summary> 💠 Aula 9 - 📝 Exercicios de Lógica VIII (54 a --) </summary>
+    <summary> 💠 Aula 9 - 📝 Exercicios de Lógica VIII (54 a 57) </summary>
 <br>
 <p> 20/02/25 <p>
 
@@ -1583,16 +1583,6 @@ print(fatorial)
 #### resultado:
     Insira um número: 3
     6
-
-
-## Exercicio #58 -
-####
-
-#### resolução:
-~~~~ python
-~~~~
-
-#### resultado:
 
 <p align="center"> 20/02/25 <p>
 </details>
