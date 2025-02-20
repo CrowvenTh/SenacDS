@@ -1519,7 +1519,27 @@ print(numero)
 
 #### resolução:
 ~~~~ python
+total = 0
+while True:
+    numero = int(input("Ínsira os números: "))
+    if(numero > 0):
+        total += numero
+    else:
+        print(f"A soma dos números digitados é igual a: {total}")
+        break
+~~~~
+#### resultado:
+    Ínsira os números: 5
+    Ínsira os números: 5
+    Ínsira os números: 5
+    Ínsira os números: -1
+    A soma do snúmeros digitados é igual a: 15
 
+## Exercicio #56 -
+####
+
+#### resolução:
+~~~~ python
 ~~~~
 
 #### resultado:

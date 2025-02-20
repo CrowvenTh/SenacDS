@@ -6,5 +6,5 @@ while True:
     if(numero > 0):
         total += numero
     else:
-        print(f"A soma do snúmeros digitados é igual a: {total}")
+        print(f"A soma dos números digitados é igual a: {total}")
         break
