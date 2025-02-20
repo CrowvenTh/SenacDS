@@ -1535,15 +1535,27 @@ while True:
     Ínsira os números: -1
     A soma do snúmeros digitados é igual a: 15
 
-## Exercicio #56 -
-####
+## Exercicio #56 - Multiplos de 5
+#### Escreva um programa que imprima os múltiplos de 5 de 1 até o número informado pelo usuário.
 
 #### resolução:
 ~~~~ python
+while True:
+    n = int(input("insira um número: "))
+    if(n % 5 == 0):
+        print(f"O número {n} é múltiplo de 5")
+    else: 
+        print(f"O número {n} não é múltiplo de 5")
+        break
 ~~~~
 
 #### resultado:
-
+    insira um número: 5
+    O número 5 é múltiplo de 5
+    insira um número: 525
+    O número 525 é múltiplo de 5
+    insira um número: 353
+    O número 353 não é múltiplo de 5
 
 <p align="center"> 20/02/25 <p>
 </details>
