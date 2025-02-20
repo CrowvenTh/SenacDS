@@ -1464,15 +1464,54 @@ while True:
 <p> 20/02/25 <p>
 
 
-## Exercicio # -
-####
+## Exercicio #53 - menu simples
+#### Crie um programa que solicite ao usuário para digitar uma palavra. O programa deve continuar solicitando palavras até que o usuário digite a palavra "sair", momento em que o programa deve exibir uma mensagem de despedida e encerrar.
+
+    while True:
+        palavra = input("Digite uma palavra (ou 'sair' para encerrar): ")
+        if palavra == 'sair':
+            print("Encerrando o programa...")
+            break
+
+### Explicação:
+
+> while True  : Inicia um loop infinito, que continuará sendo executado indefinidamente até que seja explicitamente interrompido com auxilio por exemplo do break.
+
+> break: Interrompe imediatamente o loop while True, fazendo com que o programa saia do loop e encerre a execução.
 
 #### resolução:
 ~~~~ python
+while True:
+    palavra = input("Digite uma palavra ou 'sair' para encerrar o programa: ")
+    if(palavra == "sair"):
+        print("Programa encerrado...")
+        break
 ~~~~
 
 #### resultado:
+    Digite uma palavra ou 'sair' para encerrar o programa: olá
+    Digite uma palavra ou 'sair' para encerrar o programa: eai
+    Digite uma palavra ou 'sair' para encerrar o programa: sair
+    Programa encerrado...
 
+
+## Exercicio #54 - Progressão aritmética com while
+#### Crie um programa que calcule a soma dos números de 1 a 100.
+    Resultado = 5050
+
+
+#### resolução:
+~~~~ python
+cont = 0
+numero = 0
+while cont < 100:
+    cont += 1
+    numero += cont
+print(numero)
+~~~~
+
+#### resultado:
+    5050
 
 <p align="center"> 20/02/25 <p>
 </details>
