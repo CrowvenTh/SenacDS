@@ -1674,7 +1674,7 @@ print("A soma dos caracteres é:", soma)
     Digite um número: 721
     A soma dos caracteres é: 10
 
-## Exercicio #59 FOR - Calculadora Simples
+## Exercicio #59 WHILE - Calculadora Simples
 
 #### Enunciado: Escreva um programa que solicite ao usuário dois números e uma operação:
 - adição;
@@ -1684,20 +1684,76 @@ print("A soma dos caracteres é:", soma)
 
 e realize a operação desejada.
 
-
-#### resolução
+#### resolução 
 ~~~~ python
-for i in range(1, 2):
+while True:
     n = int(input("Insira um número: "))
     n1 = int(input("Insira outro número: "))
-    print(f"a soma de {n} + {n1} = {n + n1}")
-~~~~
-> no range, pode-se ler os parênteses como primeira posição menos a segunda, ou seja, range(1, 2) significa que vai começar em 1 e vai até o 2, executando o loop apenas uma vez.
 
-#### resultado:
-    Insira um número: 4
-    Insira outro número:3
-    a soma de 4 + 3 = 7
+    print(f"| Soma = +\n| Subtração = -\n| Multiplicação = *\n| Divisão = /\n| Encerrar programa = 0")
+    operacao = str(input("Selecione uma operação: "))
+    if(operacao == 0):
+        print("Programa encerrado...")
+        break
+    elif(operacao == "+"):
+        print(f"Soma: {n} + {n1} = {n + n1}\n")
+    elif(operacao == "-"):
+        print(f"Subtração: {n} - {n1} = {n - n1}\n")
+    elif(operacao == "*"):
+        print(f"Multiplicação: {n} x {n1} = {n * n1}\n")
+    elif(operacao == "/"):
+        print(f"Divisão: {n} ÷ {n1} = {n / n1}\n")
+~~~~
+> No range pode-se ler os parênteses como primeira posição menos a segunda, ou seja, range(1, 2) significa que vai começar em 1 e vai até o 2, executando o loop apenas uma vez.
+
+#### resultado
+OBS: !!! falha ao encerrar operação !!!
+> soma
+
+    Insira um número: 14
+    Insira outro número: 7
+    | Soma = +
+    | Subtração = -
+    | Multiplicação = *
+    | Divisão = /
+    | Encerrar programa = 0
+    Selecione uma operação: +
+    Soma: 14 + 7 = 21
+
+> subtração
+
+    Insira um número: 21
+    Insira outro número: 14
+    | Soma = +
+    | Subtração = -
+    | Multiplicação = *
+    | Divisão = /
+    | Encerrar programa = 0
+    Selecione uma operação: -
+    Subtração: 21 - 14 = 7
+
+> multiplicação
+
+    Insira um número: 3
+    Insira outro número: 7
+    | Soma = +
+    | Subtração = -
+    | Multiplicação = *
+    | Divisão = /
+    Selecione uma operação: *
+    Multiplicação: 3 x 7 = 21
+
+> divisão
+
+    Insira um número: 21
+    Insira outro número: 3
+    | Soma = +
+    | Subtração = -
+    | Multiplicação = *
+    | Divisão = /
+    | Encerrar programa = 0
+    Selecione uma operação: /
+    Divisão: 21 ÷ 3 = 7.0
 
 ## Exercicio #60 FOR - contagem de 1 a 10
 
@@ -1716,9 +1772,21 @@ for i in range(1, 2):
 
 #### resolução
 ~~~~ python
+for i in range (1, 11):
+    print(i)
 ~~~~
 
 #### resultado:
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
 
 ## Exercicio #61 FOR - soma de 1 a 100
 
@@ -1726,6 +1794,7 @@ for i in range(1, 2):
 
 #### resolução
 ~~~~ python
+
 ~~~~
 
 #### resultado:
