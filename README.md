@@ -1684,11 +1684,20 @@ print("A soma dos caracteres é:", soma)
 
 e realize a operação desejada.
 
+
 #### resolução
 ~~~~ python
+for i in range(1, 2):
+    n = int(input("Insira um número: "))
+    n1 = int(input("Insira outro número: "))
+    print(f"a soma de {n} + {n1} = {n + n1}")
 ~~~~
+> no range, pode-se ler os parênteses como primeira posição menos a segunda, ou seja, range(1, 2) significa que vai começar em 1 e vai até o 2, executando o loop apenas uma vez.
 
 #### resultado:
+    Insira um número: 4
+    Insira outro número:3
+    a soma de 4 + 3 = 7
 
 ## Exercicio #60 FOR - contagem de 1 a 10
 
