@@ -1618,7 +1618,7 @@ print(fatorial)
 </details>
 
 <details>
-    <summary> 💠 Aula 10 - 📝 Exercicios de Lógica IX (58 a ) </summary>
+    <summary> 💠 Aula 10 - 📝 Exercicios de Lógica IX (58 a 62) </summary>
 <br>
 <p> 21/02/25 <p>
 
@@ -1794,10 +1794,14 @@ for i in range (1, 11):
 
 #### resolução
 ~~~~ python
-
+numero = 0
+for i in range(1, 101):
+    numero += i
+print(numero)
 ~~~~
 
 #### resultado:
+    5050
 
 ## Exercicio #62 FOR - números pares de 1 a 20
 
@@ -1805,10 +1809,22 @@ for i in range (1, 11):
 
 #### resolução
 ~~~~ python
+for i in range(1, 20):
+    if(i % 2 == 0):
+        print(i)
 ~~~~
 
 #### resultado:
-
+    2
+    4
+    6
+    8
+    10
+    12
+    14
+    16
+    18
+    20
 
 <p align="center"> 21/02/25 <p>
 </details>
