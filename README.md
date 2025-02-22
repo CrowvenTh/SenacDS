@@ -1663,9 +1663,16 @@ while True:
 
 #### resolução
 ~~~~ python
+
+while cont < len(numero):
+    soma += int(numero[cont]) 
+    cont += 1  
+print("A soma dos caracteres é:", soma)
 ~~~~
 
 #### resultado:
+    Digite um número: 721
+    A soma dos caracteres é: 10
 
 ## Exercicio #59 FOR - Calculadora Simples
 
