@@ -1568,6 +1568,36 @@ while cont <= limite:
 ## Exercicio #57 - !Fatorial
 #### Implemente um programa que imprima o fatorial do número informado pelo usuário.
 
+    numero = int(input("Digite um número: "))
+    resultado = 1
+    i = numero
+
+    while i > 1:
+        resultado *= i
+        print(f"{resultado // i} * {i} = {resultado}")
+        # faz divisão inteira e retorna apenas a parte inteira do resultado, descartando a parte decimal.
+        # print(10 / 3)   # Saída: 3.3333333333333335 (float)
+        # print(10 // 3)  # Saída: 3 (int, sem parte decimal)
+
+        i -= 1
+
+    print(f"Fatorial de {numero} é {resultado}")
+
+
+### Segunda Forma
+    
+    numero = int(input("Digite um número: "))  
+    resultado = 1  
+    i = numero  
+
+    while i > 1:  
+        anterior = resultado  # Guarda o valor antes da multiplicação
+        resultado *= i  
+        print(f"{anterior} * {i} = {resultado}")  # Usa a variável auxiliar  (anterior)
+        i -= 1  
+
+    print(f"Fatorial de {numero} é {resultado}")
+
 #### resolução:
 ~~~~ python
 n = int(input("Insira um número: "))
@@ -1585,6 +1615,95 @@ print(fatorial)
     6
 
 <p align="center"> 20/02/25 <p>
+</details>
+
+<details>
+    <summary> 💠 Aula 10 - 📝 Exercicios de Lógica IX (58 a ) </summary>
+<br>
+<p> 21/02/25 <p>
+
+## Exercicio #58 - 
+
+#### Escreva um programa que solicita ao usuário uma sequência de números inteiros positivos e conta quantos números pares e quantos números ímpares foram digitados. O programa deve encerrar, quando for inserido um número negativo.
+
+#### resolução
+~~~~ python
+~~~~
+
+#### resultado:
+
+## Exercicio #59 - 
+
+####
+
+#### resolução
+~~~~ python
+~~~~
+
+#### resultado:
+
+## Exercicio # - 
+
+####
+
+#### resolução
+~~~~ python
+~~~~
+
+#### resultado:
+
+## Exercicio # - 
+
+####
+
+#### resolução
+~~~~ python
+~~~~
+
+#### resultado:
+
+## Exercicio # - 
+
+####
+
+#### resolução
+~~~~ python
+~~~~
+
+#### resultado:
+
+## Exercicio # - 
+
+####
+
+#### resolução
+~~~~ python
+~~~~
+
+#### resultado:
+
+## Exercicio # - 
+
+####
+
+#### resolução
+~~~~ python
+~~~~
+
+#### resultado:
+
+## Exercicio # - 
+
+####
+
+#### resolução
+~~~~ python
+~~~~
+
+#### resultado:
+
+
+<p align="center"> 21/02/25 <p>
 </details>
 
 ---
