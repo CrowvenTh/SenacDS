@@ -21,7 +21,7 @@ Repositório destinado as atividades realizadas no curso de Desenvolvimento de s
 ### 🧮 Aulas
 
 <details>
-    <summary> 💠 Aula 1 - Introdução a python 🐍 </summary>
+    <summary> 💠 Aula 01 - Introdução a python 🐍 </summary>
 
 <br>
 <p> 10/02/25 <p>
@@ -98,7 +98,7 @@ resultado_arredondado = round(resultado, 2)
 
 
 <details>
-    <summary> 💠 Aula 2 - 📝 Exercicios de Lógica I (1 a 12) </summary>
+    <summary> 💠 Aula 02 - 📝 Exercicios de Lógica I (1 a 12) </summary>
 
 <br>
 <p> 11/02/25 <p>
@@ -264,7 +264,7 @@ print(palavra.capitalize())
 
 
 <details>
-    <summary> 💠 Aula 3 - 📝 Exercicios de Lógica II (13 a 21) </summary>
+    <summary> 💠 Aula 03 - 📝 Exercicios de Lógica II (13 a 21) </summary>
 
 <br>
 <p> 12/02/25 <p>
@@ -488,7 +488,7 @@ print(f"{nome} - {idade} - {altura}")
 </details>
 
 <details>
-    <summary> 💠 Aula 4 - 📝 Exercicios de Lógica III (22 a 26) </summary>
+    <summary> 💠 Aula 04 - 📝 Exercicios de Lógica III (22 a 26) </summary>
 
 <br>
 <p> 13/02/25 <p>
@@ -635,7 +635,7 @@ print(tupla[3])
 </details>
 
 <details>
-    <summary> 💠 Aula 5 - 📝 Exercicios de Lógica IV (27 a 35) </summary>
+    <summary> 💠 Aula 05 - 📝 Exercicios de Lógica IV (27 a 35) </summary>
 
 <br>
 <p> 14/02/25 <p>
@@ -873,7 +873,7 @@ else:
 </details>
 
 <details>
-    <summary> 💠 Aula 6 - 📝 Exercicios de Lógica V (36 a 41) </summary>
+    <summary> 💠 Aula 06 - 📝 Exercicios de Lógica V (36 a 41) </summary>
 
 <br>
 <p> 17/02/25 <p>
@@ -1051,7 +1051,7 @@ se a variavel for igual a 0
 </details>
 
 <details>
-   <summary> 💠 Aula 7 - 📝 Exercicios de Lógica VI (42 a 49) </summary>
+   <summary> 💠 Aula 07 - 📝 Exercicios de Lógica VI (42 a 49) </summary>
 <br>
 <p> 18/02/25 <p>
 
@@ -1190,7 +1190,7 @@ else:
     digite um número: thiago
     valor inválido o número não deve conter letras
 
-## Exercicio #46 - Contagem progressiva while()
+## Exercicio #46 WHILE - Contagem progressiva while()
 #### Escreva um programa que conte de 1 a 10 usando um loop while e imprima cada número.
     while condição: 
         # Código a ser executado enquanto a condição for verdadeira
@@ -1220,7 +1220,7 @@ for i in range(1, 11, +1):
     9
     10
 
-## Exercicio #47 - Contagem Regressiva while()
+## Exercicio #47 WHILE - Contagem Regressiva while()
 #### Escreva um programa faça a contagem regressiva de 1 a 10 usando um loop while e imprima cada número.
 
 
@@ -1248,7 +1248,7 @@ while contador > 0:
     2
     1
 
-# Exercicio #48 - contagem de pares
+# Exercicio #48 WHILE - contagem de pares
 #### Escreva um programa que solicite ao usuário um número e depois imprima todos os números pares de 1 até esse número, usando um loop while
 
 #### resolução:
@@ -1277,7 +1277,7 @@ while contador < numero:
     8
     10
 
-## Exercicio #49 - contagem de par regressivo
+## Exercicio #49 WHILE - contagem de par regressivo
 #### Escreva um programa que solicite ao usuário um número e depois imprima todos os números pares de 1 até esse número, imprimir em ordem decresce, usando um loop while.
 
 #### resolução:
@@ -1304,12 +1304,12 @@ while (contador > 0):
 </details>
 
 <details>
-    <summary> 💠 Aula 8 - 📝 Exercicios de Lógica VII (50 a 53) </summary>
+    <summary> 💠 Aula 08 - 📝 Exercicios de Lógica VII (50 a 53) </summary>
 <br>
 <p> 19/02/25 <p>
 
 
-## Exercicio #50 - tabuada com while
+## Exercicio #50 WHILE - tabuada com while
 #### Escreva um programa que imprima a tabuada de multiplicação de um número específico até 10, usando um loop while.
 
 #### resolução:
@@ -1337,7 +1337,7 @@ while cont <= 10:
     2 x 10 = 20
 
 
-## Exercicio #51 - validação de senha simples
+## Exercicio #51 WHILE - validação de senha simples
 #### Escreva um programa que solicite ao usuário que insira uma senha correta e continue pedindo até que a senha correta seja inserida, usando um loop while.
 #### resolução:
 ~~~~ python
@@ -1360,7 +1360,7 @@ while True:
     Digite sua senha: thigs
     Senha Correta!
 
-## Exercicio #52 - soma acumulada
+## Exercicio #52 WHILE - soma acumulada
 #### Escreva um programa que solicite ao usuário que insira números e calcule a soma desses números até que a soma ultrapasse um limite específico, usando um loop while
 
 #### resolução:
@@ -1389,7 +1389,7 @@ while on:
     12 | 10
 
 
-## Exercicio #53 Desafio II - Random()
+## Exercicio #53 WHILE Desafio II - Random()
 #### Escreva um programa em Python que solicite ao usuário para adivinhar um número entre 1 e 100. O programa deve continuar pedindo um palpite até que o usuário adivinhe corretamente o número. O programa deve fornecer dicas se o palpite estiver muito alto ou muito baixo
 
 ### Instruções
@@ -1459,12 +1459,12 @@ while True:
 </details>
 
 <details>
-    <summary> 💠 Aula 9 - 📝 Exercicios de Lógica VIII (54 a 57) </summary>
+    <summary> 💠 Aula 09 - 📝 Exercicios de Lógica VIII (54 a 57) </summary>
 <br>
 <p> 20/02/25 <p>
 
 
-## Exercicio #53 - menu simples
+## Exercicio #53 WHILE - menu simples
 #### Crie um programa que solicite ao usuário para digitar uma palavra. O programa deve continuar solicitando palavras até que o usuário digite a palavra "sair", momento em que o programa deve exibir uma mensagem de despedida e encerrar.
 
     while True:
@@ -1495,7 +1495,7 @@ while True:
     Programa encerrado...
 
 
-## Exercicio #54 - Progressão aritmética com while
+## Exercicio #54 WHILE - Progressão aritmética com while
 #### Crie um programa que calcule a soma dos números de 1 a 100.
     Resultado = 5050
 
@@ -1514,7 +1514,7 @@ print(numero)
     5050
 
 
-## Exercicio #55 - sequencia de numeros
+## Exercicio #55 WHILE - sequencia de numeros
 #### Crie um programa que peça ao usuário para digitar números até que ele digite um número negativo. Em seguida, imprima a soma dos números digitados.
 
 #### resolução:
@@ -1535,7 +1535,7 @@ while True:
     Ínsira os números: -1
     A soma do snúmeros digitados é igual a: 15
 
-## Exercicio #56 - Multiplos de 5
+## Exercicio #56 WHILE - Multiplos de 5
 #### Escreva um programa que imprima os múltiplos de 5 de 1 até o número informado pelo usuário.
 
 #### resolução:
@@ -1565,7 +1565,7 @@ while cont <= limite:
     15
 
 
-## Exercicio #57 - !Fatorial
+## Exercicio #57 WHILE - !Fatorial
 #### Implemente um programa que imprima o fatorial do número informado pelo usuário.
 
     numero = int(input("Digite um número: "))
@@ -1622,7 +1622,7 @@ print(fatorial)
 <br>
 <p> 21/02/25 <p>
 
-## Exercicio #58 - 
+## Exercicio #58 WHILE - contagem de par & impar
 
 #### Escreva um programa que solicita ao usuário uma sequência de números inteiros positivos e conta quantos números pares e quantos números ímpares foram digitados. O programa deve encerrar, quando for inserido um número negativo.
 
@@ -1632,19 +1632,15 @@ print(fatorial)
 
 #### resultado:
 
-## Exercicio #59 - 
+## Exercicio #58 WHILE Desafio - soma de dígitos
 
-####
+#### Escreva um programa que solicita ao usuário um número inteiro positivo e calcula a soma dos seus dígitos.
+> exemplo:
 
-#### resolução
-~~~~ python
-~~~~
+    Número informado: 110
+    1  + 1 + 0 = 2
 
-#### resultado:
-
-## Exercicio # - 
-
-####
+> len(): Retorna o comprimento (número de elementos) de um objeto, como uma string, lista ou tupla.
 
 #### resolução
 ~~~~ python
@@ -1652,19 +1648,15 @@ print(fatorial)
 
 #### resultado:
 
-## Exercicio # - 
+## Exercicio #59 FOR - Calculadora Simples
 
-####
+#### Enunciado: Escreva um programa que solicite ao usuário dois números e uma operação:
+- adição;
+- subtração;
+- multiplicação;
+- divisão,
 
-#### resolução
-~~~~ python
-~~~~
-
-#### resultado:
-
-## Exercicio # - 
-
-####
+e realize a operação desejada.
 
 #### resolução
 ~~~~ python
@@ -1672,9 +1664,20 @@ print(fatorial)
 
 #### resultado:
 
-## Exercicio # - 
+## Exercicio #60 FOR - contagem de 1 a 10
 
-####
+#### Imprima os números de 1 a 10.
+
+    for i in range(1, 11):
+        print(i)
+
+- for: Indica o início de um loop for.
+
+- i: É a variável de iteração. Em cada iteração do loop, i receberá o próximo valor da sequência definida em range(1, 11).
+
+- range(1, 11): A função range() é usada para gerar uma sequência de números. Ela cria uma sequência de números começando em 1 (o primeiro argumento) e indo até, mas não incluindo, 11 (o segundo argumento). Portanto, esta função gera números de 1 a 10.
+
+- print(i): Este é o bloco de código que será executado em cada iteração do loop for. Aqui, estamos simplesmente imprimindo o valor atual de i.
 
 #### resolução
 ~~~~ python
@@ -1682,9 +1685,9 @@ print(fatorial)
 
 #### resultado:
 
-## Exercicio # - 
+## Exercicio #61 FOR - soma de 1 a 100
 
-####
+#### Calcule a soma dos números de 1 a 100.
 
 #### resolução
 ~~~~ python
@@ -1692,9 +1695,9 @@ print(fatorial)
 
 #### resultado:
 
-## Exercicio # - 
+## Exercicio #62 FOR - números pares de 1 a 20
 
-####
+#### Imprima os números pares de 1 a 20.
 
 #### resolução
 ~~~~ python
