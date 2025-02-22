@@ -21,7 +21,7 @@ Repositório destinado as atividades realizadas no curso de Desenvolvimento de s
 ### 🧮 Aulas
 
 <details>
-    <summary> 💠 Aula 01 - Introdução a python 🐍 </summary>
+    <summary> 💠 Aula 01 - 🐍 Introdução a python  </summary>
 
 <br>
 <p> 10/02/25 <p>
@@ -1628,9 +1628,28 @@ print(fatorial)
 
 #### resolução
 ~~~~ python
+contPar = 0
+contImpar = 0
+while True:
+    n = int(input("Insira um número: "))
+    if(n <= 0):
+        print(f"{contPar} números pares foram digitados!")
+        print(f"{contImpar} números impares foram digitados!")
+        break
+    elif(n % 2 == 0):
+        contPar += 1
+    else:
+        contImpar += 1
 ~~~~
 
 #### resultado:
+    Insira um número: 21
+    Insira um número: 7
+    Insira um número: 14
+    Insira um número: 110
+    Insira um número: 0
+    2 números pares foram digitados!
+    2 números impares foram digitados!
 
 ## Exercicio #58 WHILE Desafio - soma de dígitos
 
