@@ -1829,6 +1829,51 @@ for i in range(1, 20):
 <p align="center"> 21/02/25 <p>
 </details>
 
+
+<details>
+<summary> 💠 Aula 11 - 📝 Exercicios de Lógica IX (63 a --) </summary>
+
+<br>
+<p> 24/02/25 <p>
+
+
+## Exercicio #63 FOR - Números impares de 1 a 30.
+#### Imprima os números ímpares de 1 a 30.
+
+#### resolução:
+~~~~ python
+for t in range(1, 31, 2):
+    print(t)
+
+# OU
+    
+for a in range(1, 31):
+    if a % 2 != 0:
+        print(a)
+~~~~
+
+#### resultado:
+    1
+    3
+    5
+    7
+    9
+    11
+    13
+    15
+    17
+    19
+    21
+    23
+    25
+    27
+    29
+
+
+
+<p align="center"> 21/02/25 <p>
+</details>
+
 ---
 <br>
 <p align="center">@2025</p>
