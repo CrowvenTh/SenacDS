@@ -9,7 +9,7 @@ while True:
         if(opcao == 1):
             deposito = float(input("| Insira o valor do depósito: "))
             saldo += deposito
-            print(f"| Depósito de R${deposito:.2f} realizado com sucesso!\n")
+            print(f"| Depósito de R${deposito:.2f} realizado com sucesso!\n| Saldo atual: R${saldo:.2f}\n")
             menu()
             opcao = int(input(" "))
         elif(opcao == 2):
@@ -17,7 +17,7 @@ while True:
             if(saque > saldo):
                 print("| Saldo insuficiente!\n")
             else:
-                print(f"| Saque de R${saque:.2f} realizado com sucesso!\n")
+                print(f"| Saque de R${saque:.2f} realizado com sucesso!\n| Saldo atual: R${saldo:.2f}\n")
                 saldo -= saque
                 menu()
                 opcao = int(input(" "))
