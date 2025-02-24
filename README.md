@@ -1906,6 +1906,30 @@ for t in range(11):
     7 x 9 = 63
     7 x 10 = 70
 
+    
+## Exercicio #65 FOR - 100 a 1
+#### Imprima os números de 100 a 1 em ordem decrescente.
+
+#### resolução:
+~~~~ python
+for t in range(100, 0, -1):
+    print(t)
+~~~~
+
+#### resultado:
+    100...
+    ...1
+
+## Exercicio #66 -
+####
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+
 
 <p align="center"> 21/02/25 <p>
 </details>
