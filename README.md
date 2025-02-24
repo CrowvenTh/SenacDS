@@ -1920,7 +1920,28 @@ for t in range(100, 0, -1):
     100...
     ...1
 
-## Exercicio #66 -
+## Exercicio #66 - Quadrado de um número
+#### Calcule e imprima o quadrado dos números de 1 a 10.
+
+#### resolução:
+~~~~ python
+for t in range(1, 11):
+    q2 = t * t
+    print(f"{t} x {t} = {q2}")
+~~~~
+#### resultado:
+    1 x 1 = 1
+    2 x 2 = 4
+    3 x 3 = 9
+    4 x 4 = 16
+    5 x 5 = 25
+    6 x 6 = 36
+    7 x 7 = 49
+    8 x 8 = 64
+    9 x 9 = 81
+    10 x 10 = 100
+
+## Exercicio #67 -
 ####
 
 #### resolução:
@@ -1928,7 +1949,6 @@ for t in range(100, 0, -1):
 ~~~~
 
 #### resultado:
-
 
 
 <p align="center"> 21/02/25 <p>
