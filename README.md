@@ -1843,7 +1843,7 @@ ou
 
 
 <details>
-<summary> 💠 Aula 11 - 📝 Exercicios de Lógica IX (63 a --) </summary>
+<summary> 💠 Aula 11 - 📝 Exercicios de Lógica IX (63 a 67) </summary>
 
 <br>
 <p> 24/02/25 <p>
