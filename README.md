@@ -1812,6 +1812,14 @@ print(numero)
 for i in range(1, 20):
     if(i % 2 == 0):
         print(i)
+
+# ou da segunda forma para mostrar em apenas uma linha no terminal
+
+concaten = ""
+for i in range(1, 21):
+    if(i % 2 == 0):
+        concaten += str(i) + ", "
+print(concaten)        
 ~~~~
 
 #### resultado:
@@ -1825,6 +1833,10 @@ for i in range(1, 20):
     16
     18
     20
+
+ou
+
+    2, 4, 6, 8, 10, 12, 14, 16, 18, 20,
 
 <p align="center"> 21/02/25 <p>
 </details>
@@ -1869,6 +1881,30 @@ for a in range(1, 31):
     27
     29
 
+
+## Exercicio #64 FOR - Tabuada
+#### Imprima a tabuada de multiplicação de um número fornecido pelo usuário.
+
+#### resolução:
+~~~~ python
+numero = int(input("Insira o número desejado: "))
+
+for t in range(11):
+    print(f"{numero} x {t} = {numero * t}")
+~~~~
+
+#### resultado:
+    7 x 0 = 0
+    7 x 1 = 7
+    7 x 2 = 14
+    7 x 3 = 21
+    7 x 4 = 28
+    7 x 5 = 35
+    7 x 6 = 42
+    7 x 7 = 49
+    7 x 8 = 56
+    7 x 9 = 63
+    7 x 10 = 70
 
 
 <p align="center"> 21/02/25 <p>
