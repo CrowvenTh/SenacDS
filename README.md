@@ -1941,7 +1941,7 @@ for t in range(1, 11):
     9 x 9 = 81
     10 x 10 = 100
 
-## Exercicio #67 Desafio - Locadora
+## Exercicio #66 Desafio - Locadora
 #### Faça uma programa que dados a quantidade de fitas que uma vídeo locadora possui e o valor que ela cobra por cada aluguel, informe:
 
 - Sabendo que um terço das fitas são alugadas por mês,  qual o seu faturamento anual.
@@ -1973,6 +1973,64 @@ print(f"Faturamento anual: R${faturamento:.2f}")
     Faturamento com multas: R$200.00
     Faturamento anual: R$220.00
     ---------------------------
+
+<p align="center"> 24/02/25 <p>
+</details>
+
+<details>
+<summary> 💠 Aula 12 - 📝 Exercicios de Lógica X (67 a --) </summary>
+
+<br>
+<p> 24/02/25 <p>
+
+## Instrução sobre **match-case**
+
+O match-case é uma estrutura de controle de fluxo introduzida no Python 3.10, que funciona como um switch-case encontrado em outras linguagens. 
+
+Ele permite verificar padrões de valores e executar um bloco de código específico conforme o caso correspondente.
+
+> Sintaxe básica:
+valor = input("Digite um valor 'A ou B': ").upper()
+
+~~~~ python
+match valor:
+    case "A":
+        print("Você escolheu A")
+    case "B":
+        print("Você escolheu B")
+    case _:
+        print("Opção inválida")
+~~~~
+## Exercicio #67 MATCH - CASE - Identificando Formas Geométricas
+#### Escreva um programa em Python que solicita ao usuário o nome de uma forma geométrica (triângulo, quadrado, círculo) e utiliza match-case para exibir uma mensagem correspondente à forma escolhida.
+
+Resultado:
+
+    Digite uma forma geométrica: quadrado
+    Saída: O quadrado tem 4 lados iguais.
+
+#### resolução:
+~~~~ python
+forma = input("Insira uma forma geométrica geometrica: ")
+lados = 0
+
+match forma:
+    case "QUADRADO":
+        lados = 4
+        print(f"O {forma} tem {lados} lados.")
+    case "TRIÂNGULO":
+        lados = 3
+        print(f"O {forma} tem {lados} lados.")
+    case "CÍRCULO":
+        lados = 0
+        print(f"O {forma} não contem lados nem vértices, pois ele é redondo.")
+    case _ :
+        print(f"Insira uma opção válida")
+~~~~
+
+#### resultado:
+    Insira uma forma geométrica geometrica: QUADRADO
+    O QUADRADO tem 4 lados.
 
 <p align="center"> 24/02/25 <p>
 </details>
