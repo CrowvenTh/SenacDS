@@ -2223,6 +2223,34 @@ def ParOuImpar():
     Insira um número: 7
     O número 7 é par!
 
+
+## Exercicio #74 DEF - maior número
+#### Defina uma função, que receba 3 números e retorne o maior deles
+
+#### resolução:
+~~~~ python
+n = int(input("Insira um número: "))
+n1 = int(input("Insira um número: "))
+n2 = int(input("Insira um número: "))
+
+def maiorNumero():
+    if(n > n1 and n > n2):
+        resultado = f"{n} é maior que {n1} e {n2}"
+    elif(n1 > n2 and n1 > n):
+        resultado = f"{n1} é maior que {n2} e {n}"
+    elif(n2 > n and n2 > n1):
+        resultado = f"{n2} é maior que {n} e {n1}"
+    return resultado
+    
+print(maiorNumero())
+~~~~
+
+#### resultado:
+    Insira um número: 35
+    Insira um número: 67
+    Insira um número: 12
+    67 é maior que 12 e 35
+
 <p align="center"> 24/02/25 <p>
 </details>
 
