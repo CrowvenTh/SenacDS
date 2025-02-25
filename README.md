@@ -2259,6 +2259,13 @@ def maiorNumero():
         print(f"{n2} é maior que {n} e {n1}")
 
 maiorNumero()
+
+# forma alternativa usando Lista
+numero = input("Insira os 3 numeros com virgula: ")
+
+numero = numero.split(",")
+maxNum = max(numero)
+print(maxNum)
 ~~~~
 
 #### resultado:
@@ -2266,6 +2273,48 @@ maiorNumero()
     Insira um número: 67
     Insira um número: 12
     67 é maior que 12 e 35
+
+> forma alternativa:
+    
+    Insira os 3 numeros com virgula: 7,98,21
+    98
+    
+## Exercicio #75 DEF - X vezes X
+#### Crie um função em Python, que receba 2 números e retorne a multiplicação dos 2 números.
+
+#### resolução:
+~~~~ python
+num1 = int(input("Insira o primeiro número: "))
+num2 = int(input("Insira o segundo número: "))
+
+def numXnum():
+    resultado = num1 * num2
+    return resultado
+
+print(numXnum())
+
+# Ou
+
+def numXnum(num1,num2):
+    resultado = num1 * num2
+    print(resultado)
+
+numXnum(num1, num2)
+~~~~
+
+#### resultado:
+    Insira o primeiro número: 7
+    Insira o segundo número: 7
+    49
+
+## Exercicio #76 - Média de 4 números
+#### Crie uma função que receba 4 números e retorne a média dos números
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
 
 <p align="center"> 24/02/25 <p>
 </details>
