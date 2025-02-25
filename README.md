@@ -2173,6 +2173,15 @@ dobro()
     Insira um número: 21
     O dobro de 21 é igual a 42
 
+## Exercicio #72 DEF - def conversor de string
+#### Escreva uma função chamada inverter_string que aceita uma string como argumento e retorna a string invertida.
+
+#### resolução:
+~~~~ python
+
+~~~~
+
+#### resultado:
 
 <p align="center"> 24/02/25 <p>
 </details>
