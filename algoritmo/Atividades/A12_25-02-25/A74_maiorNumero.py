@@ -13,3 +13,11 @@ def maiorNumero():
         print(f"{n2} é maior que {n} e {n1}")
 
 maiorNumero()
+
+# OU
+
+numero = input("Insira os 3 numeros com virgula: ")
+
+numero = numero.split(",")
+maxNum = max(numero)
+print(maxNum)
