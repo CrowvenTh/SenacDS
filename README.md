@@ -2148,6 +2148,31 @@ somaII()
     21
     A soma de 7 + 14 é igual a 21 #metodo II
 
+## Exercicio #71 DEF - def dobro
+#### Escreva uma função chamada dobro que aceita um número como argumento e retorna o dobro desse número.
+
+#### resolução:
+~~~~ python
+n = int(input("Insira um número: "))
+
+def dobro(n):
+    dobro = n * 2 
+    return dobro
+print(f"O dobro de {n} é {dobro(n)}")
+
+# OU com função vazia
+
+def dobro():
+    dobro = n * 2
+    print(f"O dobro de {n} é igual a {dobro}")
+
+dobro()
+~~~~
+
+#### resultado:
+    Insira um número: 21
+    O dobro de 21 é igual a 42
+
 
 <p align="center"> 24/02/25 <p>
 </details>
