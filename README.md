@@ -2062,7 +2062,7 @@ match nota:
     Insira uma nota: 7
     Bom
 
-## Exercicio #69 - Menu de restaurante
+## Exercicio #69 MATCH CASE - Menu de restaurante
 #### Faça um programa que receba um número de 1 a 5 e retorne um prato específico usando match-case. As opções podem ser:
     1: Pizza
     2: Hambúrguer
@@ -2101,6 +2101,53 @@ match id:
     |--------------
     Selecione um prato: 5
     Lasanha foi selecionada
+
+    
+## Exercicio #70 DEF - def soma
+#### Escreva uma função chamada soma que aceita dois argumentos e retorna a soma deles.
+    #Com argumento
+    def soma(a, b): 
+            return a + b 
+### Exemplo de uso: 
+    resultado = soma(3, 5) 
+    print(resultado) # Saí
+
+    #Sem argumento
+    def saudacao(): 
+             print("Olá, mundo!") 
+             # Chamando a função
+    saudacao()
+
+> Em Python, def é uma palavra-chave usada para definir uma função. 
+>
+> Quando você usa def, está indicando ao interpretador Python que está prestes a definir uma função com um nome específico, parâmetros (se houver) e um bloco de código que será executado quando a função for chamada.
+
+#### resolução:
+~~~~ python
+n1 = int(input("Insira um número: "))
+n2 = int(input("Insira outro número: "))
+
+def soma(n1, n2):
+    return n1 + n2
+resultado = soma(n1,n2)
+
+print(resultado)
+
+# OU
+
+def somaII():
+    soma = n1 + n2
+    print(f"A soma de {n1} + {n2} é igual a {soma}")
+
+somaII()
+~~~~
+
+#### resultado:
+    Insira um número: 7
+    Insira outro número: 14
+    21
+    A soma de 7 + 14 é igual a 21 #metodo II
+
 
 <p align="center"> 24/02/25 <p>
 </details>
