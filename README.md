@@ -2178,10 +2178,18 @@ dobro()
 
 #### resolução:
 ~~~~ python
+estringue = input("Insira uma palavra: ")
 
+def ConversorString(estringue):
+    estringueInvertida = estringue[::-1]
+    print(estringueInvertida)
+
+ConversorString(estringue)
 ~~~~
 
 #### resultado:
+    Insira uma palavra: Ozzi
+    izzO
 
 <p align="center"> 24/02/25 <p>
 </details>
