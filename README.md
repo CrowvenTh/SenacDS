@@ -2462,6 +2462,72 @@ except ValueError:
     Insira um número inteiro: 7.5
     Valor inválido
 
+    
+## Exercicio #80 TRY - 
+#### Crie um programa que receba dois números e faça a divisão dos dois, e crie uma mensagem de erro da divisão por zero ou se o usuário informar algo diferente de números.
+~~~~ python
+try:
+
+except ZeroDivisionError:
+
+except ValueError:
+~~~~
+
+#### resolução:
+~~~~ python
+def Divisao():
+    media = n1 / n2
+    print(f"O resultado da divisão é: {media}")
+    
+n1 = int(input("Insira um número: "))
+n2 = int(input("Insira outro número: "))
+
+try:
+    Divisao()
+except ZeroDivisionError:
+    print("Divisão inválida")
+~~~~
+
+#### resultado:
+    Insira um número: 12
+    Insira outro número: 0
+    divisão inválida
+
+## Exercicio #81 TRY - Media de uma lista de números
+#### Programa para calcular a média de uma lista de números.
+- Situação: Este programa precisa permitir de valores com casas decimais ou negativos. 
+- Observação: Toda a lista vai ser inserida em um único input
+
+#### resolução:
+~~~~ python
+def CalcularMedia():
+    try: 
+        n = input("Insira uma sequencia de numeros separados por espaço: ").    split   (" ")
+        lista = [float(i) for i in n]
+        media = sum(lista)/len(lista)
+        print(media)
+    except ValueError:
+        print("Valor inválido") 
+
+CalcularMedia()
+~~~~
+
+#### resultado:
+    Insira uma sequencia de numeros separados por espaço: 2.1 5 9 -21 45
+    8.02
+
+## Exercicio # -
+#### Crie um programa que verifique se uma pessoa é maior de idade.
+Situação: Este programa precisa lidar com a entrada de valores não inteiros ou negativos.
+
+#### resolução:
+~~~~ python
+
+~~~~
+
+#### resultado:
+
+
 <p align="center"> 25/02/25 <p>
 </details>
 
