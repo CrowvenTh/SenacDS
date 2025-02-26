@@ -2426,6 +2426,42 @@ MediaPonderada()
     Insira o peso 3: 3
     A média ponderada das notas é: 17.5
 
+    
+## Exercicio #79 TRY - Tratamento de Exceções
+#### Crie um programa que receba um número inteiro e retorne uma mensagem de erro, caso o usuário informe número fracionado ou letra.
+
+> Instruções
+> 
+> Em resumo, **try** permite que você lide com possíveis erros de forma controlada, e **ValueError** é uma categoria específica de erro relacionada a valores inválidos.
+~~~~ python
+try:
+    numero = input("Insira um número inteiro: ")
+    print("Valor inserido corretamente")
+except ValueError:
+    print("Valor inválido")
+~~~~
+
+#### resolução:
+~~~~ python
+try:
+    numero = int(input("Insira um número inteiro: "))
+    print("Valor inserido corretamente")
+except ValueError:
+    print("Valor inválido")
+~~~~
+
+#### resultado:
+    Insira um número inteiro: 5
+    Valor inserido corretamente
+
+    # em caso de erro:
+    Insira um número inteiro: abc
+    Valor inválido
+
+    #erro de float
+    Insira um número inteiro: 7.5
+    Valor inválido
+
 <p align="center"> 25/02/25 <p>
 </details>
 
