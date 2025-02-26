@@ -1978,10 +1978,10 @@ print(f"Faturamento anual: R${faturamento:.2f}")
 </details>
 
 <details>
-<summary> 💠 Aula 12 - 📝 Exercicios de Lógica X (67 a --) </summary>
+<summary> 💠 Aula 12 - 📝 Exercicios de Lógica X (67 a 76) </summary>
 
 <br>
-<p> 24/02/25 <p>
+<p> 25/02/25 <p>
 
 ## Instrução sobre **match-case**
 
@@ -2312,11 +2312,121 @@ numXnum(num1, num2)
 
 #### resolução:
 ~~~~ python
+n1 = float(input("Insira um número: "))
+n2 = float(input("Insira um número: "))
+n3 = float(input("Insira um número: "))
+n4 = float(input("Insira um número: "))
+
+def Media():
+    media = (n1 + n2 + n3 + n4) / 4
+    print(f"A média dos números é {media:.2f}")
+
+Media()
+~~~~
+#### resultado:
+    Insira um número: 8.8
+    Insira um número: 9.3
+    Insira um número: 6.8
+    Insira um número: 7.8
+    A média dos números é 8.18
+
+<p align="center"> 25/02/25 <p>
+</details>
+
+<details>
+<summary> 💠 Aula 13 - 📝 Exercicios de Lógica XI (77 a --) </summary>
+
+<br>
+<p> 26/02/25 <p>
+
+
+## Exercicio #77 DEF - Calculadora básica com def
+#### Criar um programa que simula uma calculadora básica com operações de adição, subtração, multiplicação e divisão. O programa solicitará ao usuário que escolha a operação desejada, inserindo um número correspondente, e então pedirá os dois números nos quais a operação será realizada. Por fim, mostrará o resultado da operação escolhida. 
+
+Instruções:
+- Criar uma função para cada operação.
+
+#### resolução:
+~~~~ python
+def Soma():
+    soma = (n1 + n2)
+    print(f"{n1} + {n2} = {soma}")
+
+def Sub():
+    sub = (n1 - n2)
+    print(f"{n1} - {n2} = {sub}")
+
+def Mult():
+    mult = (n1 * n2)
+    print(f"{n1} x {n2} = {mult}")
+
+def Div():
+    div = (n1 / n2)
+    print(f"{n1} ÷ {n2} = {div}")
+
+n1 = float(input("Insira o primeiro número: "))
+
+def operacao():
+    print(f"| 1 - Adição\n| 2 - subtração\n| 3 - Multiplicação\n| 4 - Divisão")
+
+operacao()
+
+operacao = int(input("Selecione uma operação: "))
+
+n2 = float(input("Insira o segundo número: "))
+
+match operacao:
+    case 1:
+        Soma()
+    case 2:
+        Sub()
+    case 3:
+        Mult()
+    case 4:
+        Div()
 ~~~~
 
 #### resultado:
+    Insira o primeiro número: 7
+    | 1 - Adição
+    | 2 - subtração
+    | 3 - Multiplicação
+    | 4 - Divisão
+    Selecione uma operação: 3
+    Insira o segundo número: 3
+    7.0 x 3.0 = 21.0
 
-<p align="center"> 24/02/25 <p>
+## Exercicio #78 DEF - Média Ponderada
+#### Escreva um programa que calcula a média ponderada de três números fornecidos pelo usuário, onde os pesos são fornecidos pelo usuário também.
+
+#### resolução:
+~~~~ python
+def MediaPonderada():
+    medPonderada = (nota1 * p1) + (nota2 * p2) + (nota3 * p3) / (p1 + p2 + p3)
+    print(f"A média ponderada das notas é: {medPonderada}")
+
+nota1 = float(input("Insira 1° a nota: "))
+p1 = int(input("Insira o peso 1: "))
+
+nota2 = float(input("Insira 2° a nota: "))
+p2 = int(input("Insira o peso 2: "))
+
+nota3 = float(input("Insira 3° a nota: "))
+p3 = int(input("Insira o peso 3: "))
+
+MediaPonderada()
+~~~~
+
+#### resultado:
+    Insira 1° a nota: 5.0
+    Insira o peso 1: 1
+    Insira 2° a nota: 5.0
+    Insira o peso 2: 2
+    Insira 3° a nota: 5.0
+    Insira o peso 3: 3
+    A média ponderada das notas é: 17.5
+
+<p align="center"> 25/02/25 <p>
 </details>
 
 ---
