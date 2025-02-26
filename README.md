@@ -2516,17 +2516,29 @@ CalcularMedia()
     Insira uma sequencia de numeros separados por espaço: 2.1 5 9 -21 45
     8.02
 
-## Exercicio # -
+## Exercicio #82 TRY - Maior Idade
 #### Crie um programa que verifique se uma pessoa é maior de idade.
 Situação: Este programa precisa lidar com a entrada de valores não inteiros ou negativos.
 
 #### resolução:
 ~~~~ python
+idade = float(input("Insira sua idade: "))
 
+def MaiorIdade():
+    try: 
+        if (idade >= 18):
+            print("Você é maior de idade")
+        else:
+            print("Você é menor de idade")
+    except ValueError:
+        print("Valor inválido")
+
+MaiorIdade()
 ~~~~
 
 #### resultado:
-
+    Insira sua idade: 20
+    Você é maior de idade
 
 <p align="center"> 25/02/25 <p>
 </details>
