@@ -2582,6 +2582,30 @@ nova_lista[expressão for variável in sequencia  if condição]
 
 #### resolução:
 ~~~~ python
+def contaPar():
+    try:
+        numero = input("Insira uma sequência de números separados por espaço: ").split(" ")
+        lista = [int(i) for i in numero if (int(i) % 2 == 0)]
+        print(lista)
+        soma = len(lista)
+        print(f"Você inseriu {soma} números pares")
+    except ValueError:
+        print(ValueError)
+
+contaPar()
+~~~~
+
+#### resultado:
+    Insira uma sequência de números separados por espaço: 12 3 4 5 6 8 7 6
+    [12, 4, 6, 8, 6]
+    Você inseriu 5 números pares
+
+    
+## Exercicio # -
+####
+
+#### resolução:
+~~~~ python
 ~~~~
 
 #### resultado:
