@@ -2658,6 +2658,26 @@ divisiveisPor3()
 #### resultado:
     Insira uma sequência de números: 0 7 21 3 5 76 21
     Números divisíveis por 3: [21, 3, 21]
+    
+## Exercicio #A88 - Números palíndromos
+#### Escreva um programa que leia uma lista de números e imprima apenas aqueles que são (números que podem ser lidos da mesma forma da esquerda para a direita e vice-versa).
+
+#### resolução:
+~~~~ python
+def numerosPalindormos():
+    try: 
+        numeros = input("Insira uma sequência de números: ").split()
+        lista = [int(i) for i in numeros if(int(i[::-1]) == int(i))]
+        print(f"Os números palíndormos são: {lista}")
+    except ValueError:
+        print(ValueError)
+
+numerosPalindormos()
+~~~~
+
+#### resultado:
+    Insira uma sequência de números: 21 77 88 21221 7 05 22
+    Os números palíndormos são: [77, 88, 7, 22]
 
 <p align="center"> 25/02/25 <p>
 </details>
