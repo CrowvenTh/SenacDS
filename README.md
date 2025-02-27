@@ -2620,6 +2620,26 @@ divisiveisPor3e5()
     Insira uma sequência de números separados por espaço: 15 60 978 23 45 3 21 7
     [15, 60, 45]
     3 números são divisíveis por 3 e 5 simultâneamente: [15, 60, 45]
+
+
+## Exercicio #86 - Contar letras
+#### Escreva um programa em Python que receba uma lista de palavras separadas por espaço e determine quantas palavras têm mais de 5 letras.
+
+#### resolução:
+~~~~ python
+palavra = input("Insira uma sequência de palavras separadas por espaço: ").split()
+
+lista = [i for i in palavra if(len(i) >= 5)]
+print(lista)
+validador = len(lista)
+print(f"Qtd de palavras com mais de 5 letras: {validador}")
+~~~~
+
+#### resultado:
+    Insira uma sequência de palavras separadas por espaço: thiago teste python  123 que pop
+    ['thiago', 'teste', 'python']
+    Palavras com mais de 5 letras: 3
+
 <p align="center"> 25/02/25 <p>
 </details>
 
