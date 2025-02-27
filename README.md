@@ -2640,6 +2640,25 @@ print(f"Qtd de palavras com mais de 5 letras: {validador}")
     ['thiago', 'teste', 'python']
     Palavras com mais de 5 letras: 3
 
+## Exercicio #87 LISTA - Divisíveis por 3
+#### Escreva um programa que leia uma lista de números e imprima apenas aqueles que são divisíveis por 3.
+
+#### resolução:
+~~~~ python
+def divisiveisPor3():
+    try:
+        numeros = input("Insira uma sequência de números: ").split()
+        lista = [int(i) for i in numeros if(int(i) % 3 == 0 and int(i) > 0)]
+        print(f"Números divisíveis por 3: {lista}")
+    except ValueError:
+        print(ValueError)
+divisiveisPor3()
+~~~~
+
+#### resultado:
+    Insira uma sequência de números: 0 7 21 3 5 76 21
+    Números divisíveis por 3: [21, 3, 21]
+
 <p align="center"> 25/02/25 <p>
 </details>
 
