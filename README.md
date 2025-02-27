@@ -2334,7 +2334,7 @@ Media()
 </details>
 
 <details>
-<summary> 💠 Aula 13 - 📝 Exercicios de Lógica XI (77 a --) </summary>
+<summary> 💠 Aula 13 - 📝 Exercicios de Lógica XI (77 a 82) </summary>
 
 <br>
 <p> 26/02/25 <p>
@@ -2539,6 +2539,52 @@ MaiorIdade()
 #### resultado:
     Insira sua idade: 20
     Você é maior de idade
+
+<p align="center"> 25/02/25 <p>
+</details>
+
+<details>
+<summary> 💠 Aula 14 - 📝 Exercicios de Lógica XII (83 a --) LISTA </summary>
+
+<br>
+<p> 27/02/25 <p>
+
+## Exercicio #83 LISTA - Soma de X²
+#### Escreva um programa em Python que receba uma lista de números inteiros separados por espaço e determine a soma dos quadrados dos números na lista.
+~~~~ python
+    nova_lista[expressão for variável in sequencia]
+    Quando a condição for verdadeira, ele interage sobre a expressão.
+~~~~
+
+#### resolução:
+~~~~ python
+try:
+    numero = input("Insira uma sequência de números separados por espaço: ").   split(" ")
+
+    lista = [int(i)**2 for i in numero]
+    print(lista)
+    soma = sum(lista)
+    print(soma)
+except ValueError:
+    print(ValueError)
+~~~~
+
+#### resultado:
+    Insira uma sequência de números separados por espaço: 21 7 5
+    [441, 49, 25]
+    515
+
+## Exercicio #84 LISTA -
+#### Escreva um programa em Python que receba uma lista de números inteiros separados por espaço e conte quantos números pares estão presentes na lista.
+~~~~ python
+nova_lista[expressão for variável in sequencia  if condição]
+~~~~ 
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
 
 <p align="center"> 25/02/25 <p>
 </details>
