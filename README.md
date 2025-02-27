@@ -2544,7 +2544,7 @@ MaiorIdade()
 </details>
 
 <details>
-<summary> 💠 Aula 14 - 📝 Exercicios de Lógica XII (83 a --) LISTA </summary>
+<summary> 💠 Aula 14 - 📝 Exercicios de Lógica XII (83 a 88) LISTA </summary>
 
 <br>
 <p> 27/02/25 <p>
@@ -2678,6 +2678,30 @@ numerosPalindormos()
 #### resultado:
     Insira uma sequência de números: 21 77 88 21221 7 05 22
     Os números palíndormos são: [77, 88, 7, 22]
+
+    
+## Exercicio #A88 DESAFIO LISTA - 
+#### Um número perfeito é um número inteiro positivo que é igual à soma de seus divisores próprios, ou seja, a soma de todos os seus divisores, excluindo o próprio número.
+- Por exemplo:
+- 6 é um número perfeito, porque seus divisores próprios são 1,2,3, e a soma 1+2+3=6.
+- 28 é um número perfeito, porque seus divisores próprios são 1,2,4,7,14, e a soma 1+2+4+7+14=28.
+> Objetivo:
+- Crie uma lista de números inteiros.
+- Para cada número, verifique se ele é um número perfeito.
+- Exiba os números perfeitos encontrados na lista.
+  
+> Em Python, append() é um método usado em listas para adicionar um novo elemento ao final da lista. Ele modifica a lista original e não retorna um novo objeto.  
+~~~~ python
+lista.append(elemento)
+~~~~ 
+
+#### resolução:
+~~~~ python
+
+~~~~
+
+#### resultado:
+
 
 <p align="center"> 25/02/25 <p>
 </details>
