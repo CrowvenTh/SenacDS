@@ -31,11 +31,13 @@ def Q1():
     match q1resp:
         case 1:
             e.append("Q1")
-            print("Alternativa:", q1resp)
+            print("Alternativa:", q1resp, "Incorreta!")
+            print(f"Correção: 3")
             Avanca()
         case 2:
             e.append("Q1")
-            print("Alternativa:", q1resp)
+            print("Alternativa:", q1resp, "Incorreta!")
+            print(f"Correção: 3")
             Avanca()
         case 3:
             a.append("Q1")
@@ -43,7 +45,8 @@ def Q1():
             Avanca()
         case 4:
             e.append("Q1")
-            print("Alternativa:", q1resp)
+            print("Alternativa:", q1resp, "Incorreta!")
+            print(f"Correção: 3")
             Avanca()
         case _:
             print("Opção inválida")
@@ -59,15 +62,18 @@ def Q2():
     match q2resp:
         case 1:
             e.append("Q2")
-            print("Alternativa:", q2resp)
+            print("Alternativa:", q2resp, "Incorreta!")
+            print(f"Correção: 4")
             Avanca()
         case 2:
             Avanca()
-            print("Alternativa:", q2resp)
+            print("Alternativa:", q2resp, "Incorreta!")
+            print(f"Correção: 4")
             e.append("Q2")
         case 3:
             e.append("Q2")
-            print("Alternativa:", q2resp)
+            print("Alternativa:", q2resp, "Incorreta!")
+            print(f"Correção: 4")
             Avanca()
         case 4:
             a.append("Q2")
@@ -87,19 +93,22 @@ def Q3():
     match q3resp:
         case 1:
             e.append("Q3")
-            print("Alternativa:", q3resp)
+            print("Alternativa:", q3resp, "Incorreta!")
+            print(f"Correção: 3")
             Avanca()
         case 2:
-            Avanca()
-            print("Alternativa:", q3resp)
             e.append("Q3")
+            print("Alternativa:", q3resp, "Incorreta!")
+            print(f"Correção: 3")
+            Avanca()
         case 3:
             a.append("Q3")
             print("Alternativa:", q3resp, "Correto!")
             Avanca()
         case 4:
             e.append("Q3")
-            print("Alternativa:", q3resp)
+            print("Alternativa:", q3resp, "Incorreta!")
+            print(f"Correção: 3")
             Avanca()
         case _:
             print("Opção inválida")
@@ -115,15 +124,18 @@ def Q4():
     match q4resp:
         case 1:
             e.append("Q4")
-            print("Alternativa:", q4resp)
+            print("Alternativa:", q4resp, "Incorreta!")
+            print(f"Correção: 4")
             Avanca()
         case 2:
-            Avanca()
-            print("Alternativa:", q4resp)
             e.append("Q4")
+            print("Alternativa:", q4resp, "Incorreta!")
+            print(f"Correção: 4")
+            Avanca()
         case 3:
             e.append("Q4")
-            print("Alternativa:", q4resp)
+            print("Alternativa:", q4resp, "Incorreta!")
+            print(f"Correção: 4")
             Avanca()
         case 4:
             a.append("Q4")
@@ -146,16 +158,19 @@ def Q5():
             print("Alternativa:", q5resp, "Correto!")
             Avanca()
         case 2:
-            Avanca()
-            print("Alternativa:", q5resp)
             e.append("Q5")
+            print("Alternativa:", q5resp, "Incorreta!")
+            print(f"Correção: 1")
+            Avanca()
         case 3:
             e.append("Q5")
-            print("Alternativa:", q5resp)
+            print("Alternativa:", q5resp, "Incorreta!")
+            print(f"Correção: 1")
             Avanca()
         case 4:
             e.append("Q5")
-            print("Alternativa:", q5resp)
+            print("Alternativa:", q5resp, "Incorreta!")
+            print(f"Correção: 1")
             Avanca()
         case _:
             print("Opção inválida")
@@ -171,15 +186,18 @@ def Q6():
     match q6resp:
         case 1:
             e.append("Q6")
-            print("Alternativa:", q6resp)
+            print("Alternativa:", q6resp,"Incorreta!")
+            print(f"Correção: 4")
             Avanca()
         case 2:
-            Avanca()
-            print("Alternativa:", q6resp)
             e.append("Q6")
+            print("Alternativa:", q6resp,"Incorreta!")
+            print(f"Correção: 4")
+            Avanca()
         case 3:
             e.append("Q6")
-            print("Alternativa:", q6resp)
+            print("Alternativa:", q6resp,"Incorreta!")
+            print(f"Correção: 4")
             Avanca()
         case 4:
             a.append("Q6")
@@ -199,19 +217,22 @@ def Q7():
     match q7resp:
         case 1:
             e.append("Q7")
-            print("Alternativa:", q7resp)
+            print("Alternativa:", q7resp, "Incorreta!")
+            print(f"Correção: 2")
             Avanca()
         case 2:
-            Avanca()
-            print("Alternativa:", q7resp)
             a.append("Q7")
-        case 3, "Correto!":
+            print("Alternativa:", q7resp, "Correto!")
+            Avanca()
+        case 3:
             e.append("Q7")
-            print("Alternativa:", q7resp)
+            print("Alternativa:", q7resp, "Incorreta!")
+            print(f"Correção: 2")
             Avanca()
         case 4:
             e.append("Q7")
-            print("Alternativa:", q7resp)
+            print("Alternativa:", q7resp, "Incorreta!")
+            print(f"Correção: 2")
             Avanca()
         case _:
             print("Opção inválida")
@@ -227,15 +248,18 @@ def Q8():
     match q8resp:
         case 1:
             e.append("Q8")
-            print("Alternativa:", q8resp)
+            print("Alternativa:", q8resp,"Incorreta!")
+            print(f"Correção: 4")
             Avanca()
         case 2:
-            Avanca()
-            print("Alternativa:", q8resp)
             e.append("Q8")
+            print("Alternativa:", q8resp,"Incorreta!")
+            print(f"Correção: 4")
+            Avanca()
         case 3:
             e.append("Q8")
-            print("Alternativa:", q8resp)
+            print("Alternativa:", q8resp,"Incorreta!")
+            print(f"Correção: 4")
             Avanca()
         case 4:
             a.append("Q8")
@@ -255,19 +279,22 @@ def Q9():
     match q9resp:
         case 1:
             e.append("Q9")
-            print("Alternativa:", q9resp)
+            print("Alternativa:", q9resp, "Incorreta!")
+            print(f"Correção: 3")
             Avanca()
         case 2:
-            Avanca()
-            print("Alternativa:", q9resp)
             e.append("Q9")
+            print("Alternativa:", q9resp, "Incorreta!")
+            print(f"Correção: 3")
+            Avanca()
         case 3:
             a.append("Q9")
             print("Alternativa:", q9resp, "Correto!")
             Avanca()
         case 4:
             e.append("Q9")
-            print("Alternativa:", q9resp)
+            print("Alternativa:", q9resp, "Incorreta!")
+            print(f"Correção: 3")
             Avanca()
         case _:
             print("Opção inválida")
@@ -283,19 +310,22 @@ def Q10():
     match q10resp:
         case 1:
             e.append("Q10")
-            print("Alternativa:", q10resp)
+            print("Alternativa:", q10resp, "Incorreta!")
+            print(f"Correção: 3")
             Avanca()
         case 2:
-            Avanca()
-            print("Alternativa:", q10resp)
             e.append("Q10")
+            print("Alternativa:", q10resp, "Incorreta!")
+            print(f"Correção: 3")
+            Avanca()
         case 3:
             a.append("Q10")
             print("Alternativa:", q10resp, "Correto!")
             Avanca()
         case 4:
             e.append("Q10")
-            print("Alternativa:", q10resp)
+            print("Alternativa:", q10resp, "Incorreta!")
+            print(f"Correção: 3")
             Avanca()
         case _:
             print("Opção inválida")
@@ -304,7 +334,8 @@ def Q10():
 def final():
     print("============================================")
     print(f"=====| Nome: {Usuario()} \n=====| Acertos: {len(a)} | Erros: {len(e)}")
-    print("=====|")
+    print(f"=====| Corretas: {a}")
+    print(f"=====| Incorretas: {e}")
     print("=================| FIM |===================\n")
     print("============================================")
 
@@ -312,13 +343,13 @@ menu()
 nomeUsuario = input("Insira seu nome: \n")
 Usuario()
 Q1()
-Q2()
-Q3()
-Q4()
-Q5()
-Q6()
-Q7()
-Q8()
-Q9()
-Q10()
+# Q2()
+# Q3()
+# Q4()
+# Q5()
+# Q6()
+# Q7()
+# Q8()
+# Q9()
+# Q10()
 final()
