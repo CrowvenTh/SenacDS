@@ -12,20 +12,11 @@ pontuacao = 0
 a = [] # acertos
 e = [] # erros
 p = 0
-# c = False
-
-# calculo
-# if(c == True):
-#     acertos + 1
-# else:
-#     erros + 1
 
 # calculo
 def Avanca():
     print("===========| Questão respondida! |==========\n")
 
-# calculo
-# def PontuacaoFinal():
     
 # questionario
 def Q1():
