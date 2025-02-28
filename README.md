@@ -2707,20 +2707,17 @@ lista.append(elemento)
 </details>
 
 <details>
-<summary> 💠 Aula 15 - 📝 Exercicios de Lógica XIII (89 a --) 🧮 LISTA </summary>
+<summary> 💠 Aula 15 - 📝 QUIZ </summary>
 
 <br>
 <p> 28/02/25 <p>
 
 
-## Exercicio # -
-####
+## Exercicio # QUIZ
+#### 
 
-#### resolução:
-~~~~ python
-~~~~
+<a href="algoritmo/Atividades/A15_28-02-25/QuizThiago.py"> 📝 QUIZ </a>
 
-#### resultado:
 
 
 <p align="center"> 28/02/25 <p>

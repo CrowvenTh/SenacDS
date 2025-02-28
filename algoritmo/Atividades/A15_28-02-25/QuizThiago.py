@@ -39,12 +39,14 @@ def Q1():
             Avanca()
         case 3:
             a.append("Q1")
-            print("Alternativa:", q1resp)
+            print("Alternativa:", q1resp, "Correto!")
             Avanca()
         case 4:
             e.append("Q1")
             print("Alternativa:", q1resp)
             Avanca()
+        case _:
+            print("Opção inválida")
 def Q2():
     print("===============| QUESTÃO 02 |===============")
     print("Em que ano o Python foi lançado ?\n")
@@ -69,8 +71,10 @@ def Q2():
             Avanca()
         case 4:
             a.append("Q2")
-            print("Alternativa:", q2resp)
+            print("Alternativa:", q2resp, "Correto!")
             Avanca()
+        case _:
+            print("Opção inválida")
 def Q3():
     print("===============| QUESTÃO 03 |===============")
     print("Qual o tipo de tipagem do Python: \n")
@@ -91,12 +95,14 @@ def Q3():
             e.append("Q3")
         case 3:
             a.append("Q3")
-            print("Alternativa:", q3resp)
+            print("Alternativa:", q3resp, "Correto!")
             Avanca()
         case 4:
             e.append("Q3")
             print("Alternativa:", q3resp)
             Avanca()
+        case _:
+            print("Opção inválida")
 def Q4():
     print("===============| QUESTÃO 04 |===============")
     print("São IDEs de python: \n")
@@ -121,8 +127,10 @@ def Q4():
             Avanca()
         case 4:
             a.append("Q4")
-            print("Alternativa:", q4resp)
+            print("Alternativa:", q4resp, "Correto!")
             Avanca()
+        case _:
+            print("Opção inválida")
 def Q5():
     print("===============| QUESTÃO 05 |===============")
     print("Em qual país se originou o Python ?\n")
@@ -135,7 +143,7 @@ def Q5():
     match q5resp:
         case 1:
             a.append("Q5")
-            print("Alternativa:", q5resp)
+            print("Alternativa:", q5resp, "Correto!")
             Avanca()
         case 2:
             Avanca()
@@ -149,6 +157,8 @@ def Q5():
             e.append("Q5")
             print("Alternativa:", q5resp)
             Avanca()
+        case _:
+            print("Opção inválida")
 def Q6():
     print("===============| QUESTÃO 06 |===============")
     print("Quais são frmaeworks de python ?\n")
@@ -173,8 +183,10 @@ def Q6():
             Avanca()
         case 4:
             a.append("Q6")
-            print("Alternativa:", q6resp)
+            print("Alternativa:", q6resp, "Correto!")
             Avanca()
+        case _:
+            print("Opção inválida")
 def Q7():
     print("===============| QUESTÃO 07 |===============")
     print("Que tipo de variáveis são aceitos em python ?\n")
@@ -193,7 +205,7 @@ def Q7():
             Avanca()
             print("Alternativa:", q7resp)
             a.append("Q7")
-        case 3:
+        case 3, "Correto!":
             e.append("Q7")
             print("Alternativa:", q7resp)
             Avanca()
@@ -201,6 +213,8 @@ def Q7():
             e.append("Q7")
             print("Alternativa:", q7resp)
             Avanca()
+        case _:
+            print("Opção inválida")
 def Q8():
     print("===============| QUESTÃO 08 |===============")
     print("São operadores lógicos em python: ?\n")
@@ -225,8 +239,10 @@ def Q8():
             Avanca()
         case 4:
             a.append("Q8")
-            print("Alternativa:", q8resp)
+            print("Alternativa:", q8resp, "Correto!")
             Avanca()
+        case _:
+            print("Opção inválida")
 def Q9():
     print("===============| QUESTÃO 09 |===============")
     print("São operadores aritméticos em python: \n")
@@ -247,12 +263,14 @@ def Q9():
             e.append("Q9")
         case 3:
             a.append("Q9")
-            print("Alternativa:", q9resp)
+            print("Alternativa:", q9resp, "Correto!")
             Avanca()
         case 4:
             e.append("Q9")
             print("Alternativa:", q9resp)
             Avanca()
+        case _:
+            print("Opção inválida")
 def Q10():
     print("===============| QUESTÃO 10 |===============")
     print("considerando fevereiro de 2025, Qual a versão mais recente do Python ?\n")
@@ -273,12 +291,14 @@ def Q10():
             e.append("Q10")
         case 3:
             a.append("Q10")
-            print("Alternativa:", q10resp)
+            print("Alternativa:", q10resp, "Correto!")
             Avanca()
         case 4:
             e.append("Q10")
             print("Alternativa:", q10resp)
             Avanca()
+        case _:
+            print("Opção inválida")
 
 # QUESTIONÁRIO    
 def final():
