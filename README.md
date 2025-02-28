@@ -18,7 +18,7 @@ Repositório destinado as atividades realizadas no curso de Desenvolvimento de s
   
 </details>
 
-### 🧮 Aulas
+###  🧮  Aulas
 
 <details>
     <summary> 💠 Aula 01 - 🐍 Introdução a python  </summary>
@@ -1304,7 +1304,7 @@ while (contador > 0):
 </details>
 
 <details>
-    <summary> 💠 Aula 08 - 📝 Exercicios de Lógica VII (50 a 53) </summary>
+    <summary> 💠 Aula 08 - 📝 Exercicios de Lógica VII (50 a 53) 🧮 WHILE</summary>
 <br>
 <p> 19/02/25 <p>
 
@@ -1374,9 +1374,9 @@ while on:
     soma = (numero + numero1)
     somaIterada += soma
     if(somaIterada < limite):
-            print(f"{somaIterada} | {limite}")
+            print(f"{somaIterada} 🧮 {limite}")
     if(somaIterada > limite):
-        print(f"{somaIterada} | {limite}")
+        print(f"{somaIterada} 🧮 {limite}")
         on = False
 ~~~~
 
@@ -1386,7 +1386,7 @@ while on:
     Insira outro número: 5
     Insira um número: 1
     Insira outro número: 1
-    12 | 10
+    12 🧮 10
 
 
 ## Exercicio #53 WHILE Desafio II - Random()
@@ -1459,7 +1459,7 @@ while True:
 </details>
 
 <details>
-    <summary> 💠 Aula 09 - 📝 Exercicios de Lógica VIII (54 a 57) </summary>
+    <summary> 💠 Aula 09 - 📝 Exercicios de Lógica VIII (54 a 57) 🧮 WHILE </summary>
 <br>
 <p> 20/02/25 <p>
 
@@ -1618,7 +1618,7 @@ print(fatorial)
 </details>
 
 <details>
-    <summary> 💠 Aula 10 - 📝 Exercicios de Lógica IX (58 a 62) </summary>
+    <summary> 💠 Aula 10 - 📝 Exercicios de Lógica IX (58 a 62) 🧮 WHILE & FOR </summary>
 <br>
 <p> 21/02/25 <p>
 
@@ -1712,11 +1712,11 @@ OBS: !!! falha ao encerrar operação !!!
 
     Insira um número: 14
     Insira outro número: 7
-    | Soma = +
-    | Subtração = -
-    | Multiplicação = *
-    | Divisão = /
-    | Encerrar programa = 0
+    🧮 Soma = +
+    🧮 Subtração = -
+    🧮 Multiplicação = *
+    🧮 Divisão = /
+    🧮 Encerrar programa = 0
     Selecione uma operação: +
     Soma: 14 + 7 = 21
 
@@ -1724,11 +1724,11 @@ OBS: !!! falha ao encerrar operação !!!
 
     Insira um número: 21
     Insira outro número: 14
-    | Soma = +
-    | Subtração = -
-    | Multiplicação = *
-    | Divisão = /
-    | Encerrar programa = 0
+    🧮 Soma = +
+    🧮 Subtração = -
+    🧮 Multiplicação = *
+    🧮 Divisão = /
+    🧮 Encerrar programa = 0
     Selecione uma operação: -
     Subtração: 21 - 14 = 7
 
@@ -1736,10 +1736,10 @@ OBS: !!! falha ao encerrar operação !!!
 
     Insira um número: 3
     Insira outro número: 7
-    | Soma = +
-    | Subtração = -
-    | Multiplicação = *
-    | Divisão = /
+    🧮 Soma = +
+    🧮 Subtração = -
+    🧮 Multiplicação = *
+    🧮 Divisão = /
     Selecione uma operação: *
     Multiplicação: 3 x 7 = 21
 
@@ -1747,11 +1747,11 @@ OBS: !!! falha ao encerrar operação !!!
 
     Insira um número: 21
     Insira outro número: 3
-    | Soma = +
-    | Subtração = -
-    | Multiplicação = *
-    | Divisão = /
-    | Encerrar programa = 0
+    🧮 Soma = +
+    🧮 Subtração = -
+    🧮 Multiplicação = *
+    🧮 Divisão = /
+    🧮 Encerrar programa = 0
     Selecione uma operação: /
     Divisão: 21 ÷ 3 = 7.0
 
@@ -1843,7 +1843,7 @@ ou
 
 
 <details>
-<summary> 💠 Aula 11 - 📝 Exercicios de Lógica IX (63 a 67) </summary>
+<summary> 💠 Aula 11 - 📝 Exercicios de Lógica IX (63 a 67) 🧮 FOR </summary>
 
 <br>
 <p> 24/02/25 <p>
@@ -1978,7 +1978,7 @@ print(f"Faturamento anual: R${faturamento:.2f}")
 </details>
 
 <details>
-<summary> 💠 Aula 12 - 📝 Exercicios de Lógica X (67 a 76) </summary>
+<summary> 💠 Aula 12 - 📝 Exercicios de Lógica X (67 a 76) 🧮 MATCH CASE </summary>
 
 <br>
 <p> 25/02/25 <p>
@@ -2046,15 +2046,15 @@ match forma:
 nota = int(input("Insira uma nota: "))
 
 match nota:
-    case 9 | 10:
+    case 9 🧮 10:
         print("Excelente")
-    case 7 | 8:
+    case 7 🧮 8:
         print("Bom")
-    case 5 | 6:
+    case 5 🧮 6:
         print("Regular")
-    case 3 | 4:
+    case 3 🧮 4:
         print("Ruim")
-    case 0 | 1 | 2:
+    case 0 🧮 1 🧮 2:
         print("Muito ruim")
 ~~~~
 
@@ -2093,11 +2093,11 @@ match id:
 
 #### resultado:
     --------------
-    | 1 - Pizza
-    | 2 - Hambúguer
-    | 3 - Sushi
-    | 4 - Salada
-    | 5 - Lasanha
+    🧮 1 - Pizza
+    🧮 2 - Hambúguer
+    🧮 3 - Sushi
+    🧮 4 - Salada
+    🧮 5 - Lasanha
     |--------------
     Selecione um prato: 5
     Lasanha foi selecionada
@@ -2334,7 +2334,7 @@ Media()
 </details>
 
 <details>
-<summary> 💠 Aula 13 - 📝 Exercicios de Lógica XI (77 a 82) </summary>
+<summary> 💠 Aula 13 - 📝 Exercicios de Lógica XI (77 a 82) 🧮 DEF & TRY </summary>
 
 <br>
 <p> 26/02/25 <p>
@@ -2388,10 +2388,10 @@ match operacao:
 
 #### resultado:
     Insira o primeiro número: 7
-    | 1 - Adição
-    | 2 - subtração
-    | 3 - Multiplicação
-    | 4 - Divisão
+    🧮 1 - Adição
+    🧮 2 - subtração
+    🧮 3 - Multiplicação
+    🧮 4 - Divisão
     Selecione uma operação: 3
     Insira o segundo número: 3
     7.0 x 3.0 = 21.0
@@ -2544,7 +2544,7 @@ MaiorIdade()
 </details>
 
 <details>
-<summary> 💠 Aula 14 - 📝 Exercicios de Lógica XII (83 a 88) LISTA </summary>
+<summary> 💠 Aula 14 - 📝 Exercicios de Lógica XII (83 a 88) 🧮 LISTA </summary>
 
 <br>
 <p> 27/02/25 <p>
@@ -2707,7 +2707,7 @@ lista.append(elemento)
 </details>
 
 <details>
-<summary> 💠 Aula 15 - 📝 Exercicios de Lógica XIII (89 a --) LISTA </summary>
+<summary> 💠 Aula 15 - 📝 Exercicios de Lógica XIII (89 a --) 🧮 LISTA </summary>
 
 <br>
 <p> 28/02/25 <p>
