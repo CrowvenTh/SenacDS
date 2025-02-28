@@ -2703,7 +2703,27 @@ lista.append(elemento)
 #### resultado:
 
 
-<p align="center"> 25/02/25 <p>
+<p align="center"> 27/02/25 <p>
+</details>
+
+<details>
+<summary> 💠 Aula 15 - 📝 Exercicios de Lógica XIII (89 a --) LISTA </summary>
+
+<br>
+<p> 28/02/25 <p>
+
+
+## Exercicio # -
+####
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+
+<p align="center"> 28/02/25 <p>
 </details>
 
 ---
