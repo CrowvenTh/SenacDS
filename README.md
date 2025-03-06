@@ -2991,6 +2991,58 @@ print(filme)
     {'titulo': 'filme', 'genero': 'acao', 'duracao': '126'}
 
 
+## Exercicio #95 DICIONARIO -
+#### Desenvolver um programa em Python que permita gerenciar o cadastro de alunos de forma interativa, utilizando uma estrutura (lista ou dicionário) para armazenar os dados.
+
+### Funções a serem implementadas:
+- limpar_tela()
+- exibir_nome_do_programa()
+- exibir_opcoes()
+- cadastrar_aluno()
+- listar_alunos()
+- buscar_aluno()
+- remover_aluno()
+- finalizar_app()
+- escolher_opcao()
+
+### def limpar_tela():
+Limpa a tela imprimindo várias quebras de linha
+~~~~ python
+print("\n" * 50)
+
+def main():
+    limpar_tela()
+    exibir_nome_do_programa()
+    exibir_opcoes()
+    escolher_opcao()
+
+if __name__ == '__main__':
+    main()
+~~~~ 
+
+Requisitos do Programa:
+
+- Exibir uma arte ASCII que contenha o título “Cadastro de Alunos - Senac DF”. https://patorjk.com/software/taag/#p=display&f=Epic&t=Senac%20DF
+
+>Apresentar um menu com as opções:
+- Cadastrar aluno
+- Listar alunos
+- Buscar aluno
+- Remover aluno
+- Sair
+- Limpar a tela.
+
+Executar a ação correspondente à opção escolhida.
+
+Encerrar o programa corretamente ao selecionar a opção “Sair”.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+
 <p align="center"> 06/03/25 <p>
 </details>
 
