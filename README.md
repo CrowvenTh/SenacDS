@@ -2851,6 +2851,28 @@ print(meuCarro)
     Insira a cor do veiculo: azul
     Informações sobre o carro: 
     {'marca': 'honda', 'modelo': 'civic', 'ano': '2002', 'cor': 'azul'}
+    
+## Exercicio #90 DICIONARIO - lista telefonica
+#### Criar um dicionário para armazenar o nome e o telefone de uma pessoa e exibi-los.
+
+#### resolução:
+~~~~ python
+contato = {}
+
+nome = input("Insira o nome do contato: ")
+numero = input("Insira o número de telefone: ")
+
+contato["nome"] = nome
+contato["numero"] = numero
+
+print(contato)
+~~~~
+
+#### resultado:
+    Insira o nome do contato: thiago
+    Insira o número de telefone: 61 98888-9999
+    {'nome': 'thiago', 'numero': '61 98888-9999'}
+
 
 
 <p align="center"> 06/03/25 <p>
