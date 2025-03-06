@@ -2723,6 +2723,140 @@ lista.append(elemento)
 <p align="center"> 28/02/25 <p>
 </details>
 
+<details>
+<summary> 💠 Aula 16 - 📝 Exercicios de Lógica XIII (89 a ) 🧮 DICIONÁRIO </summary>
+
+<br>
+<p> 06/03/25 <p>
+
+## Dicionário
+
+> Objetivo: Criar um dicionário para armazenar informações de um produto e exibi-las depois.
+
+### O que é um Dicionário em Python?
+Um dicionário (dict) em Python é uma estrutura de dados que armazena pares de chave: valor. Ele é mutável, ou seja, pode ser modificado após sua criação.
+
+> Os dicionários são úteis quando precisamos armazenar e acessar dados de forma rápida, associando chaves únicas a valores correspondentes.
+
+### Criando um dicionário vazio
+~~~~ python
+meu_dicionario = {}
+~~~~ 
+
+### Criando um dicionário com informações de um carro
+~~~~ python
+carro = {
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "ano": 2022,
+    "cor": "Prata"
+}
+~~~~
+### Exibindo o dicionário completo
+~~~~ python
+print("Informações do carro:")
+print(carro)
+~~~~
+
+### Acessando valores individuais
+~~~~ python
+print("\n Marca do carro:", carro["marca"])
+print(" Modelo do carro:", carro["modelo"])
+~~~~
+
+### Modificando um valor (alterando o ano do carro)
+~~~~ python
+carro["ano"] = 2023
+print("\n Ano atualizado:", carro["ano"])
+~~~~
+
+### Adicionando um novo atributo (adicionando o preço)
+~~~~ python
+carro["preco"] = 120000
+print("\n Adicionando o preço do carro:", carro["preco"])
+~~~~
+
+### Removendo um atributo (removendo a cor)
+~~~~ python
+del carro["cor"]
+print("\n Removendo a cor do carro.")
+~~~~
+
+### Exibindo todas as chaves, valores e pares chave-valor
+~~~~ python
+print("\n Todas as chaves do dicionário:", carro.keys())
+print(" Todos os valores do dicionário:", carro.values())
+print(" Todos os itens do dicionário:", carro.items())
+~~~~
+
+### Exibindo o dicionário final
+~~~~ python
+print("\n Dicionário atualizado:")
+print(carro)
+~~~~
+
+### Explicação:
+
+> As chaves são únicas e podem ser do tipo string, int, float, bool ou tuple.
+Os valores podem ser de qualquer tipo (int, float, string, list, dict, etc.).
+As chaves e os valores são separados por dois pontos :.
+Os pares chave: valor são separados por vírgulas ,.
+
+### Exercício resolvido:
+~~~~ python
+produto = {}
+
+nome = input("Digite o nome do produto: ")
+preco = float(input("Digite o preço do produto: R$ "))
+quantidade = int(input("Digite a quantidade em estoque: "))
+
+produto["Nome"] = nome
+produto["Preço"] = preco
+produto["Quantidade"] = quantidade
+
+print("\nInformações do Produto:")
+print(produto)
+~~~~
+
+## Exercicio #89 Dicionário - criando um dicionário
+####
+
+#### resolução:
+~~~~ python
+
+#criação do dicionário vazio 
+meuCarro = {}
+
+# implementação de input nos atributos do dicionario
+marca = input("Insira a marca: ")
+modelo = input("Insira o modelo: ")
+ano = input("Insira o ano do veiculo: ")
+cor = input("Insira a cor do veiculo: ")
+
+# atribuição dos inputs aos atributos do dicionario
+meuCarro["marca"] = marca
+meuCarro["modelo"] = modelo
+meuCarro["ano"] = ano
+meuCarro["cor"] = cor
+
+# mostrando o dicionario
+print("Informações sobre o carro: ")
+print(meuCarro)
+~~~~
+
+#### resultado:
+    Insira a marca: honda
+    Insira o modelo: civic
+    Insira o ano do veiculo: 2002
+    Insira a cor do veiculo: azul
+    Informações sobre o carro: 
+    {'marca': 'honda', 'modelo': 'civic', 'ano': '2002', 'cor': 'azul'}
+
+
+<p align="center"> 06/03/25 <p>
+</details>
+
 ---
 <br>
 <p align="center">@2025</p>
+
