@@ -35,9 +35,13 @@ def listaAluno():
 
 def buscarAluno():
     print("perai caba")
+    if "nomeAluno" in aluno:
+        print(aluno)
+    else:
+        print("funcionou nn")
 
 def removerAluno():
-    del aluno["nome"]
+    del aluno["nomeAluno"]
     print("Aluno removido com sucesso!\n")
 
 def sair():
@@ -53,11 +57,8 @@ def menu():
         match opcao:
             case 1:
                 cadAluno()
-                # Opcao()
-                # break
             case 2:
                 listaAluno()
-                # Opcao()
             case 3:
                 buscarAluno()
             case 4:
