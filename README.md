@@ -2957,6 +2957,39 @@ print(produto)
     {'nome': 'notebook', 'preco': '2500', 'quantidade': '5', 'marca': 'asus'}
     {'nome': 'notebook', 'preco': '2500', 'marca': 'asus'}
 
+## Exercicio #94 -
+#### Crie um dicionário representando um filme , contendo Título, Ano e Gênero. Depois, adicione a duração  e remova o campo "ano".
+
+#### resolução: 
+~~~~ python
+filme = {}
+
+titulo = input("Insira o titulo: ")
+ano = input("Insira o ano: ")
+genero = input("Insira o genero: ")
+
+filme["titulo"] = titulo
+filme["ano"] = ano
+filme["genero"] = genero
+print(filme)
+
+duracao = input("Insira a duração: ")
+filme["duracao"] = duracao
+print(filme)
+
+del filme["ano"]
+print(filme)
+~~~~
+
+#### resultado:
+    Insira o titulo: filme
+    Insira o ano: 2004
+    Insira o genero: acao
+    {'titulo': 'filme', 'ano': '2004', 'genero': 'acao'}
+    Insira a duração: 126
+    {'titulo': 'filme', 'ano': '2004', 'genero': 'acao', 'duracao': '126'}
+    {'titulo': 'filme', 'genero': 'acao', 'duracao': '126'}
+
 
 <p align="center"> 06/03/25 <p>
 </details>
