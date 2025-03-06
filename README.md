@@ -2898,6 +2898,28 @@ print(aluno)
     Insira a 3° nota: 9.7
     {'nota1': 7.8, 'nota2': 7.4, 'nota3': 9.7, 'media': 8.299999999999999}
 
+## Exercicio #92 DICIONARIO - Tradutor
+#### Criar um dicionário com palavras em inglês e suas traduções para português e permitir que o usuário consulte uma palavra.
+
+#### resolução:
+~~~~ python
+dicionario = {
+    "dog":"cachorro",
+    "cat":"gato",
+    "house":"casa",
+    "car":"carro"
+}
+palavra = input("Insira uma palavra: ")
+
+if palavra in dicionario:
+    print(f"{palavra.capitalize()} | PTBR: {dicionario[palavra].capitalize()}")
+else:
+    print(f"chave não encontrada")
+~~~~
+#### resultado:
+    Insira uma palavra: cat
+    Cat | PTBR: Gato
+
 <p align="center"> 06/03/25 <p>
 </details>
 
