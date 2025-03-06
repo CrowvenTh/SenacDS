@@ -2873,7 +2873,30 @@ print(contato)
     Insira o número de telefone: 61 98888-9999
     {'nome': 'thiago', 'numero': '61 98888-9999'}
 
+## Exercicio #91 DICIONARIO - Média de um aluno
+#### Criar um dicionário para armazenar as notas de um aluno e calcular a média.
 
+#### resolução:
+~~~~ python
+aluno = {}
+
+nota1 = float(input("Insira a 1° nota: "))
+nota2 = float(input("Insira a 2° nota: "))
+nota3 = float(input("Insira a 3° nota: "))
+media = (nota1 + nota2 + nota3) / 3
+
+aluno["nota1"] = nota1
+aluno["nota2"] = nota2
+aluno["nota3"] = nota3
+aluno["media"] = media
+
+print(aluno)
+~~~~
+#### resultado:
+    Insira a 1° nota: 7.8
+    Insira a 2° nota: 7.4
+    Insira a 3° nota: 9.7
+    {'nota1': 7.8, 'nota2': 7.4, 'nota3': 9.7, 'media': 8.299999999999999}
 
 <p align="center"> 06/03/25 <p>
 </details>
