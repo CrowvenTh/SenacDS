@@ -25,13 +25,16 @@ def Opcao():
           ''')
 
 aluno = {}    
+alunoLista = []
 def cadAluno():
     nomeAluno = input("Insira o nome do aluno: ")
     aluno["nomeAluno"] = nomeAluno
+    alunoLista.append(aluno)
     print("Aluno cadastrado com sucesso!\n")
 
 def listaAluno():
     print(f"Nome: {aluno["nomeAluno"].capitalize()}\n")
+    print(alunoLista)
 
 def buscarAluno():
     print("perai caba")
@@ -42,6 +45,7 @@ def buscarAluno():
 
 def removerAluno():
     del aluno["nomeAluno"]
+    alunoLista.pop(aluno["nomeAluno"])
     print("Aluno removido com sucesso!\n")
 
 def sair():
