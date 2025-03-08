@@ -2724,7 +2724,7 @@ lista.append(elemento)
 </details>
 
 <details>
-<summary> 💠 Aula 16 - 📝 Exercicios de Lógica XIII (89 a ) 🧮 DICIONÁRIO </summary>
+<summary> 💠 Aula 16 - 📝 Exercicios de Lógica XIII (89 a 95) 🧮 DICIONÁRIO </summary>
 
 <br>
 <p> 06/03/25 <p>
@@ -3044,6 +3044,58 @@ Encerrar o programa corretamente ao selecionar a opção “Sair”.
 
 
 <p align="center"> 06/03/25 <p>
+</details>
+
+<details>
+<summary> 💠 Aula 17 - 📝 Exercicios de Lógica XIII (96 a ) 🧮 POO </summary>
+
+<br>
+<p> 07/03/25 <p>
+
+## O que é POO em Python?  
+
+A **Programação Orientada a Objetos** (POO) organiza o código em classes e objetos, facilitando a reutilização e manutenção.
+
+**Construtor** (__init__): Método especial chamado ao criar um objeto, inicializando seus atributos.
+
+**self**: Referência ao próprio objeto, usada para acessar atributos e métodos dentro da classe.
+
+**Instanciação**: Processo de criar um objeto a partir de uma classe.
+
+Exemplo:
+~~~~ python
+class Carro:
+    def __init__(self, marca):
+        self.marca = marca  # `self.marca` pertence à instância
+
+    def mostrar_marca(self):
+        print(f"O carro é da marca {self.marca}")
+
+# Criando objeto e chamando método
+carro1 = Carro("Toyota")
+carro1.mostrar_marca()  # Saída: O carro é da marca Toyota
+~~~~
+## Exericico #96 POO - Criação de classes
+
+*Atividade:*
+- Criar uma classe Aluno com nome e curso
+- Criar uma classe Livro com título e autor
+- Criar uma classe Celular com modelo e fabricante
+- Criar uma classe Cachorro com nome e raça
+- Criar uma classe Computador com processador e memória
+- Criar uma classe Funcionario com nome e cargo
+- Criar uma classe Bicicleta com tipo e tamanho do aro
+- Criar uma classe Filme com título e diretor
+- Criar uma classe Restaurante com nome e tipo de cozinha
+- Criar uma classe Avião com companhia aérea e modelo
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+<p align="center"> 07/03/25 <p>
 </details>
 
 ---
