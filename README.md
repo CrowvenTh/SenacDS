@@ -11,7 +11,7 @@ Repositório destinado as atividades realizadas no curso de Desenvolvimento de s
 - 📁 <a href="algoritmo/Material/python_aula01.pdf">Lógica & interpretadores </a> 
 - 📁 <a href="algoritmo/Material/python_aula02.pdf">Operadores Lógicos </a> 
 - 📁 <a href="algoritmo/Material/python_aula03.pdf">Tipos de dados & condicionais </a> 
-- 📁 <a href="algoritmo/Material/python_aula04.pdf"> Variáveis & Exercicios</a> 
+- 📁 <a href="algoritmo/Material/python_aula04.pdf"> Variáveis & Exercícios</a> 
 - 💾 <a href="https://github.com/CrowvenTh/Santander-Python">Repositório de apoio</a>
 
 ---
@@ -98,12 +98,12 @@ resultado_arredondado = round(resultado, 2)
 
 
 <details>
-    <summary> 💠 Aula 02 - 📝 Exercicios de Lógica I (1 a 12) </summary>
+    <summary> 💠 Aula 02 - 📝 Exercícios de Lógica I (1 a 12) </summary>
 
 <br>
 <p> 11/02/25 <p>
 
-## Exercicio #1 - Olá mundo!
+## Exercício #1 - Olá mundo!
 
 #### imprima na tela a frase "Olá mundo!".    
 ~~~~ python
@@ -111,7 +111,7 @@ resultado_arredondado = round(resultado, 2)
 print("olá mundo!")
 ~~~~
 
-## Exercicio #2 - Imprimindo números
+## Exercício #2 - Imprimindo números
 
 #### Crie um programa que imprima os números de 1 até 10.
 ~~~~ python
@@ -127,7 +127,7 @@ while numero <= 10:
     numero += 1
 ~~~~
 
-## Exercicio #3 - Adição
+## Exercício #3 - Adição
 
 #### Escreva um programa que calcule a soma de dois números.
 ~~~~ python
@@ -137,7 +137,7 @@ n2 = int(input("Insira o segundo número: "))
 print(f"A soma de {n1} + {n2} é igual a {n1+n2}")
 ~~~~
 
-## Exercicio #4 - Multiplicação
+## Exercício #4 - Multiplicação
 #### Escreva um programa que calcule a multiplicação de dois números.
 ~~~~ python
 num1 = 7
@@ -146,7 +146,7 @@ num2 = 3
 print(f"O resultado de {num1}x{num2} é igual a {num1 * num2}")
 ~~~~
 
-## Exercicio #5 - Divisão
+## Exercício #5 - Divisão
 #### Escreva um programa que calcule a Divisão de dois números.
 ~~~~ python
 n1 = 21
@@ -155,7 +155,7 @@ n2 = 3
 print(f"{n1} dividido por {n2} é igual a {n1 // n2}")
 ~~~~
 
-## Exercicio #6 - Subtração
+## Exercício #6 - Subtração
 #### Escreva um programa que calcule a subtração de dois números.
 ~~~~ python
 n1 = int(input("Insira o primeiro numero: "))
@@ -164,7 +164,7 @@ n2 = int(input("Insira o segundo numero: "))
 print(f"{n1} - {n2} é igual a {n1 - n2}")
 ~~~~
 
-## Exercicio #7 - Indice de string
+## Exercício #7 - Indice de string
 
 - [Início:fim:passo] é uma forma de pegar uma parte de uma sequência, como uma string ou lista. Você pode usá-lo para:
   
@@ -206,7 +206,7 @@ string4 = "Machine Learning"
 print("#4 ", string4[-3:])
 ~~~~
 
-## Exercicio #8 - String de indice impar
+## Exercício #8 - String de indice impar
 #### Dada a string "Artificial Intelligence", imprima os caracteres nos índices ímpares.
 ~~~~ python
 string = "Artificial Intelligence"
@@ -216,7 +216,7 @@ for i in range(1, len(string), 2):
     
 ~~~~
 
-## Exercicio #9 - String de indice par
+## Exercício #9 - String de indice par
 #### Dada a string "Artificial Intelligence", imprima os caracteres nos índices pares.
 ~~~~ python
 
@@ -227,7 +227,7 @@ for i in range(0, len(string), 2):
     
 ~~~~
 
-## Exercicio #10 - Upper
+## Exercício #10 - Upper
 #### Escreva um programa em Python que utilize a variável texto= "Olá mundo!" e imprima o texto em letras maiúsculas.
 ~~~~ python
 texto = "Olá mundo!"
@@ -235,7 +235,7 @@ texto = "Olá mundo!"
 print(texto.upper())
 ~~~~
 
-## Exercicio #11 - Lower
+## Exercício #11 - Lower
 #### Defina a variável texto com o valor "Olá mundo!".
 - Utilize o método lower() para converter todo o texto em letras minúsculas.
 - Imprima o texto convertido em letras minúsculas.
@@ -245,7 +245,7 @@ word = "Olá mundo!"
 print(word.lower())
 ~~~~
 
-## Exercicio #12 - capitalize
+## Exercício #12 - capitalize
 #### Escreva um programa em Python que utilize a variável texto= "olá mundo!" e imprima a primeira letra do texto em maiúscula.
 - Defina a variável texto com o valor "olá mundo!".
 - Utilize o método capitalize() para capitalizar a primeira letra do texto.
@@ -264,12 +264,12 @@ print(palavra.capitalize())
 
 
 <details>
-    <summary> 💠 Aula 03 - 📝 Exercicios de Lógica II (13 a 21) </summary>
+    <summary> 💠 Aula 03 - 📝 Exercícios de Lógica II (13 a 21) </summary>
 
 <br>
 <p> 12/02/25 <p>
 
-## Exercicio #13 - strip
+## Exercício #13 - strip
 #### Escreva um programa em Python que remove os espaços em branco do início e do final de uma variável frase =  " Hoje a noite está ótima ". Após remover os espaços em branco do início e do final, exiba o conteúdo da variável frase.
 
 ~~~~ python
@@ -279,7 +279,7 @@ print(frase.strip())
 #### resultado: 
     Hoje a noite está ótima
 
-## Exercicio #14 - Strip & replace
+## Exercício #14 - Strip & replace
 #### Escreva um programa em Python que realize as seguintes operações em uma frase pré-definida:
 
 - A frase fornecida é: " O dia está bom, mas o tempo está chuvoso. "
@@ -297,7 +297,7 @@ print(frase.strip().replace("bom", "ótimo"))
 #### resultado:
     O dia está ótimo, mas o tempo está chuvoso. 
 
-## Exercicio #15 - input com String
+## Exercício #15 - input com String
 #### Instruções
 O comando input() é usado para receber entrada do usuário em um programa Python. Ele solicita que o usuário insira algum valor a partir do teclado.
 
@@ -321,7 +321,7 @@ print("O nome inserido foi:",nome)
     Bem vindo, insira seu nome: Thiago 
     O nome inserido foi:  Thiago
 
-## Exercicio #16 - input com adição
+## Exercício #16 - input com adição
 #### Instruções
 O comando input() é usado para receber entrada do usuário em um programa Python. Ele solicita que o usuário insira algum valor a partir do teclado.
 
@@ -349,7 +349,7 @@ print(f"{n1} + {n2} é igual a {soma}")
     Insira o segundo numero: 7
     21 + 7 é igual a 28
 
-## Exercicio #17 - input com subtração
+## Exercício #17 - input com subtração
 #### Instruções
 O comando input() é usado para receber entrada do usuário em um programa Python. Ele solicita que o usuário insira algum valor a partir do teclado.
 
@@ -377,7 +377,7 @@ print(f"{n1} - {n2} é igual a {sub}")
     Insira o segundo número: 7
     28 - 7 é igual a 21
 
-## Exercicio #18 - input com divisão e arredondamento
+## Exercício #18 - input com divisão e arredondamento
 #### Instruções
 O comando input() é usado para receber entrada do usuário em um programa Python. Ele solicita que o usuário insira algum valor a partir do teclado.
 
@@ -416,7 +416,7 @@ print(f"{n1} dividido por {n2} é igual a {divArredondada}")
     Insira o segundo número: 3.0
     21 dividido por 3 é igual a 7.0
 
-## Exercicio #19 - input com multiplicação
+## Exercício #19 - input com multiplicação
 #### Instruções
 O comando input() é usado para receber entrada do usuário em um programa Python. Ele solicita que o usuário insira algum valor a partir do teclado.
 
@@ -445,7 +445,7 @@ print(f"{number1} X {number2} é igual a {produto}")
     Insira o segundo número: 3
     7 x 3 é igual a 21
 
-## Exercicio 20 - sep data
+## Exercício 20 - sep data
 #### Escreva um programa em Python que solicite ao usuário informações sobre uma data (dia, mês e ano) e utilize o parâmetro sep na função print() para imprimir a data no formato "DD/MM/AAAA".
     Dia = 10
     Mês = 5
@@ -466,7 +466,7 @@ print(day, month, year, sep="/")
     Insira o ano: 2025
     12/2/2025
 
-## Exercicio #21 - sep pessoa
+## Exercício #21 - sep pessoa
 #### Escreva um programa em Python que use o parâmetro sep na função print() para imprimir o nome, idade e altura de uma pessoa separados por um hífen.
 
 ~~~~ python
@@ -488,12 +488,12 @@ print(f"{nome} - {idade} - {altura}")
 </details>
 
 <details>
-    <summary> 💠 Aula 04 - 📝 Exercicios de Lógica III (22 a 26) </summary>
+    <summary> 💠 Aula 04 - 📝 Exercícios de Lógica III (22 a 26) </summary>
 
 <br>
 <p> 13/02/25 <p>
 
-## Exercicio #22 - join
+## Exercício #22 - join
 ### 1 - Crie um programa em Python que aceite uma TUPLA de linguagens de programação e as junte em uma única String separada por hífens, verificar o tipo da variável antes e após a operação:
 
 ### Tupla -  É uma sequência de valores ordenados e imutáveis
@@ -553,7 +553,7 @@ variavel = "Olá, mundo!"
 print(type(variavel))  # Saída: <class 'str'>
 ~~~~
 
-## Exercicio 23 - Split
+## Exercício 23 - Split
 #### Escreva um programa em Python que aceite uma sequência de linguagens de programação separadas por espaços. O programa deve dividir essa sequência em uma lista de linguagens individuais e imprimir a lista resultante. Ao final imprimir o tipo da variável.
 ~~~~ python
 Linguagens  - "Python,Java,C#,C++,PHP"
@@ -583,7 +583,7 @@ print(l)
     ['Python', 'Java', 'C#', 'C++', 'PHP']
 
 
-## Exercicio #24 - len
+## Exercício #24 - len
 #### Escreva um programa que solicite ao usuário para inserir uma palavra e imprima o número de caracteres na palavra, utilizando a função len().
 
 Exemplo de saída:
@@ -601,7 +601,7 @@ print(f"A palavra {var} tem {len(var)} caracteres")
 #### resultado:
     A palavra antonio tem 7 caracteres
 
-## Exercicio #25 - Lista []
+## Exercício #25 - Lista []
 #### Crie um programa que receba a lista abaixo e imprima a linguaguem de programação:
 ~~~~ python
 lista: ["Python","Java","C#","C++","PHP"]
@@ -616,7 +616,7 @@ print(lista[1])
 #### resultado:
     Java
 
-## Exercicio #26 - Tupla
+## Exercício #26 - Tupla
 #### Crie um programa que receba a tupla abaixo e imprima a linguem de programação: C++
 
     tupla: "Python","Java","C#","C++","PHP"
@@ -635,12 +635,12 @@ print(tupla[3])
 </details>
 
 <details>
-    <summary> 💠 Aula 05 - 📝 Exercicios de Lógica IV (27 a 35) </summary>
+    <summary> 💠 Aula 05 - 📝 Exercícios de Lógica IV (27 a 35) </summary>
 
 <br>
 <p> 14/02/25 <p>
 
-## Exercicio #27 - Format()
+## Exercício #27 - Format()
 #### Escreva um programa em Python que utilize o método format() para formatar uma mensagem com informações pessoais. Você deve criar um dicionário chamado informacoes com as seguintes chaves e valores:
 
     Nome: "Ana"
@@ -674,7 +674,7 @@ print(mensagem)
     Digite uma cidade: Belém
     Olá, meu nome é Thiago e tenho 20 anos, e moro em Belém
 
-## Exercicio #28 - Format() II
+## Exercício #28 - Format() II
 #### Escreva um programa em Python que utilize o método format() para formatar uma mensagem com informações sobre um livro. Você deve criar variáveis para armazenar as seguintes informações:
 - Título do livro: "O Pequeno Príncipe"
 - Autor do livro: "Antoine de Saint-Exupéry"
@@ -704,7 +704,7 @@ print(livro)
 #### resultado: 
     'The witcher' é um livro escrito por Andrzej Sapkowski. Foi publicado em 1990 e custa R$79.9.
 
-## Exercicio #29 - Format() III
+## Exercício #29 - Format() III
 #### Escreva um programa em Python que utilize o método format() para formatar uma mensagem com informações sobre um produto. Você deve criar variáveis para armazenar as seguintes informações:
     
     Nome do produto: "Camiseta"
@@ -731,7 +731,7 @@ print(mensagem)
 #### resultado: 
     Produto: Camiseta, Preço: R$29.99, Quantidade disponível: 100. O valor total do estoque é R$2999.0.
 
-## Exercicio #30 - F-String
+## Exercício #30 - F-String
 #### Peça ao usuário para inserir seu nome. Em seguida, use uma f-string para exibir uma mensagem de saudação personalizada.
 
 Solicita ao usuário que insira seu nome
@@ -755,7 +755,7 @@ print(f"Olá {nome}, seja bem vindo!")
     Insira seu nome: Thiago
     Olá Thiago, seja bem vindo!
     
-## Exercicio #31 - f-string pessoa 
+## Exercício #31 - f-string pessoa 
 #### Peça ao usuário para inserir seu nome, idade e cidade. Em seguida, use uma f-string para exibir essas informações formatadas.
     
     nome = "João"
@@ -778,7 +778,7 @@ print(f"Seu nome é {nome}, sua  idade é {idade} e você mora em {Cidade}")
     insira sua cidade: Belém
     Seu nome é Thiago, sua  idade é 20 e você mora em Belém
     
-## Exercicio #32 - condicional IF, ELSE
+## Exercício #32 - condicional IF, ELSE
 #### Utilizando if e else em Python:
 
     if condição:
@@ -813,7 +813,7 @@ else:
     Insira outro número: 07
     21 é maior que 7
 
-## Exercicio #33 - Número positivo
+## Exercício #33 - Número positivo
 #### Escreva um programa em Python que verifique se um número é positivo.
 
 #### resolução:
@@ -831,7 +831,7 @@ else:
 #### resultado:
     Insira um número: 21
     21 é número positivo
-## Exercicio #34 - Maior Idade
+## Exercício #34 - Maior Idade
 #### Crie um programa que verifique se uma pessoa pode votar com base em sua idade (idade >= 16).
 
 #### resolução: 
@@ -848,7 +848,7 @@ else:
     Insira sua idade: 16
     Você é menor de idade!
 
-# Exercicio #35 - Par ou Impar
+# Exercício #35 - Par ou Impar
 #### Crie um programa que determine se um número é par ou ímpar.
     Instrução
     resultado = 10 % 3 
@@ -873,12 +873,12 @@ else:
 </details>
 
 <details>
-    <summary> 💠 Aula 06 - 📝 Exercicios de Lógica V (36 a 41) </summary>
+    <summary> 💠 Aula 06 - 📝 Exercícios de Lógica V (36 a 41) </summary>
 
 <br>
 <p> 17/02/25 <p>
 
-## Exercicio #36 - If upper
+## Exercício #36 - If upper
 #### Escreva um programa que verifique se uma palavra está toda em letras maiúsculas.
 
 #### resolução:
@@ -899,7 +899,7 @@ OU se a validação do IF for falsa:
     Insira uma palavra: thiago
     A palavra está em letras minúsculas
 
-## Exercicio #37 - Count()
+## Exercício #37 - Count()
 #### Faça um programa que transforme um texto todo em letras maiúsculas e conte quantas letras 'A' ele possui.
 
 #### resolução:
@@ -925,7 +925,7 @@ resolução da segunda forma:
     Insira uma palavra: banana
     a palavra BANANA contém 3 letras 'A'
 
-## Exercicio #38 - lowerCase
+## Exercício #38 - lowerCase
 #### Escreva um programa que verifique se uma palavra está toda em letras minúsculas.
 
 #### resolução:
@@ -947,7 +947,7 @@ OU se a validação do IF for falsa:
     Insira uma palavra: BANANA
     A palavra BANANA está escrita em letras maiúsculas!
 
-## Exercicio #39 - Lower() & count()
+## Exercício #39 - Lower() & count()
 #### Faça um programa que transforme um texto todo em letras minúsculas e conte quantas letras 'e' ele possui.
 
 #### resolução:
@@ -963,7 +963,7 @@ else:
     Digite um texto: Pelo futuro do conhecimento
     O texto 'pelo futuro do conhecimento' contém 3 letras 'e' 
 
-## Exercicio #40 Desafio - palindromo
+## Exercício #40 Desafio - palindromo
 #### Crie um programa que verifique se um palavra é um palíndromo(Igual, quando lida de trás para frente).
 
 #### resolução:
@@ -984,7 +984,7 @@ else:
     escreva uma palavra: caqui
     A palavra caqui não é um palíndromo
 
-## Exercicio #40 - If capitalize()
+## Exercício #40 - If capitalize()
 #### Crie um programa que verifique se a primeira letra é maiúscula, caso não seja, capitalize a primeira letra de uma palavra.
 
 #### resolução:
@@ -998,7 +998,7 @@ if palavra != palavra.capitalize():
     Digite uma palavra: cachorro
     Cachorro
 
-## Exercicio #41 - Elif()
+## Exercício #41 - Elif()
 #### 
 
     if condição_externa:
@@ -1051,11 +1051,11 @@ se a variavel for igual a 0
 </details>
 
 <details>
-   <summary> 💠 Aula 07 - 📝 Exercicios de Lógica VI (42 a 49) </summary>
+   <summary> 💠 Aula 07 - 📝 Exercícios de Lógica VI (42 a 49) </summary>
 <br>
 <p> 18/02/25 <p>
 
-## Exercicio #42 - Média de notas
+## Exercício #42 - Média de notas
 #### Crie um programa que receba 4 notas de um aluno e calcule a média:
 - Nota >= 6 Aprovado
 - Nota < 6 e nota > 4 Recuperação
@@ -1109,7 +1109,7 @@ Terceira validação ELSE:
     A média das nota é: 3.4
     O aluno está reprovado!
 
-## Exercicio #43 - Positivo & impar 
+## Exercício #43 - Positivo & impar 
 #### Escreva um programa em Python que determine se um número digitado pelo usuário é um número positivo e ímpar.
 
 #### resolução:
@@ -1138,7 +1138,7 @@ else:
     Insira um número: 4
     O número 4 é par e positivo
 
-## Exercicio #44 - isalpha() 
+## Exercício #44 - isalpha() 
 #### Escreva um programa em Python que determine se uma palavra digitada pelo usuário somente contém letras, caso contenha algum valor numérico, informar que não contem apenas letras ou nenhuma letra.
     texto.isalpha()
 - Ele retorna True se todos os caracteres são letras e False se pelo menos um caractere não for uma letra.
@@ -1164,7 +1164,7 @@ else:
     Digite uma palavra: 721
     A palavra '721' não contém apenas letras
 
-## Exercicio #45 - isdigit()
+## Exercício #45 - isdigit()
 #### Escreva um programa em Python que determine se os números  digitados pelo usuário contém somente números, caso contenha algum valor não numérico, informar que é permitido somente números
     numeros.isdigit()
 verificar se todos os caracteres na frase são dígitos de (0 a 9). Se todos os caracteres forem dígitos, a função retorna True, caso contrário, retorna False.
@@ -1190,7 +1190,7 @@ else:
     digite um número: thiago
     valor inválido o número não deve conter letras
 
-## Exercicio #46 WHILE - Contagem progressiva while()
+## Exercício #46 WHILE - Contagem progressiva while()
 #### Escreva um programa que conte de 1 a 10 usando um loop while e imprima cada número.
     while condição: 
         # Código a ser executado enquanto a condição for verdadeira
@@ -1220,7 +1220,7 @@ for i in range(1, 11, +1):
     9
     10
 
-## Exercicio #47 WHILE - Contagem Regressiva while()
+## Exercício #47 WHILE - Contagem Regressiva while()
 #### Escreva um programa faça a contagem regressiva de 1 a 10 usando um loop while e imprima cada número.
 
 
@@ -1248,7 +1248,7 @@ while contador > 0:
     2
     1
 
-# Exercicio #48 WHILE - contagem de pares
+# Exercício #48 WHILE - contagem de pares
 #### Escreva um programa que solicite ao usuário um número e depois imprima todos os números pares de 1 até esse número, usando um loop while
 
 #### resolução:
@@ -1277,7 +1277,7 @@ while contador < numero:
     8
     10
 
-## Exercicio #49 WHILE - contagem de par regressivo
+## Exercício #49 WHILE - contagem de par regressivo
 #### Escreva um programa que solicite ao usuário um número e depois imprima todos os números pares de 1 até esse número, imprimir em ordem decresce, usando um loop while.
 
 #### resolução:
@@ -1304,12 +1304,12 @@ while (contador > 0):
 </details>
 
 <details>
-    <summary> 💠 Aula 08 - 📝 Exercicios de Lógica VII (50 a 53) 🧮 WHILE</summary>
+    <summary> 💠 Aula 08 - 📝 Exercícios de Lógica VII (50 a 53) 🧮 WHILE</summary>
 <br>
 <p> 19/02/25 <p>
 
 
-## Exercicio #50 WHILE - tabuada com while
+## Exercício #50 WHILE - tabuada com while
 #### Escreva um programa que imprima a tabuada de multiplicação de um número específico até 10, usando um loop while.
 
 #### resolução:
@@ -1337,7 +1337,7 @@ while cont <= 10:
     2 x 10 = 20
 
 
-## Exercicio #51 WHILE - validação de senha simples
+## Exercício #51 WHILE - validação de senha simples
 #### Escreva um programa que solicite ao usuário que insira uma senha correta e continue pedindo até que a senha correta seja inserida, usando um loop while.
 #### resolução:
 ~~~~ python
@@ -1360,7 +1360,7 @@ while True:
     Digite sua senha: thigs
     Senha Correta!
 
-## Exercicio #52 WHILE - soma acumulada
+## Exercício #52 WHILE - soma acumulada
 #### Escreva um programa que solicite ao usuário que insira números e calcule a soma desses números até que a soma ultrapasse um limite específico, usando um loop while
 
 #### resolução:
@@ -1389,7 +1389,7 @@ while on:
     12 🧮 10
 
 
-## Exercicio #53 WHILE Desafio II - Random()
+## Exercício #53 WHILE Desafio II - Random()
 #### Escreva um programa em Python que solicite ao usuário para adivinhar um número entre 1 e 100. O programa deve continuar pedindo um palpite até que o usuário adivinhe corretamente o número. O programa deve fornecer dicas se o palpite estiver muito alto ou muito baixo
 
 ### Instruções
@@ -1459,12 +1459,12 @@ while True:
 </details>
 
 <details>
-    <summary> 💠 Aula 09 - 📝 Exercicios de Lógica VIII (54 a 57) 🧮 WHILE </summary>
+    <summary> 💠 Aula 09 - 📝 Exercícios de Lógica VIII (54 a 57) 🧮 WHILE </summary>
 <br>
 <p> 20/02/25 <p>
 
 
-## Exercicio #53 WHILE - menu simples
+## Exercício #53 WHILE - menu simples
 #### Crie um programa que solicite ao usuário para digitar uma palavra. O programa deve continuar solicitando palavras até que o usuário digite a palavra "sair", momento em que o programa deve exibir uma mensagem de despedida e encerrar.
 
     while True:
@@ -1495,7 +1495,7 @@ while True:
     Programa encerrado...
 
 
-## Exercicio #54 WHILE - Progressão aritmética com while
+## Exercício #54 WHILE - Progressão aritmética com while
 #### Crie um programa que calcule a soma dos números de 1 a 100.
     Resultado = 5050
 
@@ -1514,7 +1514,7 @@ print(numero)
     5050
 
 
-## Exercicio #55 WHILE - sequencia de numeros
+## Exercício #55 WHILE - sequencia de numeros
 #### Crie um programa que peça ao usuário para digitar números até que ele digite um número negativo. Em seguida, imprima a soma dos números digitados.
 
 #### resolução:
@@ -1535,7 +1535,7 @@ while True:
     Ínsira os números: -1
     A soma do snúmeros digitados é igual a: 15
 
-## Exercicio #56 WHILE - Multiplos de 5
+## Exercício #56 WHILE - Multiplos de 5
 #### Escreva um programa que imprima os múltiplos de 5 de 1 até o número informado pelo usuário.
 
 #### resolução:
@@ -1565,7 +1565,7 @@ while cont <= limite:
     15
 
 
-## Exercicio #57 WHILE - !Fatorial
+## Exercício #57 WHILE - !Fatorial
 #### Implemente um programa que imprima o fatorial do número informado pelo usuário.
 
     numero = int(input("Digite um número: "))
@@ -1618,11 +1618,11 @@ print(fatorial)
 </details>
 
 <details>
-    <summary> 💠 Aula 10 - 📝 Exercicios de Lógica IX (58 a 62) 🧮 WHILE & FOR </summary>
+    <summary> 💠 Aula 10 - 📝 Exercícios de Lógica IX (58 a 62) 🧮 WHILE & FOR </summary>
 <br>
 <p> 21/02/25 <p>
 
-## Exercicio #58 WHILE - contagem de par & impar
+## Exercício #58 WHILE - contagem de par & impar
 
 #### Escreva um programa que solicita ao usuário uma sequência de números inteiros positivos e conta quantos números pares e quantos números ímpares foram digitados. O programa deve encerrar, quando for inserido um número negativo.
 
@@ -1651,7 +1651,7 @@ while True:
     2 números pares foram digitados!
     2 números impares foram digitados!
 
-## Exercicio #58 WHILE Desafio - soma de dígitos
+## Exercício #58 WHILE Desafio - soma de dígitos
 
 #### Escreva um programa que solicita ao usuário um número inteiro positivo e calcula a soma dos seus dígitos.
 > exemplo:
@@ -1674,7 +1674,7 @@ print("A soma dos caracteres é:", soma)
     Digite um número: 721
     A soma dos caracteres é: 10
 
-## Exercicio #59 WHILE - Calculadora Simples
+## Exercício #59 WHILE - Calculadora Simples
 
 #### Enunciado: Escreva um programa que solicite ao usuário dois números e uma operação:
 - adição;
@@ -1755,7 +1755,7 @@ OBS: !!! falha ao encerrar operação !!!
     Selecione uma operação: /
     Divisão: 21 ÷ 3 = 7.0
 
-## Exercicio #60 FOR - contagem de 1 a 10
+## Exercício #60 FOR - contagem de 1 a 10
 
 #### Imprima os números de 1 a 10.
 
@@ -1788,7 +1788,7 @@ for i in range (1, 11):
     9
     10
 
-## Exercicio #61 FOR - soma de 1 a 100
+## Exercício #61 FOR - soma de 1 a 100
 
 #### Calcule a soma dos números de 1 a 100.
 
@@ -1803,7 +1803,7 @@ print(numero)
 #### resultado:
     5050
 
-## Exercicio #62 FOR - números pares de 1 a 20
+## Exercício #62 FOR - números pares de 1 a 20
 
 #### Imprima os números pares de 1 a 20.
 
@@ -1843,13 +1843,13 @@ ou
 
 
 <details>
-<summary> 💠 Aula 11 - 📝 Exercicios de Lógica IX (63 a 67) 🧮 FOR </summary>
+<summary> 💠 Aula 11 - 📝 Exercícios de Lógica IX (63 a 67) 🧮 FOR </summary>
 
 <br>
 <p> 24/02/25 <p>
 
 
-## Exercicio #63 FOR - Números impares de 1 a 30.
+## Exercício #63 FOR - Números impares de 1 a 30.
 #### Imprima os números ímpares de 1 a 30.
 
 #### resolução:
@@ -1882,7 +1882,7 @@ for a in range(1, 31):
     29
 
 
-## Exercicio #64 FOR - Tabuada
+## Exercício #64 FOR - Tabuada
 #### Imprima a tabuada de multiplicação de um número fornecido pelo usuário.
 
 #### resolução:
@@ -1907,7 +1907,7 @@ for t in range(11):
     7 x 10 = 70
 
     
-## Exercicio #65 FOR - 100 a 1
+## Exercício #65 FOR - 100 a 1
 #### Imprima os números de 100 a 1 em ordem decrescente.
 
 #### resolução:
@@ -1920,7 +1920,7 @@ for t in range(100, 0, -1):
     100...
     ...1
 
-## Exercicio #66 - Quadrado de um número
+## Exercício #66 - Quadrado de um número
 #### Calcule e imprima o quadrado dos números de 1 a 10.
 
 #### resolução:
@@ -1941,7 +1941,7 @@ for t in range(1, 11):
     9 x 9 = 81
     10 x 10 = 100
 
-## Exercicio #66 Desafio - Locadora
+## Exercício #66 Desafio - Locadora
 #### Faça uma programa que dados a quantidade de fitas que uma vídeo locadora possui e o valor que ela cobra por cada aluguel, informe:
 
 - Sabendo que um terço das fitas são alugadas por mês,  qual o seu faturamento anual.
@@ -1978,7 +1978,7 @@ print(f"Faturamento anual: R${faturamento:.2f}")
 </details>
 
 <details>
-<summary> 💠 Aula 12 - 📝 Exercicios de Lógica X (67 a 76) 🧮 MATCH CASE </summary>
+<summary> 💠 Aula 12 - 📝 Exercícios de Lógica X (67 a 76) 🧮 MATCH CASE </summary>
 
 <br>
 <p> 25/02/25 <p>
@@ -2001,7 +2001,7 @@ match valor:
     case _:
         print("Opção inválida")
 ~~~~
-## Exercicio #67 MATCH - CASE - Identificando Formas Geométricas
+## Exercício #67 MATCH - CASE - Identificando Formas Geométricas
 #### Escreva um programa em Python que solicita ao usuário o nome de uma forma geométrica (triângulo, quadrado, círculo) e utiliza match-case para exibir uma mensagem correspondente à forma escolhida.
 
 Resultado:
@@ -2032,7 +2032,7 @@ match forma:
     Insira uma forma geométrica geometrica: QUADRADO
     O QUADRADO tem 4 lados.
 
-## Exercicio #68 MACTH CASE - Classificação de Notas
+## Exercício #68 MACTH CASE - Classificação de Notas
 #### Crie um programa que pede ao usuário uma nota de 0 a 10 e usa match-case para exibir a seguinte classificação:
 
     9 ou 10: "Excelente"
@@ -2062,7 +2062,7 @@ match nota:
     Insira uma nota: 7
     Bom
 
-## Exercicio #69 MATCH CASE - Menu de restaurante
+## Exercício #69 MATCH CASE - Menu de restaurante
 #### Faça um programa que receba um número de 1 a 5 e retorne um prato específico usando match-case. As opções podem ser:
     1: Pizza
     2: Hambúrguer
@@ -2103,7 +2103,7 @@ match id:
     Lasanha foi selecionada
 
     
-## Exercicio #70 DEF - def soma
+## Exercício #70 DEF - def soma
 #### Escreva uma função chamada soma que aceita dois argumentos e retorna a soma deles.
     #Com argumento
     def soma(a, b): 
@@ -2148,7 +2148,7 @@ somaII()
     21
     A soma de 7 + 14 é igual a 21 #metodo II
 
-## Exercicio #71 DEF - def dobro
+## Exercício #71 DEF - def dobro
 #### Escreva uma função chamada dobro que aceita um número como argumento e retorna o dobro desse número.
 
 #### resolução:
@@ -2173,7 +2173,7 @@ dobro()
     Insira um número: 21
     O dobro de 21 é igual a 42
 
-## Exercicio #72 DEF - def conversor de string
+## Exercício #72 DEF - def conversor de string
 #### Escreva uma função chamada inverter_string que aceita uma string como argumento e retorna a string invertida.
 
 #### resolução:
@@ -2192,7 +2192,7 @@ ConversorString(estringue)
     izzO
 
 
-## Exercicio #73 DEF - Par ou Impar
+## Exercício #73 DEF - Par ou Impar
 #### Escreva uma função chamada par_ou_impar que aceita um número como argumento e retorna "par" se o número for par e "ímpar" se o número for ímpar.
 
 #### resolução:
@@ -2224,7 +2224,7 @@ def ParOuImpar():
     O número 7 é par!
 
 
-## Exercicio #74 DEF - maior número
+## Exercício #74 DEF - maior número
 #### Defina uma função, que receba 3 números e retorne o maior deles
 
 #### resolução:
@@ -2279,7 +2279,7 @@ print(maxNum)
     Insira os 3 numeros com virgula: 7,98,21
     98
     
-## Exercicio #75 DEF - X vezes X
+## Exercício #75 DEF - X vezes X
 #### Crie um função em Python, que receba 2 números e retorne a multiplicação dos 2 números.
 
 #### resolução:
@@ -2307,7 +2307,7 @@ numXnum(num1, num2)
     Insira o segundo número: 7
     49
 
-## Exercicio #76 - Média de 4 números
+## Exercício #76 - Média de 4 números
 #### Crie uma função que receba 4 números e retorne a média dos números
 
 #### resolução:
@@ -2334,13 +2334,13 @@ Media()
 </details>
 
 <details>
-<summary> 💠 Aula 13 - 📝 Exercicios de Lógica XI (77 a 82) 🧮 DEF & TRY </summary>
+<summary> 💠 Aula 13 - 📝 Exercícios de Lógica XI (77 a 82) 🧮 DEF & TRY </summary>
 
 <br>
 <p> 26/02/25 <p>
 
 
-## Exercicio #77 DEF - Calculadora básica com def
+## Exercício #77 DEF - Calculadora básica com def
 #### Criar um programa que simula uma calculadora básica com operações de adição, subtração, multiplicação e divisão. O programa solicitará ao usuário que escolha a operação desejada, inserindo um número correspondente, e então pedirá os dois números nos quais a operação será realizada. Por fim, mostrará o resultado da operação escolhida. 
 
 Instruções:
@@ -2396,7 +2396,7 @@ match operacao:
     Insira o segundo número: 3
     7.0 x 3.0 = 21.0
 
-## Exercicio #78 DEF - Média Ponderada
+## Exercício #78 DEF - Média Ponderada
 #### Escreva um programa que calcula a média ponderada de três números fornecidos pelo usuário, onde os pesos são fornecidos pelo usuário também.
 
 #### resolução:
@@ -2427,7 +2427,7 @@ MediaPonderada()
     A média ponderada das notas é: 17.5
 
     
-## Exercicio #79 TRY - Tratamento de Exceções
+## Exercício #79 TRY - Tratamento de Exceções
 #### Crie um programa que receba um número inteiro e retorne uma mensagem de erro, caso o usuário informe número fracionado ou letra.
 
 > Instruções
@@ -2463,7 +2463,7 @@ except ValueError:
     Valor inválido
 
     
-## Exercicio #80 TRY - 
+## Exercício #80 TRY - 
 #### Crie um programa que receba dois números e faça a divisão dos dois, e crie uma mensagem de erro da divisão por zero ou se o usuário informar algo diferente de números.
 ~~~~ python
 try:
@@ -2493,7 +2493,7 @@ except ZeroDivisionError:
     Insira outro número: 0
     divisão inválida
 
-## Exercicio #81 TRY - Media de uma lista de números
+## Exercício #81 TRY - Media de uma lista de números
 #### Programa para calcular a média de uma lista de números.
 - Situação: Este programa precisa permitir de valores com casas decimais ou negativos. 
 - Observação: Toda a lista vai ser inserida em um único input
@@ -2516,7 +2516,7 @@ CalcularMedia()
     Insira uma sequencia de numeros separados por espaço: 2.1 5 9 -21 45
     8.02
 
-## Exercicio #82 TRY - Maior Idade
+## Exercício #82 TRY - Maior Idade
 #### Crie um programa que verifique se uma pessoa é maior de idade.
 Situação: Este programa precisa lidar com a entrada de valores não inteiros ou negativos.
 
@@ -2544,12 +2544,12 @@ MaiorIdade()
 </details>
 
 <details>
-<summary> 💠 Aula 14 - 📝 Exercicios de Lógica XII (83 a 88) 🧮 LISTA </summary>
+<summary> 💠 Aula 14 - 📝 Exercícios de Lógica XII (83 a 88) 🧮 LISTA </summary>
 
 <br>
 <p> 27/02/25 <p>
 
-## Exercicio #83 LISTA - Soma de X²
+## Exercício #83 LISTA - Soma de X²
 #### Escreva um programa em Python que receba uma lista de números inteiros separados por espaço e determine a soma dos quadrados dos números na lista.
 ~~~~ python
     nova_lista[expressão for variável in sequencia]
@@ -2574,7 +2574,7 @@ except ValueError:
     [441, 49, 25]
     515
 
-## Exercicio #84 LISTA -
+## Exercício #84 LISTA -
 #### Escreva um programa em Python que receba uma lista de números inteiros separados por espaço e conte quantos números pares estão presentes na lista.
 ~~~~ python
 nova_lista[expressão for variável in sequencia  if condição]
@@ -2601,7 +2601,7 @@ contaPar()
     Você inseriu 5 números pares
 
     
-## Exercicio #85 LISTA - Divisíveis por 3 & 5
+## Exercício #85 LISTA - Divisíveis por 3 & 5
 #### Escreva um programa em Python que receba uma lista de números inteiros separados por espaço e determine quantos números são divisíveis por 3 e 5 simultaneamente.
 
 #### resolução:
@@ -2622,7 +2622,7 @@ divisiveisPor3e5()
     3 números são divisíveis por 3 e 5 simultâneamente: [15, 60, 45]
 
 
-## Exercicio #86 - Contar letras
+## Exercício #86 - Contar letras
 #### Escreva um programa em Python que receba uma lista de palavras separadas por espaço e determine quantas palavras têm mais de 5 letras.
 
 #### resolução:
@@ -2640,7 +2640,7 @@ print(f"Qtd de palavras com mais de 5 letras: {validador}")
     ['thiago', 'teste', 'python']
     Palavras com mais de 5 letras: 3
 
-## Exercicio #87 LISTA - Divisíveis por 3
+## Exercício #87 LISTA - Divisíveis por 3
 #### Escreva um programa que leia uma lista de números e imprima apenas aqueles que são divisíveis por 3.
 
 #### resolução:
@@ -2659,7 +2659,7 @@ divisiveisPor3()
     Insira uma sequência de números: 0 7 21 3 5 76 21
     Números divisíveis por 3: [21, 3, 21]
     
-## Exercicio #A88 - Números palíndromos
+## Exercício #A88 - Números palíndromos
 #### Escreva um programa que leia uma lista de números e imprima apenas aqueles que são (números que podem ser lidos da mesma forma da esquerda para a direita e vice-versa).
 
 #### resolução:
@@ -2680,7 +2680,7 @@ numerosPalindormos()
     Os números palíndormos são: [77, 88, 7, 22]
 
     
-## Exercicio #A88 DESAFIO LISTA - 
+## Exercício #A88 DESAFIO LISTA - 
 #### Um número perfeito é um número inteiro positivo que é igual à soma de seus divisores próprios, ou seja, a soma de todos os seus divisores, excluindo o próprio número.
 - Por exemplo:
 - 6 é um número perfeito, porque seus divisores próprios são 1,2,3, e a soma 1+2+3=6.
@@ -2713,7 +2713,7 @@ lista.append(elemento)
 <p> 28/02/25 <p>
 
 
-## Exercicio # QUIZ
+## Exercício # QUIZ
 #### 
 
 <a href="algoritmo/Atividades/A15_28-02-25/QuizThiago.py"> 📝 QUIZ </a>
@@ -2724,7 +2724,7 @@ lista.append(elemento)
 </details>
 
 <details>
-<summary> 💠 Aula 16 - 📝 Exercicios de Lógica XIII (89 a 95) 🧮 DICIONÁRIO </summary>
+<summary> 💠 Aula 16 - 📝 Exercícios de Lógica XIII (89 a 95) 🧮 DICIONÁRIO </summary>
 
 <br>
 <p> 06/03/25 <p>
@@ -2818,7 +2818,7 @@ print("\nInformações do Produto:")
 print(produto)
 ~~~~
 
-## Exercicio #89 Dicionário - criando um dicionário
+## Exercício #89 Dicionário - criando um dicionário
 ####
 
 #### resolução:
@@ -2852,7 +2852,7 @@ print(meuCarro)
     Informações sobre o carro: 
     {'marca': 'honda', 'modelo': 'civic', 'ano': '2002', 'cor': 'azul'}
     
-## Exercicio #90 DICIONARIO - lista telefonica
+## Exercício #90 DICIONARIO - lista telefonica
 #### Criar um dicionário para armazenar o nome e o telefone de uma pessoa e exibi-los.
 
 #### resolução:
@@ -2873,7 +2873,7 @@ print(contato)
     Insira o número de telefone: 61 98888-9999
     {'nome': 'thiago', 'numero': '61 98888-9999'}
 
-## Exercicio #91 DICIONARIO - Média de um aluno
+## Exercício #91 DICIONARIO - Média de um aluno
 #### Criar um dicionário para armazenar as notas de um aluno e calcular a média.
 
 #### resolução:
@@ -2898,7 +2898,7 @@ print(aluno)
     Insira a 3° nota: 9.7
     {'nota1': 7.8, 'nota2': 7.4, 'nota3': 9.7, 'media': 8.299999999999999}
 
-## Exercicio #92 DICIONARIO - Tradutor
+## Exercício #92 DICIONARIO - Tradutor
 #### Criar um dicionário com palavras em inglês e suas traduções para português e permitir que o usuário consulte uma palavra.
 
 #### resolução:
@@ -2921,7 +2921,7 @@ else:
     Cat | PTBR: Gato
 
     
-## Exercicio #93 DICIONARIO - dicionario produto
+## Exercício #93 DICIONARIO - dicionario produto
 #### Crie um programa que cadastre um produto em um dicionário, incluindo nome, preço e quantidade. Em seguida, adicione a marca do produto, remova o item "quantidade" e exiba o dicionário atualizado.
 
 #### resolução:
@@ -2957,7 +2957,7 @@ print(produto)
     {'nome': 'notebook', 'preco': '2500', 'quantidade': '5', 'marca': 'asus'}
     {'nome': 'notebook', 'preco': '2500', 'marca': 'asus'}
 
-## Exercicio #94 -
+## Exercício #94 -
 #### Crie um dicionário representando um filme , contendo Título, Ano e Gênero. Depois, adicione a duração  e remova o campo "ano".
 
 #### resolução: 
@@ -2991,7 +2991,7 @@ print(filme)
     {'titulo': 'filme', 'genero': 'acao', 'duracao': '126'}
 
 
-## Exercicio #95 DICIONARIO -
+## Exercício #95 DICIONARIO -
 #### Desenvolver um programa em Python que permita gerenciar o cadastro de alunos de forma interativa, utilizando uma estrutura (lista ou dicionário) para armazenar os dados.
 
 ### Funções a serem implementadas:
@@ -3047,7 +3047,7 @@ Encerrar o programa corretamente ao selecionar a opção “Sair”.
 </details>
 
 <details>
-<summary> 💠 Aula 17 - 📝 Exercicios de Lógica XIII (96 a ) 🧮 POO </summary>
+<summary> 💠 Aula 17 - 📝 Exercícios de Lógica XIII (96 a ) 🧮 POO </summary>
 
 <br>
 <p> 07/03/25 <p>
@@ -3075,7 +3075,7 @@ class Carro:
 carro1 = Carro("Toyota")
 carro1.mostrar_marca()  # Saída: O carro é da marca Toyota
 ~~~~
-## Exericico #96 POO - Criação de classes
+## Exercício #96 POO - Criação de classes
 
 *Atividade:*
 - Criar uma classe Aluno com nome e curso
@@ -3256,6 +3256,67 @@ aviao.mostrarAviao()
     classse X
     Companhia aérea: Lockhead Martin
     Modelo: F-35C
+
+## Exercício #97 POO - Verifica Aluno
+#### Crie uma classe Aluno que receba o nome e a nota do aluno no construtor e tenha um método para verificar se ele foi aprovado ou reprovado.
+
+Instruções:
+- Crie a classe Aluno com os atributos nome e nota.
+- No construtor (__init__), inicialize esses atributos.
+- Crie um método chamado verificar_aprovacao(), que retorna:
+    - "Aprovado" se a nota for maior ou igual a 7.
+    - "Reprovado" caso contrário.
+- Instancie dois alunos, atribua diferentes notas e exiba o resultado.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+## Exercício #98 POO - Banco 
+#### Crie uma classe ContaBancaria com titular e saldo. Adicione métodos depositar(valor) e sacar(valor), que impede saldo negativo.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+## Exercício #99 POO - Livraria
+#### Crie uma classe Livro com titulo, autor e estoque. Adicione um método vender(qtd) que reduz o estoque e impede valores negativos.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+## Exercício #100 POO - Reabastecendo estoque
+#### Crie uma classe Produto com nome e estoque. Adicione um método repor_estoque(quantidade) que aumenta o estoque.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+## Exercício #101 POO - Histórico de compras
+#### Crie uma classe Cliente com nome e historico_compras. Adicione um método adicionar_compra(valor) que adiciona uma compra ao histórico.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+## Exercício #102 POO - Livraria II
+#### Crie uma classe Livraria que armazena uma lista de livros. Adicione métodos para adicionar livros e listar os títulos disponíveis.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
 
 <p align="center"> 07/03/25 <p>
 </details>
