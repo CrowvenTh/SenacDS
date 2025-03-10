@@ -1,10 +1,10 @@
 class Banco:
     saldo = 0
-    def __init__(self,titular):
-        self.titular = titular
+    def __init__(self):
+        self
     
     def Titular(self):
-        self.titular = input("Insira o nome do titular: ")
+        self.titular = input("Insira o nome do titular: ").capitalize()
 
     def MostrarSaldo(self):
         print(f"===| Titular: {self.titular}\n===| Saldo atual: R${self.saldo}\n")
@@ -16,36 +16,19 @@ class Banco:
     
     def SacarValor(self):
         self.saque = float(input("===| Insira o valor do saque: "))
-        self.saldo -= self.saque
-        print(f"===| Titular: {self.titular}\n===| Saque de R${self.saque} realizado com sucesso!\n")
-def Menu():
-    print("""
-          ===| Titular: {self.titular}\n
-          ===| 1 - Deposito \n
-          ===| 2 - Saque \n
-          ===| 3 - Saldo \n
-          ===| 4 - Encerrar
-          """)
-    option = int(input(""))
-
-while True:
+        if(self.saldo > self.saque):
+            self.saldo -= self.saque
+            print(f"===| Titular: {self.titular}\n===| Saque de R${self.saque} realizado com sucesso!\n")
+        else: 
+            print(f"===| Titular: {self.titular}\n===| Saque de R${self.saque} negado!\n===| Saldo Insuficiente.\n")
+            
+def main():
     conta = Banco()
     conta.Titular()
-    Menu()
-    option = int(input(""))
-    match option:
-        case 1:
-            conta.DepositarValor()
-            Menu()
-        case 2:
-            conta.SacarValor()
-            Menu()
-        case 3:
-            conta.MostrarSaldo()
-            Menu()
-        case 4:
-            print("Programa encerrado...")
-            break
-        case _:
-            print("Opção inválida!")
-            Menu()
+    conta.MostrarSaldo()
+    conta.DepositarValor()
+    conta.MostrarSaldo()
+    conta.SacarValor()
+    conta.MostrarSaldo()
+
+main()

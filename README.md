@@ -3353,6 +3353,7 @@ book.vender()
 
 #### resolução:
 ~~~~ python
+
 ~~~~
 
 #### resultado:
