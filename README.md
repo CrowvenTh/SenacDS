@@ -3352,7 +3352,7 @@ main()
 
     ===| Titular: Thiago
     ===| Saldo atual: R$5335.0
-    
+
 ## Exercício #99 POO - Livraria
 #### Crie uma classe Livro com titulo, autor e estoque. Adicione um método vender(qtd) que reduz o estoque e impede valores negativos.
 
@@ -3404,11 +3404,24 @@ book.vender()
 
 #### resolução:
 ~~~~ python
+class Estoque:
+    def __init__(self, nome, estoque):
+        self.nome = nome
+        self.estoque = estoque
 
+    def repor_estoque(self, quantidade):
+        quantidade = input("insira a qtd a reabastecer: ")
+        self.estoque += int(quantidade)
+        print(f"Estoque reabastecido\nNova Quantidade: {self.estoque}")
+
+est = Estoque("Relógio",100)
+est.repor_estoque(50)
 ~~~~
 
 #### resultado:
-
+    insira a qtd a reabastecer: 10
+    Estoque reabastecido
+    Nova Quantidade: 110
 ## Exercício #101 POO - Histórico de compras
 #### Crie uma classe Cliente com nome e historico_compras. Adicione um método adicionar_compra(valor) que adiciona uma compra ao histórico.
 
