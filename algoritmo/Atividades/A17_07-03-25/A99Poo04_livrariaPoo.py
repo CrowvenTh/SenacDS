@@ -9,6 +9,8 @@ class Livro:
         if (self.estoque > qtd and qtd > 0):
             self.estoque -= qtd
             print(f"Estoque atual: {self.estoque}")
+        else:
+            print("Valor inválido")
 
 book = Livro("The Witcher","Andrzej Sapkowski",150)
 book.vender(50)
@@ -26,6 +28,8 @@ class Livro:
         if (self.estoque > qtd and qtd > 0):
             self.estoque -= qtd
             print(f"Estoque atual: {self.estoque}")
+        else: 
+            print("valor inválido")
 
 book = Livro()
 book.vender()
