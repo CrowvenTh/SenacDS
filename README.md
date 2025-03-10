@@ -3490,7 +3490,7 @@ livraria1.ListaLivros()
 </details>
 
 <details>
-<summary> 💠 Aula 18 - 📝 Exercícios de Lógica XIII (102 a --) 🧮 POO </summary>
+<summary> 💠 Aula 18 - 📝 Exercícios de Lógica XIII (102 a 105) 🧮 POO </summary>
 
 <br>
 <p> 10/03/25 <p>
