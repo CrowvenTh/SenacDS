@@ -3307,9 +3307,46 @@ aluno2.VerificaAprovacao()
 
 #### resolução:
 ~~~~ python
+class Livro:
+    def __init__(self, titulo, autor, estoque):
+        self.titulo = titulo
+        self.autor = autor
+        self.estoque = estoque
+
+    def vender(self,qtd):
+        self.qtd = qtd
+        if (self.estoque > qtd and qtd > 0):
+            self.estoque -= qtd
+            print(f"Estoque atual: {self.estoque}")
+
+book = Livro("The Witcher","Andrzej Sapkowski",150)
+book.vender(50)
+        
+# OU
+
+class Livro:
+    def __init__(self):
+        self.titulo = input("Insira o Titulo: ")
+        self.autor = input("Insira o Autor: ")
+        self.estoque = int(input("Insira o Estoque: " ))
+
+    def vender(self):
+        qtd = int(input("Insira a qtd a vender: "))
+        if (self.estoque > qtd and qtd > 0):
+            self.estoque -= qtd
+            print(f"Estoque atual: {self.estoque}")
+
+book = Livro()
+book.vender()
 ~~~~
 
 #### resultado:
+    Estoque atual: 100
+    Insira o Titulo: The witcher      
+    Insira o Autor: Andrej Sapkowski
+    Insira o Estoque: 200
+    Insira a qtd a vender: 187
+    Estoque atual: 13
 
 ## Exercício #100 POO - Reabastecendo estoque
 #### Crie uma classe Produto com nome e estoque. Adicione um método repor_estoque(quantidade) que aumenta o estoque.
