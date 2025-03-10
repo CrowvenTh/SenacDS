@@ -3427,10 +3427,36 @@ est.repor_estoque(50)
 
 #### resolução:
 ~~~~ python
+class Cliente:
+    def __init__(self, nome):
+        self.nome = nome
+        self.compras = []
+    
+    def adicionar_compra(self):
+        self.valor = input("Insira o valor da compra: ")
+        self.compras.append(self.valor)
+
+    def historico(self):
+        print(f"===| Histórico de Cliente |===\n===| {self.nome}")
+        for i in self.compras:
+            print(f"===| Histórico: {i}")
+
+cliente1 = Cliente("Thiago")
+cliente1.adicionar_compra()
+cliente1.adicionar_compra()
+cliente1.adicionar_compra()
+cliente1.historico()
 ~~~~
 
 #### resultado:
-
+    Insira o valor da compra: 540
+    Insira o valor da compra: 12
+    Insira o valor da compra: 07
+    ===| Histórico de Cliente |===
+    ===| Thiago
+    ===| Histórico: 540
+    ===| Histórico: 12
+    ===| Histórico: 07
 ## Exercício #102 POO - Livraria II
 #### Crie uma classe Livraria que armazena uma lista de livros. Adicione métodos para adicionar livros e listar os títulos disponíveis.
 
