@@ -3574,6 +3574,18 @@ kardapio.listar_cardapio()
     ===| 4 - Açaí com farinha baguda
     ===| 5 - Maniçoba
     =====|============|=====
+
+## Exercicio #105 POO - Agenda de Contatos
+#### Crie uma classe chamada Agenda que armazena uma lista de contatos. Cada contato deve ter um nome e um número de telefone. A classe deve ter os seguintes métodos:
+- adicionar_contato(nome, telefone): adiciona um contato à agenda.
+- listar_contatos(): exibe todos os contatos armazenados.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
 <p align="center"> 10/03/25 <p>
 </details>
 ---
