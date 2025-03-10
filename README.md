@@ -3047,7 +3047,7 @@ Encerrar o programa corretamente ao selecionar a opção “Sair”.
 </details>
 
 <details>
-<summary> 💠 Aula 17 - 📝 Exercícios de Lógica XIII (96 a ) 🧮 POO </summary>
+<summary> 💠 Aula 17 - 📝 Exercícios de Lógica XIII (96 a 102 ) 🧮 POO </summary>
 
 <br>
 <p> 07/03/25 <p>
@@ -3462,13 +3462,83 @@ cliente1.historico()
 
 #### resolução:
 ~~~~ python
+class Livraria:
+    def __init__(self):
+        self.livraria = []
+
+    def AdicionarLivro(self, livro):
+        self.livro = livro
+        self.livraria.append(self.livro)
+    
+    def ListaLivros(self):
+        for i, self.livro in enumerate(self.livraria, 1):
+            print(f"{i} - {self.livro}")
+
+livraria1 = Livraria()
+livraria1.AdicionarLivro("The witcher")
+livraria1.AdicionarLivro("Crônicas do Gelo & Fogo")
+livraria1.AdicionarLivro("Gigantes da física")
+livraria1.ListaLivros() 
 ~~~~
 
 #### resultado:
+    1 - The witcher
+    2 - Crônicas do Gelo & Fogo
+    3 - Gigantes da física
 
 <p align="center"> 07/03/25 <p>
 </details>
 
+<details>
+<summary> 💠 Aula 18 - 📝 Exercícios de Lógica XIII (102 a --) 🧮 POO </summary>
+
+<br>
+<p> 10/03/25 <p>
+
+
+## Exercicio # 103 POO - Garagem
+#### Crie uma classe chamada Garagem que armazena uma lista de carros. A classe deve ter os seguintes métodos:
+- adicionar_carro(modelo): adiciona um carro à lista.
+- listar_carros(): exibe todos os carros armazenados
+
+#### resolução:
+~~~~ python
+class Garagem:
+    def __init__(self):
+        self.carros = []
+
+    def adicionar_carro(self,modelo):
+        self.modelo = modelo
+        self.carros.append(modelo)
+
+    def listar_carros(self):
+        print("\n=========| GARAGEM |=========")
+        for i, self.modelo in enumerate(self.carros, 1):
+            print(f"{i} - {self.modelo}")
+        print("=============================")
+
+carros1 = Garagem()
+carros1.adicionar_carro("Civic Type R")
+carros1.adicionar_carro("GTR R34")
+carros1.adicionar_carro("NSX")
+carros1.adicionar_carro("240SX")
+carros1.adicionar_carro("RAM TRX")
+carros1.adicionar_carro("Challenger")
+carros1.listar_carros()
+~~~~
+
+#### resultado:
+    =========| GARAGEM |=========
+    1 - Civic Type R
+    2 - GTR R34
+    3 - NSX
+    4 - 240SX
+    5 - RAM TRX
+    6 - Challenger
+    =============================
+
+<p align="center"> 10/03/25 <p>
+</details>
 ---
 <br>
 <p align="center">@2025</p>
