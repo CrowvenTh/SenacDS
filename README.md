@@ -3775,14 +3775,14 @@ turma_A.ListarAlunos()
     =====================
 
     
-## Exercicio #109 POO -
+## Exercicio #109 POO - Agenda
 #### Crie um programa em Python que implemente uma Agenda de Contatos utilizando o paradigma da Programação Orientada a Objetos (POO). O programa deve permitir ao usuário armazenar e gerenciar uma lista de contatos, onde cada contato possui um nome e um número de telefone.
 
 ### Requisitos
 - Criar uma classe Contato
 - Deve conter os atributos:
-- nome: representa o nome do contato.
-- telefone: representa o número de telefone do contato.
+    - nome: representa o nome do contato.
+    - telefone: representa o número de telefone do contato.
 - Deve implementar o método __str__, que retorna uma string formatada no seguinte padrão:
 
 ~~~~ python
