@@ -3719,6 +3719,106 @@ estoque.ListarProdutos()
     ID 4 | Nome: Cimento | Quantidade: 60
     ID 5 | Nome: Tijolo | Quantidade: 250
 
+## Exercicio #108 POO - Turmas
+#### Crie uma classe chamada Turma que armazena uma lista de alunos. A classe deve ter os seguintes métodos:
+- adicionar_aluno(nome, idade): adiciona um aluno à turma.
+- listar_alunos(): exibe todos os alunos cadastrados.
+
+#### resolução:
+~~~~ python
+class Turma:
+    def __init__(self):
+        self.alunos = []
+
+    def AdicionaAluno(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+        self.alunos.append({"Nome":nome, "Idade":idade})
+
+    def ListarAlunos(self):
+        print("=======| TURMA A |=======")
+        for i, alunos in enumerate(self.alunos, 1):
+            nomes = alunos["Nome"]    
+            idades = alunos["Idade"]
+            print(f"===| ID: {i}\n===| Nome: {nomes}\n===| Idade: {idades}\n=====================")
+    
+turma_A = Turma()    
+turma_A.AdicionaAluno("Thiago","20")
+turma_A.AdicionaAluno("Gabrielle","21")
+turma_A.AdicionaAluno("Brunna","26")
+turma_A.AdicionaAluno("Diana","19")
+turma_A.AdicionaAluno("Tadeu","24")
+turma_A.ListarAlunos()
+~~~~
+
+#### resultado:
+    =======| TURMA A |=======
+    ===| ID: 1
+    ===| Nome: Thiago
+    ===| Idade: 20
+    =====================
+    ===| ID: 2
+    ===| Nome: Gabrielle
+    ===| Idade: 21
+    =====================
+    ===| ID: 3
+    ===| Nome: Brunna
+    ===| Idade: 26
+    =====================
+    ===| ID: 4
+    ===| Nome: Diana
+    ===| Idade: 19
+    =====================
+    ===| ID: 5
+    ===| Nome: Tadeu
+    ===| Idade: 24
+    =====================
+
+    
+## Exercicio #109 POO -
+#### Crie um programa em Python que implemente uma Agenda de Contatos utilizando o paradigma da Programação Orientada a Objetos (POO). O programa deve permitir ao usuário armazenar e gerenciar uma lista de contatos, onde cada contato possui um nome e um número de telefone.
+
+### Requisitos
+- Criar uma classe Contato
+- Deve conter os atributos:
+- nome: representa o nome do contato.
+- telefone: representa o número de telefone do contato.
+- Deve implementar o método __str__, que retorna uma string formatada no seguinte padrão:
+
+~~~~ python
+            class Contato:
+                def __init__(self, nome, telefone):
+                self.nome = nome
+                self.telefone = telefone
+
+            def __str__(self):
+                return f"{self.nome}: {self.telefone}"
+~~~~
+
+
+### Criar uma classe Agenda
+- Deve conter uma lista interna para armazenar os contatos.
+- Deve possuir os seguintes métodos:
+- adicionar_contato(nome, telefone): Adiciona um novo contato à agenda.
+- listar_contatos(): Exibe todos os contatos armazenados.
+- buscar_contato(nome): Busca um contato pelo nome e exibe suas - informações, se encontrado.
+- remover_contato(nome): Remove um contato da agenda, se ele existir.
+
+
+### Implementar um exemplo de uso:
+- Criar uma instância da classe Agenda.
+- Adicionar pelo menos dois contatos.
+- Exibir a lista de contatos.
+- Buscar um contato específico pelo nome.
+- Remover um contato e exibir novamente a lista para confirmar a remoção.
+- Exemplo de Saída Esperada
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
 
 <p align="center"> 11/03/25 <p>
 </details>
