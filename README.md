@@ -3490,7 +3490,7 @@ livraria1.ListaLivros()
 </details>
 
 <details>
-<summary> 💠 Aula 18 - 📝 Exercícios de Lógica XIII (102 a 105) 🧮 POO </summary>
+<summary> 💠 Aula 18 - 📝 Exercícios de Lógica XIII (103 a 105) 🧮 POO </summary>
 
 <br>
 <p> 10/03/25 <p>
@@ -3619,6 +3619,65 @@ agenda1.listar_contatos()
 #### Crie uma classe chamada Playlist que armazena uma lista de músicas. A classe deve ter os seguintes métodos:
 - adicionar_musica(titulo, artista): adiciona uma música à playlist.
 - listar_musicas(): exibe todas as músicas armazenadas.
+
+#### resolução:
+~~~~ python
+class Playlist:
+    def __init__(self):
+        self.playlist = []
+
+    def adicionarMusica(self):
+        titulo = input("\n===| Insira o titulo: ").capitalize()
+        artista = input("===| Insira o artista: ").capitalize()
+        self.titulo = titulo
+        self.artista = artista
+        self.playlist.append({"Titulo":titulo, "Artista":artista})
+
+    def listarMusicas(self):
+        for i, playlists in enumerate(self.playlist, 1):
+            titulos = playlists["Titulo"]
+            artistas = playlists["Artista"]
+
+            print(f"=======| MÚSICA {i} |=======")
+            print(f"===| Música: {titulos}\n===| Artista: {artistas}\n==========================")
+def Texto():
+    print(f"\n=======| PLAYLIST |=======")
+
+            
+playlist1 = Playlist()
+Texto()
+playlist1.adicionarMusica()
+playlist1.adicionarMusica()
+playlist1.adicionarMusica()
+playlist1.listarMusicas()
+~~~~
+
+#### resultado:
+    =======| PLAYLIST |=======
+
+    ===| Insira o titulo: Needles
+    ===| Insira o artista: soad
+
+    ===| Insira o titulo: question
+    ===| Insira o artista: soad
+
+    ===| Insira o titulo: sad statue
+    ===| Insira o artista: soad
+    =======| MÚSICA 1 |=======
+    ===| Música: Needles
+    ===| Artista: Soad
+    ==========================
+    =======| MÚSICA 2 |=======
+    ===| Música: Question
+    ===| Artista: Soad
+    ==========================
+    =======| MÚSICA 3 |=======
+    ===| Música: Sad statue
+    ===| Artista: Soad
+    ==========================
+
+## Exercicio #107 POO -
+####
 
 #### resolução:
 ~~~~ python
