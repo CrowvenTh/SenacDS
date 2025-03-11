@@ -4,31 +4,17 @@
 
 class Agenda:
     def __init__(self):
-        self.nomes = []
-        self.telefones = []
-        
-    def adicionar_contato(self, nome, telefone):
-        self.nomes.append(nome)
-        self.telefones.append(telefone)
+        self.contatos = []
     
-    def listar_contatos():
-        for nome, telefone in self.nomes:
-            print(f"{i} - Nome: {nome}\nTelefone: {telefone}")
+    def adicionar(self, nome, telefone):
+        self.contatos.append({"Nome": nome, "Telefone": telefone})
 
-listaTelefonica = Agenda()
-listaTelefonica.adicionar_contato("Thiago","61 99788-8787")
-listaTelefonica.listar_contatos()
+    def listar_contatos(self):
+        for i, listar_contatos in enumerate(self.contatos, 1):
+            print(f"{i} - {listar_contatos}")
 
-
-notas={'João'   :  9,
-       'Maria'  : 10,
-       'José'   : 4  }
-
-nome = input("Digite o nome do aluno: ")
-nota = float(input("Nota dele: "))
-
-if notas.get(nome):
-    print("Ja existe o aluno ",nome)
-else:
-    notas[nome] = nota
-print(notas)
+agenda1 = Agenda()
+agenda1.adicionar("Thiago", "61 98787-9009")
+agenda1.adicionar("Hiago", "61 98787-9009")
+agenda1.adicionar("Thais", "61 98787-9009")
+agenda1.listar_contatos()
