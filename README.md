@@ -3582,13 +3582,56 @@ kardapio.listar_cardapio()
 
 #### resolução:
 ~~~~ python
+class Agenda:
+    def __init__(self):
+        self.contatos = []
+    
+    def adicionar(self, nome, telefone):
+        self.contatos.append({"Nome": nome, "Telefone": telefone})
+
+    def listar_contatos(self):
+        for i, listar_contatos in enumerate(self.contatos, 1):
+            print(f"{i} - {listar_contatos}")
+
+agenda1 = Agenda()
+agenda1.adicionar("Thiago", "61 98787-9009")
+agenda1.adicionar("Hiago", "61 98787-9009")
+agenda1.adicionar("Thais", "61 98787-9009")
+agenda1.listar_contatos()
+~~~~
+
+#### resultado:
+    1 - {'Nome': 'Thiago', 'Telefone': '61 98787-9009'}
+    2 - {'Nome': 'Hiago', 'Telefone': '61 98787-9009'}
+    3 - {'Nome': 'Thais', 'Telefone': '61 98787-9009'}
+
+<p align="center"> 10/03/25 <p>
+</details>
+
+
+<details>
+<summary> 💠 Aula 19 - 📝 Exercícios de Lógica XIII (106 a --) 🧮 POO </summary>
+
+<br>
+<p> 11/03/25 <p>
+
+## Exercicio #106 POO - Playlist
+#### Crie uma classe chamada Playlist que armazena uma lista de músicas. A classe deve ter os seguintes métodos:
+- adicionar_musica(titulo, artista): adiciona uma música à playlist.
+- listar_musicas(): exibe todas as músicas armazenadas.
+
+#### resolução:
+~~~~ python
 ~~~~
 
 #### resultado:
 
-<p align="center"> 10/03/25 <p>
+
+<p align="center"> 11/03/25 <p>
 </details>
+
 ---
+
 <br>
 <p align="center">@2025</p>
 
