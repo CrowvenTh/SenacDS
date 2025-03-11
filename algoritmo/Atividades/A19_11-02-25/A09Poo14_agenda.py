@@ -26,6 +26,20 @@ class Agenda:
             nomes = agenda["Nome"]
             telefones = agenda["Telefone"]
             print(f"=======| Contato {i} |=========\n===|Nome: {nomes}\n===|Número: {telefones}\n=============================")
+    
+    def BuscarContato(self):
+        buscaNome = input("Insira o nome para busca: ")
+        if(buscaNome == self.nome):
+            for self.nome in self.ListarContatos():
+                print(f"{self.nomes}: {self.telefones}")
+            else:
+                print("Contato não encontrado")
+
+
+    def RemoverContato(self, nome):
+        del agenda
+
+    
 
 def Main():
     def Menu():
@@ -48,7 +62,7 @@ def Main():
             case 2:
                 agenda.ListarContatos()
             case 3:
-                print("opcão 3")
+                agenda.BuscarContato()
             case 4:
                 print("opcão 4")
             case 0:

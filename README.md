@@ -3811,7 +3811,6 @@ turma_A.ListarAlunos()
 - Exibir a lista de contatos.
 - Buscar um contato específico pelo nome.
 - Remover um contato e exibir novamente a lista para confirmar a remoção.
-- Exemplo de Saída Esperada
 
 #### resolução:
 ~~~~ python
