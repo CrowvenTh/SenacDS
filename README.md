@@ -3676,14 +3676,48 @@ playlist1.listarMusicas()
     ===| Artista: Soad
     ==========================
 
-## Exercicio #107 POO -
-####
+## Exercicio #107 POO - Estoque
+#### Crie uma classe chamada Inventário que armazena um conjunto de produtos em estoque. A classe deve ter os seguintes métodos:
+- adicionar_produto(nome, quantidade): adiciona um produto ao estoque.
+- listar_produtos(): exibe todos os produtos armazenados.
 
 #### resolução:
 ~~~~ python
+class Inventario:
+    def __init__(self):
+        self.produtos = []
+
+    def AdicionarProdutos(self, nome, qtd):
+        self.nome = nome
+        self.qtd = qtd
+        self.produtos.append({"Nome":nome, "Quantidade":qtd})
+
+    def ListarProdutos(self):
+        for i,self.produtos in enumerate(self.produtos, 1):
+            # print(f"ID {i} | Nome: {self.nome} | Quantidade: {self.qtd}")
+            nomes = self.produtos["Nome"]
+            qtds = self.produtos["Quantidade"]
+            print(f"ID {i} | Nome: {nomes} | Quantidade: {qtds}")
+def Inicia():
+    print("\n=======| INVENTÁRIO |=======")
+
+estoque = Inventario()
+Inicia()
+estoque.AdicionarProdutos("Caixote", "50")
+estoque.AdicionarProdutos("Ferragem", "80")
+estoque.AdicionarProdutos("Vergalhão", "40")
+estoque.AdicionarProdutos("Cimento", "60")
+estoque.AdicionarProdutos("Tijolo", "250")
+estoque.ListarProdutos()
 ~~~~
 
 #### resultado:
+    =======| INVENTÁRIO |=======
+    ID 1 | Nome: Caixote | Quantidade: 50
+    ID 2 | Nome: Ferragem | Quantidade: 80
+    ID 3 | Nome: Vergalhão | Quantidade: 40
+    ID 4 | Nome: Cimento | Quantidade: 60
+    ID 5 | Nome: Tijolo | Quantidade: 250
 
 
 <p align="center"> 11/03/25 <p>
