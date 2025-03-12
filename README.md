@@ -3047,7 +3047,7 @@ Encerrar o programa corretamente ao selecionar a opção “Sair”.
 </details>
 
 <details>
-<summary> 💠 Aula 17 - 📝 Exercícios de Lógica XIII (96 a 102 ) 🧮 POO </summary>
+<summary> 💠 Aula 17 - 📝 Exercícios de Lógica VX (96 a 102 ) 🧮 POO </summary>
 
 <br>
 <p> 07/03/25 <p>
@@ -3490,7 +3490,7 @@ livraria1.ListaLivros()
 </details>
 
 <details>
-<summary> 💠 Aula 18 - 📝 Exercícios de Lógica XIII (103 a 105) 🧮 POO </summary>
+<summary> 💠 Aula 18 - 📝 Exercícios de Lógica XV (103 a 105) 🧮 POO </summary>
 
 <br>
 <p> 10/03/25 <p>
@@ -3610,7 +3610,7 @@ agenda1.listar_contatos()
 
 
 <details>
-<summary> 💠 Aula 19 - 📝 Exercícios de Lógica XIII (106 a --) 🧮 POO </summary>
+<summary> 💠 Aula 19 - 📝 Exercícios de Lógica XVI (106 a 109) 🧮 POO </summary>
 
 <br>
 <p> 11/03/25 <p>
@@ -3820,6 +3820,37 @@ turma_A.ListarAlunos()
 
 
 <p align="center"> 11/03/25 <p>
+</details>
+
+<details>
+<summary> 💠 Aula 20 - 📝 Exercícios de Lógica XVII (110 a --) 🧮 POO ENCAPSULAMENTO </summary>
+
+<br>
+<p> 12/03/25 <p>
+
+
+## Exercicio #110 POO ENCAPSULAMENTO - Conta Bancaria
+#### Crie uma classe chamada ContaBancaria que possua os seguintes atributos:
+
+- titular (público): nome do titular da conta.
+- __saldo (privado): saldo da conta.
+ 
+Implemente um método chamado **exibir_saldo()** que retorne o saldo formatado.
+
+No código principal, crie uma instância de ContaBancaria e exiba o saldo usando o método, demonstrando que o atributo privado não pode ser acessado diretamente.
+
+> Atributo Protegido (com um único underscore _saldo): Pode ser acessado diretamente pela classe e suas subclasses. É recomendado apenas não acessá-lo diretamente fora da classe para evitar modificações indesejadas.
+Atributo Privado (com dois underscores __saldo): Não pode ser acessado diretamente fora da classe. Só pode ser manipulado através de métodos da própria classe.
+
+#### resolução:
+~~~~ python
+
+~~~~
+
+#### resultado:
+
+
+<p align="center"> 12/03/25 <p>
 </details>
 
 ---
