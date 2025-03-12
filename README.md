@@ -3823,7 +3823,7 @@ turma_A.ListarAlunos()
 </details>
 
 <details>
-<summary> 💠 Aula 20 - 📝 Exercícios de Lógica XVII (110 a --) 🧮 POO ENCAPSULAMENTO & HERANÇA</summary>
+<summary> 💠 Aula 20 - 📝 Exercícios de Lógica XVII (110 a 115) 🧮 POO ENCAPSULAMENTO & HERANÇA</summary>
 
 <br>
 <p> 12/03/25 <p>
