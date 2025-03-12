@@ -3823,7 +3823,7 @@ turma_A.ListarAlunos()
 </details>
 
 <details>
-<summary> 💠 Aula 20 - 📝 Exercícios de Lógica XVII (110 a --) 🧮 POO ENCAPSULAMENTO </summary>
+<summary> 💠 Aula 20 - 📝 Exercícios de Lógica XVII (110 a --) 🧮 POO ENCAPSULAMENTO & HERANÇA</summary>
 
 <br>
 <p> 12/03/25 <p>
@@ -3934,6 +3934,139 @@ livro1.ExibirPreco()
 #### resultado:
     Título: The Witcher
     Preço: R$132.95
+
+
+## Exercicio #113 POO HERANÇA - Conta bancaria
+#### Crie uma classe ContaBancaria com atributos públicos saldo e titular.
+Crie métodos **depositar(valor)** e **sacar(valor)**, verificando se há saldo suficiente.
+
+Crie um método **exibir_saldo()** que retorna o saldo formatado.
+~~~~ python
+class ContaBancaria:
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        self.saldo = saldo
+
+    def depositar(self, valor):
+        if valor > 0:
+            self.saldo += valor
+            print(f"Depósito de R$ {valor} realizado.")
+        else:
+            print("Valor inválido para depósito.")
+
+    def sacar(self, valor):
+        if 0 < valor <= self.saldo:
+            self.saldo -= valor
+            print(f"Saque de R$ {valor} realizado.")
+        else:
+            print("Saldo insuficiente ou valor inválido.")
+
+    def exibir_saldo(self):
+        return f"Titular: {self.titular} | Saldo: R$ {self.saldo:.2f}"
+~~~~
+
+### Teste
+    conta = ContaBancaria("João", 500)
+    conta.depositar(300)
+    conta.sacar(200)
+    print(conta.exibir_saldo())
+
+
+## Herança: Conta Corrente e Poupança
+
+Crie uma classe ContaPoupanca que herda de ContaBancaria e adiciona um método rendimento(taxa) que aumenta o saldo.
+~~~~ python
+from ContaBancaria import ContaBancaria
+
+class ContaPoupanca(ContaBancaria):
+    def rendimento(self, taxa):
+        self.saldo += self.saldo * taxa
+        print(f"Rendimento aplicado! Novo saldo: R$ {self.saldo:.2f}")
+~~~~
+
+### Teste
+    poupanca = ContaPoupanca("Maria", 1000)
+    poupanca.rendimento(0.05)  # 5% de rendimento
+    print(poupanca.exibir_saldo())
+
+#### resolução:
+> arquivo ContaCorrente
+~~~~ python
+class ContaBancaria:
+    def __init__(self,titular,saldo):
+        self.titular = titular
+        self.saldo = saldo
+
+    def Depositar(self, valor):
+        if valor > 0:
+            self.saldo += valor
+            print("deposito realizado")
+        else: 
+            print("valro inválido")
+
+    def Sacar(self, valor):
+        if self.saldo > valor:
+            self.saldo -= valor
+            print("saque realizado")
+
+    def ExibirSaldo(self):
+        print(f"Saldo atual: {self.saldo}")
+
+conta = ContaBancaria("Thiago", 0)
+conta.Depositar(150)
+conta.ExibirSaldo()
+conta.Sacar(50)
+conta.ExibirSaldo()
+~~~~
+
+> Arquivo ContaPoupanca
+~~~~ python
+from A113_contaCorrente import ContaBancaria
+
+class ContaPoupanca(ContaBancaria):
+    def rendimento(self, taxa):
+        self.saldo += self.saldo * taxa
+        print(f"Rendimento aplicado! Saldo atual: R${self.saldo:.2f}")
+
+poupanca1 = ContaPoupanca("Thiago", 2100)
+poupanca1.rendimento(0.10)
+poupanca1.ExibirSaldo()
+~~~~
+#### resultado:
+    deposito realizado
+    Saldo atual: 150
+    saque realizado
+    Saldo atual: 100
+    ######| poupanca| ########
+    Rendimento aplicado! Saldo atual: R$2310.00
+    Saldo atual: 2310.0
+
+
+## Exercicio #114 POO HERANÇA - 
+#### Crie uma classe chamada ContaBancaria com os seguintes atributos:
+
+- titular: o nome do titular da conta (do tipo string).
+- __saldo: o saldo da conta (do tipo float), que deve ser privado (com dois underscores __).
+- 
+Em seguida, crie uma subclasse chamada ContaPoupanca que herda de ContaBancaria e implementa um método rendimento() que recebe uma taxa de rendimento e aplica sobre o saldo.
+
+Implemente os seguintes métodos:
+
+- depositar(valor): realiza um depósito na conta, somando o valor ao saldo.
+- sacar(valor): realiza um saque da conta, subtraindo o valor do saldo, se o saldo for suficiente.
+- exibir_saldo(): retorna o saldo atual da conta (o saldo será acessado por um método dentro da classe, pois é privado).
+- 
+Na classe principal, crie um objeto da classe ContaPoupanca, faça alguns depósitos, saques e exiba o saldo. O atributo __saldo não pode ser acessado diretamente. Utilize um método para visualizar o saldo.
+
+Atributo Protegido (com um único underscore _saldo): Pode ser acessado diretamente pela classe e suas subclasses. É recomendado apenas não acessá-lo diretamente fora da classe para evitar modificações indesejadas.
+
+Atributo Privado (com dois underscores __saldo): Não pode ser acessado diretamente fora da classe. Só pode ser manipulado através de métodos da própria classe.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
 
 
 <p align="center"> 12/03/25 <p>
