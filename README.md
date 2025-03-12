@@ -3901,14 +3901,39 @@ carro1.getAno() #esse resultado não será impresso por que o ano foi definido c
 
     Ano do carro: 2020 
 
-## Exercicio #112 -
-####
+## Exercicio #112 POO ENCAPSULAMENTO - Livro
+#### Crie uma classe chamada Livro com os seguintes atributos:
+
+- titulo (público): título do livro.
+- __preco (privado): preço do livro.
+
+Implemente um método chamado **exibir_preco()** que retorne o preço do livro formatado.
+
+No código principal, crie uma instância de Livro e exiba o preço usando o método, evidenciando que o atributo privado não pode ser acessado diretamente.
 
 #### resolução:
 ~~~~ python
+class Livro:
+    def __init__(self, titulo, preco):
+        self.titulo = titulo
+        self.__preco = preco
+
+    def getPreco(self):
+        return self.__preco
+    
+    def setPreco(self, preco):
+        self.__preco = preco
+
+    def ExibirPreco(self):
+        print(f"Título: {self.titulo}\nPreço: R${self.getPreco()}")
+
+livro1 = Livro("The Witcher", 132.95)
+livro1.ExibirPreco()
 ~~~~
 
 #### resultado:
+    Título: The Witcher
+    Preço: R$132.95
 
 
 <p align="center"> 12/03/25 <p>
