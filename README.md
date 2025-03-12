@@ -4042,7 +4042,7 @@ poupanca1.ExibirSaldo()
     Saldo atual: 2310.0
 
 
-## Exercicio #114 POO HERANÇA - 
+## Exercicio #114 POO HERANÇA - ContaBancaria II
 #### Crie uma classe chamada ContaBancaria com os seguintes atributos:
 
 - titular: o nome do titular da conta (do tipo string).
@@ -4067,6 +4067,32 @@ Atributo Privado (com dois underscores __saldo): Não pode ser acessado diretame
 ~~~~
 
 #### resultado:
+
+
+## Exercicio #115 POO HERANÇA - Veículo
+#### Crie um programa em Python que modele um sistema de veículos utilizando herança.
+
+Implemente uma classe chamada Veiculo que tenha os seguintes atributos:
+
+- marca: Representa a marca do veículo.
+- modelo: Representa o modelo do veículo.
+- ano: Representa o ano de fabricação do veículo.
+
+A classe Veiculo deve ter os seguintes métodos:
+
+- exibir_dados(): Retorna uma string com as informações do veículo.
+- ligar(): Retorna uma mensagem informando que o veículo foi ligado.
+
+Crie uma classe Carro que herde da classe Veiculo e adicione um novo atributo:
+
+portas: Representa a quantidade de portas do carro.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
 
 
 <p align="center"> 12/03/25 <p>
