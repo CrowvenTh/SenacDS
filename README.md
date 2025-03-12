@@ -3844,11 +3844,62 @@ Atributo Privado (com dois underscores __saldo): Não pode ser acessado diretame
 
 #### resolução:
 ~~~~ python
+class ContaBancaria:
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        self.__saldo = saldo
 
+    def getSaldo(self):
+        return self.__saldo
+    
+    def setSaldo(self, saldo):
+        self.__saldo = saldo
+
+conta1 = ContaBancaria("Thiago", 2100)
+print(conta1.getSaldo())
+print(conta1.titular)
 ~~~~
 
 #### resultado:
+    2100
+    Thiago
 
+
+## Exercicio #111 POO ENCAPSULAMENTO - Carro
+#### Crie uma classe chamada Carro com os seguintes atributos:
+
+- modelo (público): modelo do carro.
+- __ano (privado): ano do carro.
+
+Implemente um método chamado exibir_ano() que retorne uma string informando o ano do carro.
+
+No código principal, crie uma instância de Carro e exiba o ano usando o método, demonstrando que o atributo privado não pode ser acessado diretamente.
+
+#### resolução:
+~~~~ python
+class Carro:
+    def __init__(self, modelo, ano):
+        self.modelo = modelo
+        self.__ano = ano
+
+    def getAno(self):
+        return self.__ano
+     
+    def setAno(self, ano):
+        self.__ano = ano
+
+    def ExibirAno(self):
+        print(f"Ano do carro: {self.getAno()}")
+
+carro1 = Carro("Type R", 2020)
+carro1.ExibirAno()
+carro1.getAno() #esse resultado não será impresso por que o ano foi definido como privado na classe
+~~~~
+
+#### resultado:
+> retorno do método
+
+    Ano do carro: 2020 
 
 <p align="center"> 12/03/25 <p>
 </details>
