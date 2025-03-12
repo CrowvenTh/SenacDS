@@ -2957,7 +2957,7 @@ print(produto)
     {'nome': 'notebook', 'preco': '2500', 'quantidade': '5', 'marca': 'asus'}
     {'nome': 'notebook', 'preco': '2500', 'marca': 'asus'}
 
-## Exercício #94 -
+## Exercício #94 - Dicionario filme
 #### Crie um dicionário representando um filme , contendo Título, Ano e Gênero. Depois, adicione a duração  e remova o campo "ano".
 
 #### resolução: 
@@ -3900,6 +3900,16 @@ carro1.getAno() #esse resultado não será impresso por que o ano foi definido c
 > retorno do método
 
     Ano do carro: 2020 
+
+## Exercicio #112 -
+####
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
 
 <p align="center"> 12/03/25 <p>
 </details>
