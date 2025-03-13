@@ -4098,6 +4098,27 @@ portas: Representa a quantidade de portas do carro.
 <p align="center"> 12/03/25 <p>
 </details>
 
+
+<details>
+<summary> 💠 Aula 21 - 📝 Exercícios de Lógica XVIII (115 a --) 🧮 POO ENCAPSULAMENTO & HERANÇA</summary>
+
+<br>
+<p> 13/03/25 <p>
+
+
+## Exercicio #116 HERANÇA -
+####
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+
+<p align="center"> 13/03/25 <p>
+</details>
+
 ---
 
 <br>
