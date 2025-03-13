@@ -7,4 +7,4 @@ class ContaPoupanca(ContaBancaria):
 
 poupanca1 = ContaPoupanca("Thiago", 2100)
 poupanca1.rendimento(0.10)
-poupanca1.ExibirSaldo()
+# poupanca1.ExibirSaldo()
