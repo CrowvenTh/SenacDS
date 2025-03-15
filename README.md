@@ -4100,14 +4100,29 @@ portas: Representa a quantidade de portas do carro.
 
 
 <details>
-<summary> 💠 Aula 21 - 📝 Exercícios de Lógica XVIII (115 a --) 🧮 POO ENCAPSULAMENTO & HERANÇA</summary>
+<summary> 💠 Aula 21 - 📝 Exercícios de Lógica XVIII (116 a 118) 🧮 POO ENCAPSULAMENTO & HERANÇA</summary>
 
 <br>
-<p> 13/03/25 <p>
+<p> 14/03/25 <p>
 
 
-## Exercicio #116 HERANÇA -
-####
+## Exercicio #116 HERANÇA - Animais
+#### Crie um programa em Python que modele um sistema de animais utilizando herança e encapsulamento.
+
+Implemente a classe Animal com os seguintes atributos privados:
+
+- especie (string): Representa a espécie do animal.
+- nome (string): Representa o nome do animal.
+- idade (inteiro): Representa a idade do animal.
+
+A classe deve conter os seguintes métodos:
+
+- emitir_som(): Retorna uma mensagem indicando o som que o animal faz.
+- informacoes(): Retorna uma string com as informações do animal.
+
+Crie uma classe Cachorro que herde de Animal e adicione o método:
+
+- abanar_rabo(): Retorna uma mensagem indicando que o cachorro está abanando o rabo.
 
 #### resolução:
 ~~~~ python
@@ -4115,8 +4130,79 @@ portas: Representa a quantidade de portas do carro.
 
 #### resultado:
 
+## Exercício #117 HERANÇA - Funcionários
+#### Crie um programa em Python que modele um sistema de funcionários utilizando herança e encapsulamento.
 
-<p align="center"> 13/03/25 <p>
+Implemente a classe Funcionario com os seguintes atributos privados:
+- nome (string): Representa o nome do funcionário.
+- cargo (string): Representa o cargo do funcionário.
+- salario (float): Representa o salário do funcionário.
+
+A classe deve conter os seguintes métodos:
+
+- exibir_dados(): Retorna uma string com as informações do funcionário.
+
+- calcular_bonus(): Retorna o valor do bônus (10% do salário).
+
+Crie uma classe Gerente que herde de Funcionario e adicione o atributo privado:
+
+    setor (string): Representa o setor em que o gerente atua.
+
+#### resolução:
+~~~~ python
+~~~~ 
+
+#### resultado:
+
+## Exercício #118 HERANÇA - Smartphone
+#### Implemente a classe Dispositivo com os atributos privados marca, modelo e preco.
+
+Crie um método exibir_dados que retorna uma string com as informações do dispositivo.
+
+Implemente a classe Smartphone que herda de Dispositivo e adicione o atributo privado sistema_operacional.
+
+Sobrescreva o método exibir_dados para incluir o sistema operacional.
+
+**Instrução sobre sobrescrita:** A sobrescrita de um método ocorre quando a classe filha redefine um método herdado da classe pai para adicionar ou modificar seu comportamento. 
+
+Para isso, utilizamos a função `super()`, que permite chamar o método original da classe pai e adicionar novos comportamentos. No caso, a classe `Smartphone` herda o método `exibir_dados` da classe `Dispositivo`, mas o reescrevemos para adicionar o atributo `sistema_operacional`.
+~~~~ python
+class Dispositivo:
+    def __init__(self, marca, modelo, preco):
+            self.__marca = marca
+            self.__modelo = modelo
+            self.__preco = preco
+
+        def exibir_dados(self):
+            return f"Marca: {self.__marca}, Modelo: {self.__modelo}, Preço: {self.__preco}"
+
+class Smartphone(Dispositivo):
+        def __init__(self, marca, modelo, preco, sistema_operacional):
+                super().__init__(marca, modelo, preco)
+                self.__sistema_operacional = sistema_operacional
+
+        # Sobrescrita do método exibir_dados
+        def exibir_dados(self):
+                dados_dispositivo = super().exibir_dados()
+                    return f"{dados_dispositivo}, Sistema Operacional: {self.__sistema_operacional}"
+~~~~
+Crie uma instância de Smartphone com dados fictícios e exiba as informações.
+
+Crie um método que calcula o preço com desconto percentual.
+Aplique o método de desconto para reduzir 10% do preço do smartphone.
+
+Implemente um método para atualizar o preço do dispositivo.
+Atualize o preço do smartphone para 3000 e exiba as informações atualizadas.
+
+Crie uma nova instância de Smartphone com dados fictícios e outro sistema operacional.
+
+#### resolução:
+~~~~python
+~~~~
+
+#### resultado:
+
+<p align="center"> 14/03/25 <p>
 </details>
 
 ---
