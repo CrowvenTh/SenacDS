@@ -4088,10 +4088,70 @@ Crie uma classe Carro que herde da classe Veiculo e adicione um novo atributo:
 portas: Representa a quantidade de portas do carro.
 
 #### resolução:
+### classe contaBancaria
 ~~~~ python
+class ContaBancaria:
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        self.__saldo = saldo
+
+    def getSaldo(self):
+        return self.__saldo
+    
+    def setSaldo(self, saldo):
+        self.__saldo = saldo
+
+    def Deposito(self, valor):
+        self.__saldo += valor
+        print(f"Depósito de R${valor} realizado!")
+    
+    def Saque(self, valor):
+        if valor < self.__saldo:
+            self.__saldo -= valor
+            print(f"Saque de R${valor} realizado")
+        else:
+            print(f"Saque de R${valor} negado, saldo insuficiente!")
+
+    def ExibirSaldo(self):
+        print(f"Saldo atual: R${self.getSaldo()}")
+~~~~ 
+
+### classe contaPoupanca
+~~~~ python
+from A114_contaBancariaII import ContaBancaria
+
+class ContaPoupanca(ContaBancaria):
+    def rendimento(self, taxa):
+        rend = self.getSaldo() * taxa # ajustar calculo
+        self.setSaldo(rend)
+        print(f"Rendimento aplicado! Saldo atual: R${rend:.2f}")
+
+
+poupanca = ContaPoupanca("Thiago", 0)
+poupanca.Deposito(500)
+poupanca.Saque(100)
+poupanca.rendimento(0.10)
+~~~~
+
+### classe contaPrincipal
+~~~~ python
+from A114_contaPoupancaII import ContaPoupanca
+
+conta = ContaPoupanca("Thiago", 0)
+conta.Deposito(500)
+conta.ExibirSaldo()
+conta.Saque(250)
+conta.ExibirSaldo()
+conta.rendimento(0.05)
+
 ~~~~
 
 #### resultado:
+    Depósito de R$500 realizado!
+    Saldo atual: R$500
+    Saque de R$250 realizado
+    Saldo atual: R$250
+    Rendimento aplicado! Saldo atual: R$12.50
 
 
 
