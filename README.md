@@ -4063,31 +4063,6 @@ Atributo Protegido (com um único underscore _saldo): Pode ser acessado diretame
 Atributo Privado (com dois underscores __saldo): Não pode ser acessado diretamente fora da classe. Só pode ser manipulado através de métodos da própria classe.
 
 #### resolução:
-~~~~ python
-~~~~
-
-#### resultado:
-
-
-## Exercicio #115 POO HERANÇA - Veículo
-#### Crie um programa em Python que modele um sistema de veículos utilizando herança.
-
-Implemente uma classe chamada Veiculo que tenha os seguintes atributos:
-
-- marca: Representa a marca do veículo.
-- modelo: Representa o modelo do veículo.
-- ano: Representa o ano de fabricação do veículo.
-
-A classe Veiculo deve ter os seguintes métodos:
-
-- exibir_dados(): Retorna uma string com as informações do veículo.
-- ligar(): Retorna uma mensagem informando que o veículo foi ligado.
-
-Crie uma classe Carro que herde da classe Veiculo e adicione um novo atributo:
-
-portas: Representa a quantidade de portas do carro.
-
-#### resolução:
 ### classe contaBancaria
 ~~~~ python
 class ContaBancaria:
@@ -4153,6 +4128,29 @@ conta.rendimento(0.05)
     Saldo atual: R$250
     Rendimento aplicado! Saldo atual: R$12.50
 
+## Exercicio #115 POO HERANÇA - Veículo
+#### Crie um programa em Python que modele um sistema de veículos utilizando herança.
+
+Implemente uma classe chamada Veiculo que tenha os seguintes atributos:
+
+- marca: Representa a marca do veículo.
+- modelo: Representa o modelo do veículo.
+- ano: Representa o ano de fabricação do veículo.
+
+A classe Veiculo deve ter os seguintes métodos:
+
+- exibir_dados(): Retorna uma string com as informações do veículo.
+- ligar(): Retorna uma mensagem informando que o veículo foi ligado.
+
+Crie uma classe Carro que herde da classe Veiculo e adicione um novo atributo:
+
+portas: Representa a quantidade de portas do carro.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
 
 
 <p align="center"> 12/03/25 <p>
