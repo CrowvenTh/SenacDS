@@ -4148,10 +4148,65 @@ portas: Representa a quantidade de portas do carro.
 
 #### resolução:
 ~~~~ python
+class Veiculo:
+    def __init__(self, marca, modelo, ano):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+
+    def getMarca(self):
+        return self.marca
+
+    def setMarca(self, marca):
+        self.marca = marca
+
+    def getModelo(self):
+        return self.modelo
+
+    def setModelo(self, modelo):
+        self.modelo = modelo
+
+    def getAno(self,):
+        return self.ano
+    
+    def setAno(self, ano):
+        self.ano = ano
+
+    def ExibirDados(self):
+        print(f"Infomrções do Veículo: \n- Marca: {self.getMarca()}\n- Modelo: {self.getModelo()}\n- Ano: {self.getAno()}")
+
+    def Ligar(self):
+        print(f"{self.getModelo()} foi ligado!")
+~~~~
+~~~~ python
+from A115_veiculo import Veiculo
+
+class Carro(Veiculo):
+
+    def getPortas(self):
+        return self.portas
+    
+    def setPortas(self, portas):
+        self.portas = portas
+
+    def ExibirDadosII(self):
+        print(f"- Portas: {self.getPortas()}")
+
+coche = Carro("Honda", "Type R", 2020)
+coche.ExibirDados()
+coche.setPortas(4)
+coche.ExibirDadosII()
+coche.Ligar()
 ~~~~
 
-#### resultado:
 
+#### resultado:
+    Infomrções do Veículo: 
+    - Marca: Honda
+    - Modelo: Type R
+    - Ano: 2020
+    - Portas: 4
+    Type R foi ligado!
 
 <p align="center"> 12/03/25 <p>
 </details>
