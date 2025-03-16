@@ -4239,9 +4239,56 @@ Crie uma classe Cachorro que herde de Animal e adicione o método:
 
 #### resolução:
 ~~~~ python
+class Animal:
+    def __init__(self, especie, nome, idade):
+        self.especie = (especie)
+        self.nome = nome
+        self.idade = idade
+
+    def getEspecie(self):
+        return self.especie
+    
+    def setEspecia(self, especie):
+        self.especie = especie
+
+    def getNome(self):
+        return self.nome
+    
+    def setNome(self, nome):
+        self.nome = nome
+
+    def getIdade(self):
+        return self.idade
+    
+    def setIdade(self, idade):
+        self.idade = idade
+
+    def EmitirSom(self):
+        print(f"{self.getNome} está emitindo latindo!!!")
+
+    def Infomracoes(self):
+        print(f"Informações do animal")
+        print(f"Espécie: {self.getEspecie()}")
+        print(f"Nome: {self.getNome()}")
+        print(f"Idade: {self.getIdade()} anos")
+        #================================================
+
+class Cachorro(Animal):
+    def AbanarRabo(self):
+        print(f"O {self.getNome()} está abanandoo rabo!!!")
+
+perro = Cachorro("Cachorro","Chase",8)
+perro.EmitirSom()
+perro.Infomracoes()
+perro.AbanarRabo()
 ~~~~
 
 #### resultado:
+    Informações do animal
+    Espécie: Cachorro
+    Nome: Chase
+    Idade: 8 anos
+    O Chase está abanandoo rabo!!!
 
 ## Exercício #117 HERANÇA - Funcionários
 #### Crie um programa em Python que modele um sistema de funcionários utilizando herança e encapsulamento.
@@ -4263,10 +4310,67 @@ Crie uma classe Gerente que herde de Funcionario e adicione o atributo privado:
 
 #### resolução:
 ~~~~ python
+class Funcinonario:
+    def __init__(self, nome, cargo, salario):
+        self.__nome = nome
+        self.__cargo = cargo
+        self.__salario = salario
+
+    def getNome(self):
+        return self.__nome
+    
+    def setNome(self, nome):
+        self.__nome = nome
+    
+    def getCargo(self):
+        return self.__cargo
+    
+    def setCargo(self, cargo):
+        self.__cargo = cargo
+
+    def getSalario(self):
+        return self.__salario
+    
+    def setSalario(self, salario):
+        self.__salario = salario
+
+    def ExibirInformacoes(self):
+        print(f"Informações do funcionário: ")
+        print(f"Nome: {self.getNome()}")
+        print(f"Cargo: {self.getCargo()}")
+        print(f"Salário: R${self.getSalario()}")
+    
+    def CalcularBonus(self):
+        bonus = self.getSalario() / 10
+        print(f"Bônus salarial: R${bonus}")
+#==============================================
+class Gerente(Funcinonario):
+    def __init__(self, nome, cargo, salario, setor):
+        super().__init__(nome, cargo, salario)
+        self.__setor = setor
+
+    def getSetor(self):
+        return self.__setor
+    
+    def setSetor(self, setor):
+        self.__setor = setor
+
+    def ExibirInformacoes(self):
+        super().ExibirInformacoes()
+        print(f"Setor: {self.getSetor()}")
+
+funcinonario = Gerente("Thiago", "Desenvolvedor Jr", 8500, "Backend")
+funcinonario.ExibirInformacoes()
+funcinonario.CalcularBonus()
 ~~~~ 
 
 #### resultado:
-
+    Informações do funcionário: 
+    Nome: Thiago
+    Cargo: Desenvolvedor Jr
+    Salário: R$8500
+    Setor: Backend
+    Bônus salarial: R$850.0
 ## Exercício #118 HERANÇA - Smartphone
 #### Implemente a classe Dispositivo com os atributos privados marca, modelo e preco.
 
