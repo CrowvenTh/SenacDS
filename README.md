@@ -4415,10 +4415,80 @@ Crie uma nova instância de Smartphone com dados fictícios e outro sistema oper
 
 #### resolução:
 ~~~~python
+class Dispositivo:
+    def __init__(self, marca, modelo, preco):
+        self.__marca = marca
+        self.__modelo = modelo
+        self.__preco = preco
+
+    def getMarca(self):
+        return self.__marca
+    
+    def getModelo(self):
+        return self.__modelo
+    
+    def getPreco(self):
+        return self.__preco
+    
+    def setMarca(self, marca):
+        self.__marca = marca
+
+    def setModelo(self, modelo):
+        self.__modelo = modelo
+
+    def setPreco(self, preco):
+        self.__preco = preco
+
+    def ExibirDados(self):
+        print(f"Informações do aparelho:")
+        print(f"Marca: {self.getMarca()}")
+        print(f"Modelo: {self.getModelo()} ")
+        print(f"Preço: R${self.getPreco()}")
+
+aparelho1 = Dispositivo("Samsung", "S24", 6500)
+aparelho2 = Dispositivo("Apple", "Iphone 16", 9450)
+
+aparelho1.ExibirDados()
+aparelho2.ExibirDados()
 ~~~~
 
-#### resultado:
+~~~~ python
+from A118_smartphone import Dispositivo
 
+class Smartphone(Dispositivo):
+    def __init__(self, marca, modelo, preco, so):
+        super().__init__(marca, modelo, preco)
+        self.__so = so
+
+    def getSo(self):
+            return self.__so
+
+    def setSo(self, so):
+            self.__so = so
+
+    def ExibirDados(self):
+        super().ExibirDados()
+        print(f"Sistema Operacional: {self.getSo()}\n")
+
+celular1 = Smartphone("Samsung", "Galaxy S24", 7500, "Android")
+celular2 = Smartphone("Apple", "Iphone 16", 12500, "IOS")
+
+celular1.ExibirDados()
+celular2.ExibirDados()
+~~~~
+
+#### resultado
+    Informações do aparelho:
+    Marca: Samsung
+    Modelo: Galaxy S24
+    Preço: R$7500
+    Sistema Operacional: Android
+
+    Informações do aparelho:
+    Marca: Apple
+    Modelo: Iphone 16
+    Preço: R$12500
+    Sistema Operacional: IOS
 <p align="center"> 14/03/25 <p>
 </details>
 
