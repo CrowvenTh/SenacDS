@@ -4511,6 +4511,39 @@ celular2.ExibirDados()
 <p align="center"> 14/03/25 <p>
 </details>
 
+
+<details>
+<summary> 💠 Aula 22 - 📝 Exercícios de Lógica XIX (119 a --) 🧮 POO ENCAPSULAMENTO & HERANÇA</summary>
+
+<br>
+<p> 17/03/25 <p>
+
+## Exercicio #119 HERANÇA -Insturmento
+#### Implemente a classe Instrumento com o atributo privado tipo.
+
+Crie um método emitir_som que retorna a string "Som do instrumento".
+Implemente a classe Guitarra que herda de Instrumento e adicione o atributo privado cordas.
+
+Sobrescreva o método emitir_som para retornar "Som da guitarra".
+
+**Instrução sobre sobrescrita:** A sobrescrita do método `emitir_som 
+permite que a classe `Guitarra`  tenha um som específico diferente do so
+genérico da classe `Instrumento`. Utilizamos `super()` para chamar 
+método original, caso necessário.
+
+- Crie uma instância de Guitarra e exiba o som emitido.
+- Implemente um método que retorna o número de cordas.
+- Crie outra instância de Guitarra com um número diferente de cordas.
+
+#### resolução:
+~~~~ python
+~~~~
+
+#### resultado:
+
+<p align="center"> 17/03/25 <p>
+</details>
+
 ---
 
 <br>
