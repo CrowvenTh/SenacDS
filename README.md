@@ -4560,7 +4560,18 @@ Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
 <img src="algoritmo/Atividades/BD/A22_17-03-25/DERMC02_diretor/BD_02_diretor.png">
 
 ## DB 03 - DER
-####
+#### 3. Um autor escreve vários livros, mas ele pode não ter nenhum livro escrito. Um livro pode ser escrito por vários autores, mas pode ter livro sem autor. 
+
+Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
+## DB 04 - DER
+#### 4. Uma equipe é composta por vários jogadores, e  pode existir equipe sem jogador. Um jogador joga apenas em uma equipe, pode ter jogador sem equipe. 
+
+Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
+
+## DB 05 - DER
+#### 5. Um cliente realiza nenhuma ou várias encomendas. Uma encomenda diz respeito sempre a aum cliente apenas a um cliente.
+
+Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
 
 
 
