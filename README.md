@@ -14,6 +14,21 @@ Repositório destinado as atividades realizadas no curso de Desenvolvimento de s
 - 📁 <a href="algoritmo/Material/python_aula04.pdf"> Variáveis & Exercícios</a> 
 - 💾 <a href="https://github.com/CrowvenTh/Santander-Python">Repositório de apoio</a>
 
+#### 📋 Banco de Dados 
+- 📜 <a href="algoritmo/Material/SQL/AULA 15_SQL BÁSICO.pdf">SQL básico</a>
+- 📜 <a href="algoritmo/Material/SQL/SQL Basics Cheat Sheet.pdf">SQL Basics cheat Sheet</a>
+- 📜 <a href="algoritmo/Material/SQL/AULA 01 - BANCO DE DADOS INTRODUÇÃO.pdf">BANCO DE DADOS INTRODUÇÃO</a>
+- 📜 <a href="algoritmo/Material/SQL/AULA 02 - MODELAGEM DE DADOS.pdf">MODELAGEM DE DADOS</a>
+- 📜 <a href="algoritmo/Material/SQL/AULA 03 - MODELO RELACIONAL.pdf">MODELO RELACIONAL</a>
+- 📜 <a href="algoritmo/Material/SQL/AULA 04 - MODELO ER.pdf">MODELO ER</a>
+- 📜 <a href="algoritmo/Material/SQL/AULA 05 _ CHAVES.pdf">CHAVES</a>
+- 📜 <a href="algoritmo/Material/SQL/AULA 06 _ CARDINALIDADE.pdf">CARDINALIDADE</a>
+- 📜 <a href="algoritmo/Material/SQL/AULA 07 _ RESTRIÇÕES DE DADOS.pdf">RESTRIÇÕES DE DADOS</a>
+- 📜 <a href="algoritmo/Material/SQL/AULA 08 _ DICIONÁRIO DE DADOS.pdf">DICIONÁRIO DE DADOS</a>
+- 📜 <a href="algoritmo/Material/SQL/AULA 09_ETAPA CONCEITUAL.pdf">CONCEITUAL</a>
+- 📜 <a href="algoritmo/Material/SQL/AULA 10_MIGRAÇÃO MODELO LÓGICO PROJETO CONCEITUAL.pdf">MIGRAÇÃO MODELO LÓGICO PROJETO CONCEITUAL</a>
+
+ 
 ---
   
 </details>
