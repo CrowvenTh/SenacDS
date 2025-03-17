@@ -4550,10 +4550,14 @@ método original, caso necessário.
 
 Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
 
-<img src="algoritmo/Atividades/BD/A22_17-03-25/ModeloConceitual/BD_01_aluno.png">
+<img src="algoritmo/Atividades/BD/A22_17-03-25/DERMC01_aluno/BD_01_aluno.png">
 
 ## DB 02 - DER
-####
+#### 2. Um diretor no mínimo um departamento e no máximo um departamento. Um departamento tem no mínimo um diretor e no máximo um diretor. 
+
+Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
+
+<img src="algoritmo/Atividades/BD/A22_17-03-25/DERMC02_diretor/BD_02_diretor.png">
 
 ## DB 03 - DER
 ####
