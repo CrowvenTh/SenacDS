@@ -4508,15 +4508,6 @@ celular2.ExibirDados()
     Modelo: Iphone 16
     Preço: R$12500
     Sistema Operacional: IOS
-<p align="center"> 14/03/25 <p>
-</details>
-
-
-<details>
-<summary> 💠 Aula 22 - 📝 Exercícios de Lógica XIX (119 a --) 🧮 POO ENCAPSULAMENTO & HERANÇA</summary>
-
-<br>
-<p> 17/03/25 <p>
 
 ## Exercicio #119 HERANÇA -Insturmento
 #### Implemente a classe Instrumento com o atributo privado tipo.
@@ -4540,6 +4531,34 @@ método original, caso necessário.
 ~~~~
 
 #### resultado:
+
+
+<p align="center"> 14/03/25 <p>
+</details>
+
+
+<details>
+<summary> 💠 Aula 22 - 📝 Banco de Dados - Modelo Conteitual </summary>
+
+<br>
+<p> 17/03/25 <p>
+
+## BD 01 - DER Aluno
+
+#### Desenvolva o Modelo entidade-Relacionamento para as seguintes situações: 
+1. Um aluno realiza vários trabalhos. Um trabalho é realizado por um ou mais alunos.
+
+Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
+
+<img src="algoritmo/Atividades/BD/A22_17-03-25/ModeloConceitual/BD_01_aluno.png">
+
+## DB 02 - DER
+####
+
+## DB 03 - DER
+####
+
+
 
 <p align="center"> 17/03/25 <p>
 </details>
