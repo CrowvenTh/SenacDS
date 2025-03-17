@@ -4241,27 +4241,27 @@ Crie uma classe Cachorro que herde de Animal e adicione o método:
 ~~~~ python
 class Animal:
     def __init__(self, especie, nome, idade):
-        self.especie = (especie)
-        self.nome = nome
-        self.idade = idade
+        self.__especie = (especie)
+        self.__nome = nome
+        self.__idade = idade
 
     def getEspecie(self):
-        return self.especie
+        return self.__especie
     
     def setEspecia(self, especie):
-        self.especie = especie
+        self.__especie = especie
 
     def getNome(self):
-        return self.nome
+        return self.__nome
     
     def setNome(self, nome):
-        self.nome = nome
+        self.__nome = nome
 
     def getIdade(self):
-        return self.idade
+        return self.__idade
     
     def setIdade(self, idade):
-        self.idade = idade
+        self.__idade = idade
 
     def EmitirSom(self):
         print(f"{self.getNome} está emitindo latindo!!!")
