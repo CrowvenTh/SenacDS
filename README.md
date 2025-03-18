@@ -4586,9 +4586,6 @@ Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
 <details>
 <summary> 💠 Aula 23 - 📝 Banco de Dados - Modelo Conteitual II (1 a 6)</summary>
 
-<p align="center"> 18/03/25 <p>
-</details>
-
 ## BD 06 - Berçário
 
 #### Um berçário deseja informatizar suas operações. 
@@ -4656,6 +4653,8 @@ Além disso, a floricultura pretende registrar os pedidos realizados pelos clien
 <br>
 <p> 18/03/25 <p>
 
+<p align="center"> 18/03/25 <p>
+</details>
 
 ---
 
