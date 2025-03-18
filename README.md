@@ -4619,7 +4619,7 @@ Para os médicos, é importante saber:
 4. Definir as chaves primarias das entidades
 5. Crie o Diagrama Entidade Relacionamento
 
-<img src="algoritmo/Atividades/BD/A23_18-03-25/">
+<img src="algoritmo/Atividades/BD/A23_18-03-25/DERMC/BD_06_bebe.png">
 
 <br>
 <p> 18/03/25 <p>
