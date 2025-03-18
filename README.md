@@ -4550,33 +4550,80 @@ método original, caso necessário.
 
 Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
 
-<img src="algoritmo/Atividades/BD/A22_17-03-25/DERMC01_aluno/BD_01_aluno.png">
+<img src="algoritmo/Atividades/BD/A22_17-03-25/DERMC/BD_01_aluno.png">
 
 ## DB 02 - DER
 #### 2. Um diretor no mínimo um departamento e no máximo um departamento. Um departamento tem no mínimo um diretor e no máximo um diretor. 
 
 Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
 
-<img src="algoritmo/Atividades/BD/A22_17-03-25/DERMC02_diretor/BD_02_diretor.png">
+<img src="algoritmo/Atividades/BD/A22_17-03-25/DERMC/BD_02_diretor.png">
 
 ## DB 03 - DER
 #### 3. Um autor escreve vários livros, mas ele pode não ter nenhum livro escrito. Um livro pode ser escrito por vários autores, mas pode ter livro sem autor. 
 
 Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
+
+<img src="algoritmo/Atividades/BD/A22_17-03-25/DERMC/BD_03_livro.png">
+
 ## DB 04 - DER
 #### 4. Uma equipe é composta por vários jogadores, e  pode existir equipe sem jogador. Um jogador joga apenas em uma equipe, pode ter jogador sem equipe. 
 
 Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
+
+<img src="algoritmo/Atividades/BD/A22_17-03-25/DERMC/BD_04_jogador.png">
 
 ## DB 05 - DER
 #### 5. Um cliente realiza nenhuma ou várias encomendas. Uma encomenda diz respeito sempre a aum cliente apenas a um cliente.
 
 Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
 
-
+<img src="algoritmo/Atividades/BD/A22_17-03-25/DERMC/BD_05_cliente.png">
 
 <p align="center"> 17/03/25 <p>
 </details>
+
+<details>
+<summary> 💠 Aula 23 - 📝 Banco de Dados - Modelo Conteitual II (1 a 6)</summary>
+
+<p align="center"> 18/03/25 <p>
+</details>
+
+## BD 06 - Berçário
+
+#### Um berçário deseja informatizar suas operações. 
+Quando um bebê nasce, algumas informações são armazenadas sobre ele, tais como: 
+- nome
+- data do nascimento 
+- peso do nascimento
+- altura
+- mãe deste bebê
+- médico que fez seu parto.
+
+Para as mães, o berçário também deseja manter um controle, guardando informações como:
+- nome
+- endereço 
+- telefone
+- data de nascimento
+  
+Para os médicos, é importante saber: 
+- CRM
+- nome
+- telefone
+- celular
+- especialidade
+
+1. Liste as entidades que você identificou
+2. Liste os relacionamentos entre as entidades 
+3. Liste os atributos de cada entidade
+4. Definir as chaves primarias das entidades
+5. Crie o Diagrama Entidade Relacionamento
+
+<img src="algoritmo/Atividades/BD/A23_18-03-25/">
+
+<br>
+<p> 18/03/25 <p>
+
 
 ---
 
