@@ -4584,7 +4584,7 @@ Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
 </details>
 
 <details>
-<summary> 💠 Aula 23 - 📝 Banco de Dados - Modelo Conteitual II (1 a 6)</summary>
+<summary> 💠 Aula 23 - 📝 Banco de Dados - Modelo Conteitual II (6 a 7)</summary>
 
 ## BD 06 - Berçário
 
