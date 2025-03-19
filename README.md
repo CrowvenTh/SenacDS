@@ -4586,6 +4586,9 @@ Após a conclusão, desenvolva o Diagrama Entidade Relacionamento
 <details>
 <summary> 💠 Aula 23 - 📝 Banco de Dados - Modelo Conteitual II (6 e 7)</summary>
 
+<br>
+<p> 17/03/25 <p>
+
 ## BD 06 - Berçário
 
 #### Um berçário deseja informatizar suas operações. 
@@ -4654,6 +4657,33 @@ Além disso, a floricultura pretende registrar os pedidos realizados pelos clien
 <p> 18/03/25 <p>
 
 <p align="center"> 18/03/25 <p>
+</details>
+
+<details>
+<summary> 💠 Aula 24 - 📝 Banco de Dados - Modelo Conteitual III (8)</summary>
+
+<br>
+<p> 19/03/25 <p>
+
+## BD 08 - Empresa
+#### Situação: Você está trabalhando em um projeto para uma empresa que deseja rastrear a hierarquia de funcionários. 
+
+Cada funcionário pode ter um supervisor que também é um funcionário na mesma empresa. Como você estruturaria o banco de dados para representar essa relação entre os funcionários?
+
+Funcionário gerencia um ou mais funcionários
+
+Funcionário é gerenciado por um ou nenhum funcionáro
+
+- Entidades: Funcionário
+- Auto-Relacionamento: Funcionário pode ser supervisor de outros Funcionários
+- Funcionário: ID_Funcionário (PK), Nome, Cargo, Supervisor_ID (FK - referenciando ID_Funcionário na mesma tabela)
+
+<img src="algoritmo/Atividades/BD/A24_19-03-25/BD_08_autoRelacionamento.png">
+
+## BD 09 - 
+#### 
+
+<p align="center"> 19/03/25 <p>
 </details>
 
 ---
