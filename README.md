@@ -4745,10 +4745,89 @@ create schema turma;
 use turma;
 
 create table aluno(
-id_aluno int auto_increment primary key,
-nome varchar(150) not null
+	id_aluno int auto_increment primary key,
+	nome varchar(150) not null
+);
+
+create table trabalho(
+	id_trabalho int auto_increment primary key,
+	descricao varchar(255) not null,
+	id_aluno int not null,
+		foreign key (id_aluno) references aluno(id_aluno)
 );
 ~~~~ 
+
+## Exercicio
+
+Você foi contratado para projetar um `banco de dados` para uma empresa que gerencia clientes e pedidos. Sua tarefa é desenvolver os modelos: 
+- conceitual,
+- lógico,
+- físico.
+
+
+Vamos criar duas entidades: **Cliente** e **Pedido**, e um relacionamento entre elas.
+
+Campos: Cliente
+- id_cliente (chave primária), 
+- nome_cliente.
+- Pedido
+
+Campos: Pedido
+- id_pedido (chave primária), 
+- descricao_pedido.
+
+Um cliente pode fazer vários pedidos
+
+Um pedido está relacionado somente a um cliente.
+
+#### Modelagem Conceitual
+Desenhe um diagrama entidade-relacionamento (DER) representando as entidades Cliente e Pedido e o relacionamento entre elas.
+
+#### Modelagem Lógica
+
+Converta o diagrama entidade-relacionamento (DER) em um modelo relacional. Liste as tabelas necessárias, seus atributos e as chaves primárias e estrangeiras.
+
+#### Modelagem Física
+
+Utilizando SQL, crie as tabelas correspondentes ao modelo relacional definido na etapa de modelagem lógica.
+
+Insira alguns dados de exemplo nas tabelas para testar o banco de dados.
+
+##### Observações
+
+Certifique-se de definir corretamente as chaves primárias e estrangeiras para manter a integridade dos dados.
+
+Verifique se os tipos de dados escolhidos para cada atributo são apropriados para os dados que serão armazenados.
+
+Ao criar o modelo físico, preste atenção aos detalhes de sintaxe SQL específicos do sistema de gerenciamento de banco de dados (SGBD) que você está utilizando.
+
+### Modelo Conceitual
+<img src="algoritmo/Atividades/BD/A25_20-02-25/BD_Exercicio_DERMC.png">
+
+### Modelo Lógico
+<img src="algoritmo/Atividades/BD/A25_20-02-25/BD_Exercicio_DERML.png">
+
+### Modelo Físico
+~~~~ sql
+create schema Exercicio;
+use Exercicio;
+
+create table cliente(
+	id_cliente int auto_increment primary key,
+	nome varchar(150),
+	pedido varchar(200)
+);
+
+create table pedido(
+	id_pedido int auto_increment primary key,
+	descricao varchar(255),
+	id_cliente int not null,
+		foreign key (id_cliente) references cliente(id_cliente)
+);
+
+
+~~~~
+
 
 
 <p align="center"> 20/03/25 <p>
