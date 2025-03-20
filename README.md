@@ -4731,7 +4731,7 @@ A empresa de varejo decidiu informatizar o gerenciamento de funcionários, mas d
 </details>
 
 <details>
-<summary> 💠 Aula 25 - 📝 Banco de Dados - Modelo Conteitual VI ()</summary>
+<summary> 💠 Aula 25 - 📝 Banco de Dados - Modelo Físico </summary>
 
 <br>
 <p> 20/03/25 <p>
