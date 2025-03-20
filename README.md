@@ -1823,7 +1823,6 @@ print(numero)
     5050
 
 ## Exercício #62 FOR - números pares de 1 a 20
-
 #### Imprima os números pares de 1 a 20.
 
 #### resolução
@@ -4725,7 +4724,20 @@ Tabela de Funcionários:
 
 A empresa de varejo decidiu informatizar o gerenciamento de funcionários, mas descobriu que o banco de dados existente está inconsistente e não normalizado. Isso resulta em várias anomalias e dificuldades de manutenção, como redundância de dados, dependências transitivas e dificuldade em atualizar informações. Você foi solicitado para efetuar melhorias no sistema existente, qual seria a sugestão de melhoria.
 
+![alt](algoritmo/Atividades/BD/A24_19-03-25/BD_10_funcionario.png)
+
 <p align="center"> 19/03/25 <p>
+</details>
+
+<details>
+<summary> 💠 Aula 25 - 📝 Banco de Dados - Modelo Conteitual VI ()</summary>
+
+<br>
+<p> 20/03/25 <p>
+
+
+
+<p align="center"> 20/03/25 <p>
 </details>
 
 ---
