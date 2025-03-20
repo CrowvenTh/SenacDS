@@ -12,12 +12,13 @@ Repositório destinado as atividades realizadas no curso de Desenvolvimento de s
 - 📁 <a href="algoritmo/Material/python_aula02.pdf">Operadores Lógicos </a> 
 - 📁 <a href="algoritmo/Material/python_aula03.pdf">Tipos de dados & condicionais </a> 
 - 📁 <a href="algoritmo/Material/python_aula04.pdf"> Variáveis & Exercícios</a> 
-- 💾 <a href="https://github.com/CrowvenTh/Santander-Python">Repositório de apoio</a>
+- 💾 <a href="https://github.com/CrowvenTh/Santander-Python">Repositório de apoio (Python)</a>
 
 ### 📋 Banco de Dados 
 
 #### ⚙️ Ferramenta <a href="http://www.sis4.com/brModelo/download.html?authuser=0"> BRModelo </a>
 
+- 💾 <a href="https://github.com/CrowvenTh/senai-lp">Repositório de apoio (SQL)</a>
 
 - 📜 <a href="algoritmo/Material/SQL/AULA 15_SQL BÁSICO.pdf">SQL básico</a>
 - 📜 <a href="algoritmo/Material/SQL/SQL Basics Cheat Sheet.pdf">SQL Basics cheat Sheet</a>
@@ -4735,6 +4736,19 @@ A empresa de varejo decidiu informatizar o gerenciamento de funcionários, mas d
 <br>
 <p> 20/03/25 <p>
 
+## Modelo físico
+
+Criação do modelo físico 
+
+~~~~ sql
+create schema turma;
+use turma;
+
+create table aluno(
+id_aluno int auto_increment primary key,
+nome varchar(150) not null
+);
+~~~~ 
 
 
 <p align="center"> 20/03/25 <p>
