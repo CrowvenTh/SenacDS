@@ -4833,6 +4833,199 @@ create table pedido(
 <p align="center"> 20/03/25 <p>
 </details>
 
+<details>
+<summary> 💠 Aula 26 - 📝 Banco de Dados - Modelo Físico II </summary>
+
+<br>
+<p> 21/03/25 <p>
+
+## Atividade I - INSERT 
+
+Nesta atividade, você realizará um teste do banco de dados que foi criado anteriormente. O teste envolverá a inserção de dados de exemplo nas tabelas Clientes e Pedidos, permitindo verificar se o banco de dados está funcionando conforme o esperado.
+
+ - Objetivo
+   - Inserir dados de exemplo para testar o banco de dados.
+
+#### Instruções
+Inserção de Dados:
+Insira os seguintes dados de exemplo nas tabelas Clientes e Pedidos do banco de dados:
+- Três Clientes.
+- Quatro Pedidos.
+
+Inserção de Dados:
+
+Ao utilizar o comando INSERT INTO e especificar as colunas, você pode inserir valores apenas para as colunas desejadas.
+
+~~~~ sql
+INSERT INTO nomeDaTabela (coluna1, coluna2, coluna3) VALUES (valor1, valor2, valor3);
+~~~~
+
+Neste exemplo, estamos inserindo valores apenas para as colunas coluna1, coluna2 e coluna3.
+
+
+## Atividade II - ALTER TABLE - ADD COLUMN
+
+Adição de Nova Coluna para Pontos de Fidelidade
+
+Realizaremos essa atividade prática para explorar como fazer alterações em um banco de dados MySQL. Nosso objetivo é adicionar uma nova coluna para acompanhar os pontos de fidelidade dos clientes na tabela já existente (cliente). Sempre que um cliente for adicionado, por padrão será atribuído o valor zero para a nova coluna criada.
+
+> Objetivo:
+> 
+> Compreender e praticar a adição de uma nova coluna a uma tabela existente em um banco de dados MySQL.
+Reconhecer a importância de planejar e executar alterações no esquema do banco de dados para atender às necessidades do sistema.
+Novos campos da Tabela Cliente:
+
+#### Cliente
+- id_cliente (chave primária),
+- nome_cliente
+- pontos_fidelidade
+
+#### Instruções
+
+Sem valor padrão:
+~~~~ sql
+ALTER TABLE nomeTabela
+ADD COLUMN novoNomeColuna VARCHAR(20);
+~~~~
+
+#### Com valor padrão(DEFAULT):
+~~~~ sql
+ALTER TABLE nomeTabela
+ADD COLUMN novoNovemColuna VARCHAR(20) DEFAULT 'regular';
+~~~~
+
+## Atividade III - ALTER TABLE - MODIFY
+
+Modificação de Coluna para Adicionar Restrição `NOT NULL`
+Nesta atividade prática, exploraremos como fazer alterações em um banco de dados MySQL. 
+
+Nosso objetivo é modificar uma coluna existente na tabela pedido para adicionar uma restrição NOT NULL. Esta coluna foi originalmente criada sem a restrição e agora vamos garantir que não aceite valores nulos.
+
+#### Instruções
+~~~~ sql
+ALTER TABLE pedido
+MODIFY quantidade int NOT NULL;
+~~~~
+
+## Atividade IV - livros e autores
+
+Você foi contratado para criar o projeto conceitual e lógico de um banco de dados para uma biblioteca online. A biblioteca precisa armazenar informações sobre os livros disponíveis e seus respectivos autores.
+
+Requisitos do Sistema
+
+- Tabelas
+- Livros
+- Autores
+- Cardinalidade
+
+1. Livros
+     - Cada livro deve ter um título, ano de publicação e gênero.
+  
+2. Autores
+   - Cada autor deve ter um nome e país de origem.
+
+3. Relacionamento
+    - Um livro pode ter apenas um autor, mas um autor pode ter escrito vários livros.
+  
+    - Nem todos os livros precisam estar associados a um autor, permitindo a existência de livros sem autores registrados.
+  
+    - Nem todos os autores precisam estar associados a livros, permitindo a existência de autores sem livros registrados.
+
+- Atributos Livros:
+    - livro_id (PK, INT)
+    - titulo (VARCHAR)
+    - ano_publicacao (INT)
+    - genero (VARCHAR)
+    - autor_id (FK, INT, NULL)
+
+- Atributos Autores:
+    - autor_id (PK, INT)
+    - nome (VARCHAR)
+    - pais_origem (VARCHAR
+Especificar as Chaves Primárias e Estrangeiras:
+
+#### Entregáveis
+1. Modelo Conceitual:
+   - Diagrama ER mostrando as entidades, atributos e relacionamentos, incluindo a cardinalidade.
+2. Modelo Lógico:
+    - Descrição das tabelas e seus campos.
+    - Especificação das chaves primárias e estrangeiras.
+    - Definição dos tipos de dados e restrições para cada campo.
+
+3. Projeto Físico
+
+
+## Atividade V - Nota Fiscal
+
+1. Crie, no seu banco de dados, a tabela abaixo, insira os valores apresentados e em
+seguida escreva as consultas solicitadas abaixo.
+OBS: Os valores em branco devem ser nulos no banco de dados.
+
+![alt text](algoritmo/Atividades/BD/A26_21-03-25/BD_notaFiscal.jpg)
+
+a) Pesquise os itens que foram vendidos sem desconto. As colunas presentes no resultado
+da consulta são: `ID_NF`, `ID_ITEM`, `COD_PROD` E `VALOR_UNIT`.
+
+b) Pesquise os itens que foram vendidos com desconto. As colunas presentes no resultado
+da consulta são: 
+    
+    ID_NF, ID_ITEM, COD_PROD, VALOR_UNIT 
+    
+E O VALOR VENDIDO. OBS: O valor vendido é igual a:
+    
+    VALOR_UNIT -(VALOR_UNIT*(DESCONTO/100)).
+
+c) Altere o valor do desconto (para zero) de todos os registros onde este campo é nulo.
+
+d) Pesquise os itens que foram vendidos. As colunas presentes no resultado da consulta
+são: 
+    
+        ID_NF, ID_ITEM, COD_PROD, VALOR_UNIT, VALOR_TOTAL, DESCONTO,
+VALOR_VENDIDO. 
+
+OBS: O VALOR_TOTAL é obtido pela fórmula: 
+
+    QUANTIDADE * VALOR_UNIT. O VALOR_VENDIDO é igual a VALOR_UNIT - (VALOR_UNIT*(DESCONTO/100)).
+
+e) Pesquise o valor total das NF e ordene o resultado do maior valor para o menor. 
+As colunas presentes no resultado da consulta são: ID_NF, VALOR_TOTAL. OBS: O VALOR_TOTAL é obtido pela fórmula: ∑ QUANTIDADE * VALOR_UNIT. Agrupe o
+resultado da consulta por ID_NF.
+
+f) Pesquise o valor vendido das NF e ordene o resultado do maior valor para o menor. As
+colunas presentes no resultado da consulta são: ID_NF, VALOR_VENDIDO. OBS: O
+VALOR_TOTAL é obtido pela fórmula: ∑ QUANTIDADE * VALOR_UNIT. O
+VALOR_VENDIDO é igual a ∑ VALOR_UNIT - (VALOR_UNIT*(DESCONTO/100)). Agrupe o
+resultado da consulta por ID_NF.
+
+g) Consulte o produto que mais vendeu no geral. As colunas presentes no resultado da
+consulta são: COD_PROD, QUANTIDADE. Agrupe o resultado da consulta por
+COD_PROD.
+
+h) Consulte as NF que foram vendidas mais de 10 unidades de pelo menos um produto. As
+colunas presentes no resultado da consulta são: ID_NF, COD_PROD, QUANTIDADE.
+Agrupe o resultado da consulta por ID_NF, COD_PROD.
+
+i) Pesquise o valor total das NF, onde esse valor seja maior que 500, e ordene o resultado
+do maior valor para o menor. As colunas presentes no resultado da consulta são: ID_NF,
+VALOR_TOT. OBS: O VALOR_TOTAL é obtido pela fórmula: ∑ QUANTIDADE *
+VALOR_UNIT. Agrupe o resultado da consulta por ID_NF.
+
+j) Qual o valor médio dos descontos dados por produto. As colunas presentes no resultado
+da consulta são: COD_PROD, MEDIA. Agrupe o resultado da consulta por COD_PROD.
+
+k) Qual o menor, maior e o valor médio dos descontos dados por produto. As colunas
+presentes no resultado da consulta são: COD_PROD, MENOR, MAIOR, MEDIA. Agrupe o
+resultado da consulta por COD_PROD.
+
+l) Quais as NF que possuem mais de 3 itens vendidos. As colunas presentes no resultado
+da consulta são: ID_NF, QTD_ITENS. OBS:: NÃO ESTÁ RELACIONADO A QUANTIDADE
+VENDIDA DO ITEM E SIM A QUANTIDADE DE ITENS POR NOTA FISCAL. Agrupe o
+resultado da consulta por ID_NF.
+
+<p align="center"> 21/03/25 <p>
+</details>
+
+
 ---
 
 <br>
