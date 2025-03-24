@@ -4971,18 +4971,45 @@ Requisitos do Sistema
     - autor_id (PK, INT)
     - nome (VARCHAR)
     - pais_origem (VARCHAR
+
 Especificar as Chaves Primárias e Estrangeiras:
 
 #### Entregáveis
 1. Modelo Conceitual:
    - Diagrama ER mostrando as entidades, atributos e relacionamentos, incluindo a cardinalidade.
-2. Modelo Lógico:
+<img src="algoritmo/Atividades/BD/A26_21-03-25/Livro&Autores/DER_Conceitual.png">
+
+1. Modelo Lógico:
     - Descrição das tabelas e seus campos.
     - Especificação das chaves primárias e estrangeiras.
     - Definição dos tipos de dados e restrições para cada campo.
+<img src="algoritmo/Atividades/BD/A26_21-03-25/Livro&Autores/DER_Lógico.png">
+
+
 
 3. Projeto Físico
+~~~~ sql
+create schema biblioteca;
 
+use biblioteca;
+
+create table autor (
+	autor_id int,
+	nome varchar(255),
+	pais_origem varchar(150),
+		primary key (autor_id)
+);
+
+create table livro (
+	livro_id int,
+	titulo varchar(255),
+	ano_publicacao int,
+	genero varchar(200),
+	autor_id int,
+		primary key (livro_id),
+		foreign key (autor_id) references autor(autor_id)
+);
+~~~~
 
 ## Atividade V - Nota Fiscal
 
@@ -4998,33 +5025,41 @@ da consulta são: `ID_NF`, `ID_ITEM`, `COD_PROD` E `VALOR_UNIT`.
 b) Pesquise os itens que foram vendidos com desconto. As colunas presentes no resultado
 da consulta são: 
     
-    ID_NF, ID_ITEM, COD_PROD, VALOR_UNIT 
+`ID_NF, ID_ITEM, COD_PROD, VALOR_UNIT` 
     
 E O VALOR VENDIDO. OBS: O valor vendido é igual a:
     
-    VALOR_UNIT -(VALOR_UNIT*(DESCONTO/100)).
+`VALOR_UNIT -(VALOR_UNIT*(DESCONTO/100))`.
 
 c) Altere o valor do desconto (para zero) de todos os registros onde este campo é nulo.
 
 d) Pesquise os itens que foram vendidos. As colunas presentes no resultado da consulta
 são: 
     
-        ID_NF, ID_ITEM, COD_PROD, VALOR_UNIT, VALOR_TOTAL, DESCONTO,
-VALOR_VENDIDO. 
+`ID_NF, ID_ITEM, COD_PROD, VALOR_UNIT, VALOR_TOTAL, DESCONTO, VALOR_VENDIDO.`
 
 OBS: O VALOR_TOTAL é obtido pela fórmula: 
 
-    QUANTIDADE * VALOR_UNIT. O VALOR_VENDIDO é igual a VALOR_UNIT - (VALOR_UNIT*(DESCONTO/100)).
+`QUANTIDADE * VALOR_UNIT`. 
+
+O VALOR_VENDIDO é igual a:
+
+ `VALOR_UNIT - (VALOR_UNIT*(DESCONTO/100))`.
 
 e) Pesquise o valor total das NF e ordene o resultado do maior valor para o menor. 
-As colunas presentes no resultado da consulta são: ID_NF, VALOR_TOTAL. OBS: O VALOR_TOTAL é obtido pela fórmula: ∑ QUANTIDADE * VALOR_UNIT. Agrupe o
+As colunas presentes no resultado da consulta são: `ID_NF, VALOR_TOTAL`. OBS: O VALOR_TOTAL é obtido pela fórmula: `∑ QUANTIDADE * VALOR_UNIT`. Agrupe o
 resultado da consulta por ID_NF.
 
 f) Pesquise o valor vendido das NF e ordene o resultado do maior valor para o menor. As
-colunas presentes no resultado da consulta são: ID_NF, VALOR_VENDIDO. OBS: O
-VALOR_TOTAL é obtido pela fórmula: ∑ QUANTIDADE * VALOR_UNIT. O
-VALOR_VENDIDO é igual a ∑ VALOR_UNIT - (VALOR_UNIT*(DESCONTO/100)). Agrupe o
-resultado da consulta por ID_NF.
+colunas presentes no resultado da consulta são: ID_NF, VALOR_VENDIDO. OBS:
+
+O VALOR_TOTAL é obtido pela fórmula: 
+
+`∑ QUANTIDADE * VALOR_UNIT`. 
+
+O VALOR_VENDIDO é igual a `∑ VALOR_UNIT - (VALOR_UNIT*(DESCONTO/100))`. 
+
+Agrupe o resultado da consulta por ID_NF.
 
 g) Consulte o produto que mais vendeu no geral. As colunas presentes no resultado da
 consulta são: COD_PROD, QUANTIDADE. Agrupe o resultado da consulta por
