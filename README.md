@@ -4979,7 +4979,7 @@ Especificar as Chaves Primárias e Estrangeiras:
    - Diagrama ER mostrando as entidades, atributos e relacionamentos, incluindo a cardinalidade.
 <img src="algoritmo/Atividades/BD/A26_21-03-25/Livro&autores/DER_Conceitual.png">
 
-1. Modelo Lógico:
+2. Modelo Lógico:
     - Descrição das tabelas e seus campos.
     - Especificação das chaves primárias e estrangeiras.
     - Definição dos tipos de dados e restrições para cada campo.
