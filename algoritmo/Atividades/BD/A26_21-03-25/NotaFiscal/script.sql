@@ -96,6 +96,47 @@ order by 2 desc;
 -- G
 select
 	cod_prod,
-	quantidade
+	sum(quantidade) as Quantidade
+from registro
+group by cod_prod;
 
+-- H
+select 
+	id_nf,
+	cod_prod,
+		(sum(valor_unit - (valor_unit * (desconto / 100)))) as 'valor vendido'
+		from registro
+	group by 1, 2
+having (sum(valor_unit - (valor_unit * (desconto / 100)))) > 10;
 
+-- I
+select
+	id_nf,
+	sum(quantidade * valor_unit) as 'valor total'
+	from registro
+group by 1
+	having sum(quantidade * valor_unit) > 500;
+
+-- J
+select 
+	cod_prod,
+	round(avg(valor_unit - (valor_unit * (desconto / 100))),2) as 'Média Vendas'
+from registro
+	group by 1;
+
+-- K
+select 
+	cod_prod,
+	MIN(desconto) as 'Menor desconto',
+	MAX(desconto) as 'Maior desconto',
+	AVG(desconto) as 'Média desconto'
+from registro
+group by 1;
+
+-- L
+select 
+	id_nf,
+	count(quantidade) as 'Quantidade Itens'
+from registro 
+group by 1;
+	

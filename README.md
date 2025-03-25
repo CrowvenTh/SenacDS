@@ -5022,70 +5022,166 @@ OBS: Os valores em branco devem ser nulos no banco de dados.
 a) Pesquise os itens que foram vendidos sem desconto. As colunas presentes no resultado
 da consulta são: `ID_NF`, `ID_ITEM`, `COD_PROD` E `VALOR_UNIT`.
 
+~~~~ sql
+select 
+	id_nf, 
+	id_item, 
+	cod_prod, 
+	valor_unit 
+from registro 
+	where desconto is null;
+~~~~
+
 b) Pesquise os itens que foram vendidos com desconto. As colunas presentes no resultado
 da consulta são: 
     
 `ID_NF, ID_ITEM, COD_PROD, VALOR_UNIT` 
     
-E O VALOR VENDIDO. OBS: O valor vendido é igual a:
+E O **VALOR VENDIDO**. OBS: O valor vendido é igual a:
     
 `VALOR_UNIT -(VALOR_UNIT*(DESCONTO/100))`.
+~~~~ sql
+select 
+	id_nf, 
+	id_item, 
+	cod_prod, 
+	valor_unit,
+	valor_unit - (valor_unit * (desconto / 100)) as 'valor vendido'
+from registro 
+	where desconto is not null;
+~~~~ 
 
 c) Altere o valor do desconto (para zero) de todos os registros onde este campo é nulo.
+~~~~ sql
+update 
+	registro 
+		set desconto = 0 
+where desconto is null;
+
+select * from registro;
+~~~~ 
 
 d) Pesquise os itens que foram vendidos. As colunas presentes no resultado da consulta
 são: 
     
 `ID_NF, ID_ITEM, COD_PROD, VALOR_UNIT, VALOR_TOTAL, DESCONTO, VALOR_VENDIDO.`
 
-OBS: O VALOR_TOTAL é obtido pela fórmula: 
+OBS: O **VALOR_TOTAL** é obtido pela fórmula: 
 
 `QUANTIDADE * VALOR_UNIT`. 
 
-O VALOR_VENDIDO é igual a:
+O **VALOR_VENDIDO** é igual a:
 
  `VALOR_UNIT - (VALOR_UNIT*(DESCONTO/100))`.
 
-e) Pesquise o valor total das NF e ordene o resultado do maior valor para o menor. 
-As colunas presentes no resultado da consulta são: `ID_NF, VALOR_TOTAL`. OBS: O VALOR_TOTAL é obtido pela fórmula: `∑ QUANTIDADE * VALOR_UNIT`. Agrupe o
-resultado da consulta por ID_NF.
+ ~~~~ sql
+ select
+	id_nf, 
+	id_item, 
+	cod_prod, 
+	valor_unit,
+	(quantidade * valor_unit) as 'Valor total',
+	(valor_unit - (valor_unit * (desconto / 100))) as 'valor vendido'
+from registro;
+ ~~~~ 
 
+e) Pesquise o valor total das NF e ordene o resultado do maior valor para o menor. 
+As colunas presentes no resultado da consulta são: `ID_NF, VALOR_TOTAL`. OBS: O **VALOR_TOTAL** é obtido pela fórmula: `∑ QUANTIDADE * VALOR_UNIT`. Agrupe o
+resultado da consulta por ID_NF.
+~~~~ sql
+select 
+	id_nf,
+	sum(quantidade * valor_unit) as 'Valor total'
+	from registro 
+		group by id_nf
+			order by id_nf asc;
+~~~~
 f) Pesquise o valor vendido das NF e ordene o resultado do maior valor para o menor. As
 colunas presentes no resultado da consulta são: ID_NF, VALOR_VENDIDO. OBS:
 
-O VALOR_TOTAL é obtido pela fórmula: 
+O **VALOR_TOTAL** é obtido pela fórmula: 
 
 `∑ QUANTIDADE * VALOR_UNIT`. 
 
-O VALOR_VENDIDO é igual a `∑ VALOR_UNIT - (VALOR_UNIT*(DESCONTO/100))`. 
+O **VALOR_VENDIDO** é igual a `∑ VALOR_UNIT - (VALOR_UNIT*(DESCONTO/100))`. 
 
 Agrupe o resultado da consulta por ID_NF.
+~~~~ sql
+select
+	id_nf,
+	(sum(valor_unit - (valor_unit * (desconto / 100)))) as 'valor vendido'	
+from registro
+group by 1
+order by 2 desc;
+~~~~ 
 
 g) Consulte o produto que mais vendeu no geral. As colunas presentes no resultado da
 consulta são: COD_PROD, QUANTIDADE. Agrupe o resultado da consulta por
 COD_PROD.
+~~~~ sql
+select
+	cod_prod,
+	sum(quantidade) as Quantidade
+from registro
+group by cod_prod;
+~~~~ 
 
 h) Consulte as NF que foram vendidas mais de 10 unidades de pelo menos um produto. As
 colunas presentes no resultado da consulta são: ID_NF, COD_PROD, QUANTIDADE.
 Agrupe o resultado da consulta por ID_NF, COD_PROD.
-
+~~~~ sql
+select 
+	id_nf,
+	cod_prod,
+		(sum(valor_unit - (valor_unit * (desconto / 100)))) as 'valor vendido'
+		from registro
+	group by 1, 2
+having (sum(valor_unit - (valor_unit * (desconto / 100)))) > 10;
+~~~~
 i) Pesquise o valor total das NF, onde esse valor seja maior que 500, e ordene o resultado
 do maior valor para o menor. As colunas presentes no resultado da consulta são: ID_NF,
-VALOR_TOT. OBS: O VALOR_TOTAL é obtido pela fórmula: ∑ QUANTIDADE *
-VALOR_UNIT. Agrupe o resultado da consulta por ID_NF.
-
+VALOR_TOT. OBS: O VALOR_TOTAL é obtido pela fórmula: `∑ QUANTIDADE *
+VALOR_UNIT`. Agrupe o resultado da consulta por ID_NF.
+~~~~ sql
+select
+	id_nf,
+	sum(quantidade * valor_unit) as 'valor total'
+	from registro
+group by 1
+	having sum(quantidade * valor_unit) > 500;
+~~~~
 j) Qual o valor médio dos descontos dados por produto. As colunas presentes no resultado
 da consulta são: COD_PROD, MEDIA. Agrupe o resultado da consulta por COD_PROD.
-
+~~~~ sql
+select 
+	cod_prod,
+	round(avg(valor_unit - (valor_unit * (desconto / 100))),2) as 'Média Vendas'
+from registro
+	group by 1;
+~~~~
 k) Qual o menor, maior e o valor médio dos descontos dados por produto. As colunas
 presentes no resultado da consulta são: COD_PROD, MENOR, MAIOR, MEDIA. Agrupe o
 resultado da consulta por COD_PROD.
-
+~~~~ sql
+select 
+	cod_prod,
+	MIN(desconto) as 'Menor desconto',
+	MAX(desconto) as 'Maior desconto',
+	AVG(desconto) as 'Média desconto'
+from registro
+group by 1;
+~~~~
 l) Quais as NF que possuem mais de 3 itens vendidos. As colunas presentes no resultado
 da consulta são: ID_NF, QTD_ITENS. OBS:: NÃO ESTÁ RELACIONADO A QUANTIDADE
 VENDIDA DO ITEM E SIM A QUANTIDADE DE ITENS POR NOTA FISCAL. Agrupe o
 resultado da consulta por ID_NF.
-
+~~~~ sql
+select 
+	id_nf,
+	count(quantidade) as 'Quantidade Itens'
+from registro 
+group by 1;
+~~~~ 
 <p align="center"> 21/03/25 <p>
 </details>
 
