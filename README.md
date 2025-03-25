@@ -5191,6 +5191,106 @@ group by 1;
 <br>
 <p> 25/03/25 <p>
 
+## Desafio BD 01
+
+m) Identificação de Itens com e sem Desconto Utilizando IF:
+
+Identifique os itens vendidos, indicando se cada item possui ou não desconto. Utilize a função IF para esta distinção.
+
+As colunas presentes no resultado da consulta são: 
+- **ID_NF** (Identificador da Nota Fiscal)
+- **ID_ITEM** (Identificador do Item)
+- **COD_PROD** (Código do Produto)
+- **VALOR_UNIT** (Valor Unitário do Produto)
+- **QUANTIDADE** (Quantidade Vendida)
+- **STATUS_DESCONTO** (Indicação de Desconto)
+- **VALOR_VENDIDO** (Valor Vendido Considerando o Desconto, se aplicável).
+
+<img src="algoritmo/Atividades/BD/A27_25-03-25/Questão M.png">
+
+## Desafio BD 02
+
+n) Listar itens e indicar se a quantidade vendida é maior ou igual a 10.
+
+Liste os itens vendidos, indicando se a quantidade vendida de cada item é maior ou igual a 10.
+
+Utilize a função `IF` para esta distinção. As colunas presentes no resultado da consulta são:
+- **ID_NF** (Identificador da Nota Fiscal)
+- **ID_ITEM** (Identificador do Item)
+- **COD_PROD** (Código do Produto)
+- **QUANTIDADE** (Quantidade Vendida) 
+- **QUANTIDADE_STATUS** (Status da Quantidade Vendida).
+
+Os status possíveis para quantidade são **"Quantidade Alta" (>= 10) e "Quantidade Baixa" (< 10)**.
+
+<img src="algoritmo/Atividades/BD/A27_25-03-25/questão n.png">
+
+## Desafio BD 03
+
+O) Listar itens e indicar se o desconto aplicado é maior, igual ou menor que a média geral dos descontos.
+
+Liste os itens vendidos, indicando se o desconto aplicado em cada item é maior, igual ou menor que a média geral dos descontos.
+Utilize a função **IF** para esta distinção. As colunas presentes no resultado da consulta são:
+- **ID_NF** (Identificador da Nota Fiscal)
+- **ID_ITEM** (Identificador do Item)
+- **COD_PROD** (Código do Produto)
+- **DESCONTO** (Percentual de Desconto)
+- **DESCONTO_STATUS** (Status do Desconto).
+
+Os status possíveis para o desconto são **"Desconto Acima da Média", "Desconto Médio" e "Desconto Abaixo da Média"**.
+
+<img src="algoritmo/Atividades/BD/A27_25-03-25/Questão O.png">
+
+---
+## Universidade
+
+1. Crie uma base de dados Universidade com as tabelas a seguir:
+
+- Alunos (MAT, nome, endereço, cidade)
+- Disciplinas (COD_DISC, nome_disc, carga_hor)
+- Professores (COD_PROF, nome, endereço, cidade)
+- Turma (COD_DISC, COD_TURMA, COD_PROF, ANO, horário)
+    - COD_DISC referencia Disciplinas
+    - COD_PROF referencia Professores
+- Histórico (MAT, COD_DISC, COD_TURMA, COD_PROF, ANO, frequência, nota)
+  - MAT referencia Alunos
+  - COD_DISC, COD_TURMA, COD_PROF, ANO referencia Turma
+
+INSIRA OS SEGUINTES REGISTROS:
+ALUNOS:
+~~~~ sql
+(2015010101, JORGE DE ALENCAR, RUA DAS ALMAS, NATAL)
+(2015010102, JOÃO PAULO, AVENIDA RUY CARNEIRO, JOÃO PESSOA)
+(2015010103, MARINA, RUA CARROSSEL, RECIFE)
+(2015010104, MARIA DAS DORES, RUA DAS LADEIRAS, FORTALEZA)
+(2015010105, JOSUÉ EDUARDO DOS SANTOS, CENTRO, NATAL)
+(2015010106, JOSUÉLISSON CLAUDINO DOS SANTOS, CENTRO, NATAL)
+~~~~ 
+
+DISCIPLINAS:
+~~~~ sql
+(BD, BANCO DE DADOS, 100)
+(POO, PROGRAMAÇÃO COM ACESSO A BANCO DE DADOS, 100)
+(WEB, AUTORIA WEB, 50)
+(ENG, ENGENHARIA DE SOFTWARE, 80)
+~~~~ 
+
+PROFESSORES:
+~~~~ sql
+(212131, NICKERSON FERREIRA, RUA MANAÍRA, JOÃO PESSOA)
+(122135, ADORILSON BEZERRA, AVENIDA SALGADO FILHO, NATAL)
+(192011, DIEGO OLIVEIRA, AVENIDA ROBERTO FREIRE, NATAL)
+~~~~
+
+TURMA:
+~~~~ sql
+(BD, 1, 212131, 2015, 11H-12H)
+(BD, 2, 212131, 2015, 13H-14H)
+(POO, 1, 192011, 2015, 08H-09H)
+(WEB, 1, 192011, 2015, 07H-08H)
+(ENG, 1, 122135, 2015, 10H-11H)
+~~~~
+
 
 
 <p align="center"> 25/03/25 <p>
