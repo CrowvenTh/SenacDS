@@ -4986,7 +4986,6 @@ Especificar as Chaves Primárias e Estrangeiras:
 <img src="algoritmo/Atividades/BD/A26_21-03-25/Livro&autores/DER_Lógico.png">
 
 
-
 3. Projeto Físico
 ~~~~ sql
 create schema biblioteca;
@@ -5017,7 +5016,7 @@ create table livro (
 seguida escreva as consultas solicitadas abaixo.
 OBS: Os valores em branco devem ser nulos no banco de dados.
 
-![alt text](algoritmo/Atividades/BD/A26_21-03-25/BD_notaFiscal.jpg)
+![alt text](algoritmo/Atividades/BD/A26_21-03-25/NotaFiscal/BD_notaFiscal.jpg)
 
 a) Pesquise os itens que foram vendidos sem desconto. As colunas presentes no resultado
 da consulta são: `ID_NF`, `ID_ITEM`, `COD_PROD` E `VALOR_UNIT`.
@@ -5185,6 +5184,17 @@ group by 1;
 <p align="center"> 21/03/25 <p>
 </details>
 
+
+<details>
+<summary> 💠 Aula 27 - 📝 Banco de Dados - Modelo Físico III </summary>
+
+<br>
+<p> 25/03/25 <p>
+
+
+
+<p align="center"> 25/03/25 <p>
+</details>
 
 ---
 
