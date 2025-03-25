@@ -4977,13 +4977,13 @@ Especificar as Chaves Primárias e Estrangeiras:
 #### Entregáveis
 1. Modelo Conceitual:
    - Diagrama ER mostrando as entidades, atributos e relacionamentos, incluindo a cardinalidade.
-<img src="algoritmo/Atividades/BD/A26_21-03-25/Livro&Autores/DER_Conceitual.png">
+<img src="algoritmo/Atividades/BD/A26_21-03-25/Livro&autores/DER_Conceitual.png">
 
 1. Modelo Lógico:
     - Descrição das tabelas e seus campos.
     - Especificação das chaves primárias e estrangeiras.
     - Definição dos tipos de dados e restrições para cada campo.
-<img src="algoritmo/Atividades/BD/A26_21-03-25/Livro&Autores/DER_Lógico.png">
+<img src="algoritmo/Atividades/BD/A26_21-03-25/Livro&autores/DER_Lógico.png">
 
 
 
