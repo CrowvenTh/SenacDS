@@ -5223,7 +5223,7 @@ Utilize a função `IF` para esta distinção. As colunas presentes no resultado
 
 Os status possíveis para quantidade são **"Quantidade Alta" (>= 10) e "Quantidade Baixa" (< 10)**.
 
-<img src="algoritmo/Atividades/BD/A27_25-03-25/questão n.png">
+<img src="algoritmo/Atividades/BD/A27_25-03-25/questão N.png">
 
 ## Desafio BD 03
 
