@@ -5208,6 +5208,19 @@ As colunas presentes no resultado da consulta são:
 
 <img src="algoritmo/Atividades/BD/A27_25-03-25/Questão M.png">
 
+~~~~ sql
+select 
+	id_nf,
+	id_item,
+	cod_prod,
+	valor_unit,
+	quantidade,
+		if(desconto > 0, 'Com desconto', 'Sem deconto') as 'status desconto',
+	(sum(valor_unit - (valor_unit * (desconto / 100)))) as 'valor vendido'
+from registro
+group by 1, 2, 3;
+~~~~ 
+
 ## Desafio BD 02
 
 n) Listar itens e indicar se a quantidade vendida é maior ou igual a 10.
