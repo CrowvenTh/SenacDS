@@ -43,12 +43,17 @@ create table historico(
 	cod_prof int,
 	ano year,
 	frequencia int,
-	falta int,
-	nota decimal (2,2),
+	nota decimal (10,2),
 		primary key(mat, cod_disc, cod_turma, cod_prof, ano),
 		foreign key(mat) references alunos(mat),
 		foreign key(cod_disc) references disciplinas(cod_disc)		
 );
+
+select * from alunos;
+select * from disciplinas;
+select * from professores;
+select * from turma;
+select * from historico;	
 
 insert into alunos(mat, nome, endereco, cidade) values
 (2015010101, "JORGE DE ALENCAR", "RUA DAS ALMAS", "NATAL"),
@@ -76,7 +81,7 @@ insert into turma(cod_disc, cod_turma, cod_prof, ano, horario) values
 ("WEB", 1, 192011, 2015, "07H-08H"),
 ("ENG", 1, 122135, 2015, "10H-11H");
 
-insert into historico(mat, cod_disc, cod_turma, cod_prof, ano, frequencia, falta, nota) values
+insert into historico(mat, cod_disc, cod_turma, cod_prof, ano, frequencia, nota) values
 (2015010101,'BD',1,212131,2015,5,9.00),
 (2015010101,'ENG',1,122135,2015,1,10.00),
 (2015010101,'POO',1,192011,2015,4,8.00),
