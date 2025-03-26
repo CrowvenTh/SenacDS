@@ -5238,6 +5238,16 @@ Os status possíveis para quantidade são **"Quantidade Alta" (>= 10) e "Quantid
 
 <img src="algoritmo/Atividades/BD/A27_25-03-25/questão N.png">
 
+~~~~ sql
+select
+	id_nf,
+	id_item,
+	cod_prod,
+	quantidade,
+		if(quantidade >= 10, 'Quantidade Alta', 'Quantidade Baixa') as 'Quantidade status'
+from registro;
+~~~~
+
 ## Desafio BD 03
 
 O) Listar itens e indicar se o desconto aplicado é maior, igual ou menor que a média geral dos descontos.
@@ -5254,6 +5264,17 @@ Os status possíveis para o desconto são **"Desconto Acima da Média", "Descont
 
 <img src="algoritmo/Atividades/BD/A27_25-03-25/Questão O.png">
 
+~~~~ sql
+select
+	id_nf,
+	id_item,
+	cod_prod,
+	desconto,
+		if(desconto > (select avg(desconto) from registro), 'Desconto Acima da Média',
+			if(desconto = (select avg(desconto) from registro), 'Desconto Médio',
+				if(desconto < (select avg(desconto) from registro) and desconto > 0, 'Desconto Abaixo da Média', 'Sem desconto'))) as 'desconto status'
+	from registro;
+~~~~ 
 ---
 ## Universidade
 

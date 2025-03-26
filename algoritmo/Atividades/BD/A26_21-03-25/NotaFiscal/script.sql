@@ -148,6 +148,26 @@ select
 	valor_unit,
 	quantidade,
 		if(desconto > 0, 'Com desconto', 'Sem deconto') as 'status desconto',
-	(sum(valor_unit - (valor_unit * (desconto / 100)))) as 'valor vendido'
+	sum(valor_unit - (valor_unit * (desconto / 100))) as 'valor vendido'
 from registro
 group by 1, 2, 3;
+
+-- N
+select
+	id_nf,
+	id_item,
+	cod_prod,
+	quantidade,
+		if(quantidade >= 10, 'Quantidade Alta', 'Quantidade Baixa') as 'Quantidade status'
+from registro;
+
+-- O
+select
+	id_nf,
+	id_item,
+	cod_prod,
+	desconto,
+		if(desconto > (select avg(desconto) from registro), 'Desconto Acima da Média',
+			if(desconto = (select avg(desconto) from registro), 'Desconto Médio',
+				if(desconto < (select avg(desconto) from registro) and desconto > 0, 'Desconto Abaixo da Média', 'Sem desconto'))) as 'desconto status'
+	from registro;
