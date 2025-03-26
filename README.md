@@ -5280,13 +5280,13 @@ select
 
 1. Crie uma base de dados Universidade com as tabelas a seguir:
 
-- Alunos (MAT, nome, endereço, cidade)
-- Disciplinas (COD_DISC, nome_disc, carga_hor)
-- Professores (COD_PROF, nome, endereço, cidade)
-- Turma (COD_DISC, COD_TURMA, COD_PROF, ANO, horário)
+- Alunos (<u>MAT</u>, nome, endereço, cidade)
+- Disciplinas (<u>COD_DISC</u>, nome_disc, carga_hor)
+- Professores (<u>COD_PROF</u>, nome, endereço, cidade)
+- Turma (<u>COD_DISC, COD_TURMA, COD_PROF, ANO</u>, horário)
     - COD_DISC referencia Disciplinas
     - COD_PROF referencia Professores
-- Histórico (MAT, COD_DISC, COD_TURMA, COD_PROF, ANO, frequência, nota)
+- Histórico (<u>MAT, COD_DISC, COD_TURMA, COD_PROF, ANO</u>, frequência, nota)
   - MAT referencia Alunos
   - COD_DISC, COD_TURMA, COD_PROF, ANO referencia Turma
 
@@ -5324,6 +5324,23 @@ TURMA:
 (WEB, 1, 192011, 2015, 07H-08H)
 (ENG, 1, 122135, 2015, 10H-11H)
 ~~~~
+
+HISTÓRICO:  
+
+INSIRA VALORES PARA TODOS OS ALUNOS EM TODAS AS DISCIPLINAS  
+    
+A) Encontre a MAT dos alunos com nota em BD em 2015 menor que 5 (obs: BD = 
+código da disciplina).  
+
+B) Encontre a MAT e calcule a média das notas dos alunos na disciplina de POO 
+em 2015.  
+
+C) Encontre a MAT e calcule a média das notas dos alunos na disciplina de POO 
+em 2015 e que esta média seja superior a 6.  
+
+D) Encontre quantos alunos não são de Natal.  
+  
+  
 
 
 
