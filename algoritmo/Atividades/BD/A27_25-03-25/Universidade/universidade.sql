@@ -174,7 +174,9 @@ select * from alunos where mat > 2015010109;
 
 -- UDPATE -----------------------------------
 -- A ----------------------------------------
-update historico set nota + 0.5 where 
+update historico set nota + 0.5 where cod_disc = 'ENG' and cod_turma = 2;
+
+select nota from historico where cod_disc = 'ENG' and cod_turma = 2;
 
 
 show tables;
