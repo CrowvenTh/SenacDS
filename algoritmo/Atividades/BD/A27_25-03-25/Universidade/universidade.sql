@@ -101,15 +101,6 @@ insert into historico(mat, cod_disc, cod_turma, cod_prof, ano, frequencia, nota)
 (2015010106,'POO',1,192011,2015,1,6.00),
 (2015010106,'WEB',1,192011,2015,2,7.00);
 
-
-show tables;
-
-select * from alunos;
-select * from disciplinas;
-select * from historico;
-select * from professores;
-select * from turma;
-
 -- A ----------
 select 
 	mat,
@@ -140,3 +131,45 @@ select
 	* 
 from alunos 
 	where cidade != 'NATAL';
+
+
+-- PARTE 02 ---------------------------------
+-- INSERT -----------------------------------
+-- A ----------------------------------------
+select * from alunos;
+insert into alunos (mat,nome,endereco,cidade) values
+(2015010107, 'AUGUSTO ALEGRE','RUA MANGUEIRÃO','BELÉM'),
+(2015010108, 'PEDRO ROCHA','AVENIDA NAZARÉ','BELÉM'),
+(2015010109, 'ALEXA DIAS','TAGUATINGA','BRASÍLIA'),
+(2015010110, 'RAISSA ANDREIA','SAMAMBAIA','BRASÍLIA');
+
+-- B ----------------------------------------
+insert into professores (cod_prof, nome, endereco, cidade) values
+(777888,'ANTONIO SOARES','RIACHO FUNDO II','BRASÍLIA'),
+(121721,'THIAGO ANTONIO','RIACHO FUNDO I','BRASÍLIA')
+(123968,'BRENA COSTA','NÚCLEO BANDEIRANTE','BRASÍLIA');
+
+insert into turma(cod_disc, cod_turma, cod_prof, ano, horario) values 
+('WEB',2,777888,2025,'9H-10H'),
+('ENG',2,121721,2025,'12H-13H'),
+('POO',2,123968,2025,'10H-11H');
+
+-- C ----------------------------------------
+insert into historico(mat, cod_disc, cod_turma, cod_prof, ano, frequencia, nota) values
+(2015010107,'POO',2,123968,2025,8,8.8),
+(2015010107,'WEB',2,777888,2025,9,7.8),
+(2015010108,'ENG',2,121721,2025,5,5.4),
+(2015010109,'WEB',2,777888,2025,10,8.0),
+(2015010110,'ENG',2,121721,2025,7,9.2);
+
+-- DELETE-----------------------------------
+-- A ----------------------------------------
+
+
+show tables;
+
+select * from alunos;
+select * from disciplinas;
+select * from historico;
+select * from professores;
+select * from turma;
