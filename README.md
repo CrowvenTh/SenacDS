@@ -5382,6 +5382,7 @@ from alunos
 <br>
 <p> 26/03/25 <p>
 
+### Universidade Parte 2
 1. INSERIR OS DADOS NO BANCO DE DADOS DB_UNIVERSIDADE  
   
 - a) CADASTRAR 4 ALUNOS NO BANCO DE DADOS DA UNIVERSIDADE;  
@@ -5406,10 +5407,42 @@ TURMA 2, ACRESCENTAR 0,5 NAS NOTAS.
 - b) ALTERAR A NOTA DO ALUNO JOÃO PAULO DA DISCIPLINA DE POO PARA 10 E DEPOIS  
 REALIZE UMA CONSULTA PARA SABER SE O RESULTADO FOI ALTERADO 
 CORRETAMENTE;  
-  
-  
 
 <p align="center"> 26/03/25 <p>
+</details>
+
+
+<details>
+<summary> 💠 Aula 29 - 📝 Banco de Dados - Modelo Físico V </summary>
+
+<br>
+<p> 27/03/25 <p>
+
+SUBCONSULTA COM MAIS DE UMA TABELA 
+
+### Universidade Parte 3
+### Fazer um relatório para mostrar o nome dos alunos da disciplina de 
+banco de dados 
+~~~~ sql
+ SELECT NOME FROM ALUNO WHERE MAT IN (SELECT MAT FROM 
+HISTORICO WHERE COD_DISC = 'BD'); 
+~~~~
+
+1. Fazer um relatório para mostrar os dados dos alunos que tiraram 
+nota = 10. 
+
+2. Fazer um relatório que mostre todos os dados do aluno e do 
+histórico, quando a nota for maior que 7. 
+
+3. Fazer um relatório que mostre o nome dos professores e a 
+quantidade de turmas que eles ministram aula, somente para 
+quando a quantidade de turmas for maior que 1. 
+
+4. Fazer um relatório para mostrar o nome dos alunos, o código da 
+disciplina, a nota e a média geral, mostrar somente os dados dos 
+alunos que tiraram nota com valor maior ou igual a média geral.
+
+<p align="center"> 27/03/25 <p>
 </details>
 
 ---
