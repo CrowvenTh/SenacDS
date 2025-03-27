@@ -5331,15 +5331,47 @@ INSIRA VALORES PARA TODOS OS ALUNOS EM TODAS AS DISCIPLINAS
     
 A) Encontre a MAT dos alunos com nota em BD em 2015 menor que 5 (obs: BD = 
 código da disciplina).  
+~~~~ sql
+select 
+	mat,
+	nota
+from historico
+where cod_disc = 'BD' 
+		and ano = 2015 
+			and nota < 5;
+~~~~ 
 
 B) Encontre a MAT e calcule a média das notas dos alunos na disciplina de POO 
 em 2015.  
+~~~~ sql
+select 
+	mat,
+	avg(nota)
+from historico
+where cod_disc = 'POO' 
+	and ano = 2015
+group by mat;
+~~~~
 
 C) Encontre a MAT e calcule a média das notas dos alunos na disciplina de POO 
 em 2015 e que esta média seja superior a 6.  
-
+~~~~ sql
+select
+	mat,
+	avg(nota) as média
+from historico
+where cod_disc = 'POO'
+	and ano = 2015
+group by 1
+having avg(nota) > 6;
+~~~~ 
 D) Encontre quantos alunos não são de Natal.  
-  
+~~~~ sql
+select 
+	* 
+from alunos 
+	where cidade != 'NATAL';
+~~~~
 
 <p align="center"> 25/03/25 <p>
 </details>

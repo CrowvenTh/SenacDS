@@ -49,12 +49,6 @@ create table historico(
 		foreign key(cod_disc) references disciplinas(cod_disc)		
 );
 
-select * from alunos;
-select * from disciplinas;
-select * from professores;
-select * from turma;
-select * from historico;	
-
 insert into alunos(mat, nome, endereco, cidade) values
 (2015010101, "JORGE DE ALENCAR", "RUA DAS ALMAS", "NATAL"),
 (2015010102, "JOÃO PAULO", "AVENIDA RUY CARNEIRO", "JOÃO PESSOA"),
@@ -106,3 +100,43 @@ insert into historico(mat, cod_disc, cod_turma, cod_prof, ano, frequencia, nota)
 (2015010106,'ENG',1,122135,2015,1,10.00),
 (2015010106,'POO',1,192011,2015,1,6.00),
 (2015010106,'WEB',1,192011,2015,2,7.00);
+
+
+show tables;
+
+select * from alunos;
+select * from disciplinas;
+select * from historico;
+select * from professores;
+select * from turma;
+
+-- A ----------
+select 
+	mat,
+	nota
+from historico
+where cod_disc = 'BD' 
+		and ano = 2015 
+			and nota < 5;
+-- B -------------
+select 
+	mat,
+	avg(nota)
+from historico
+where cod_disc = 'POO' 
+	and ano = 2015
+group by mat;
+-- C --------------
+select
+	mat,
+	avg(nota) as média
+from historico
+where cod_disc = 'POO'
+	and ano = 2015
+group by 1
+having avg(nota) > 6;
+-- D --------------
+select 
+	* 
+from alunos 
+	where cidade != 'NATAL';
