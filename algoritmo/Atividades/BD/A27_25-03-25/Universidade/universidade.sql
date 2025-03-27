@@ -132,7 +132,6 @@ select
 from alunos 
 	where cidade != 'NATAL';
 
-
 -- PARTE 02 ---------------------------------
 -- INSERT -----------------------------------
 -- A ----------------------------------------
@@ -162,8 +161,20 @@ insert into historico(mat, cod_disc, cod_turma, cod_prof, ano, frequencia, nota)
 (2015010109,'WEB',2,777888,2025,10,8.0),
 (2015010110,'ENG',2,121721,2025,7,9.2);
 
--- DELETE-----------------------------------
+-- DELETE -----------------------------------
+-- A ---------------------------------------
+delete from historico where cod_turma = 2 and cod_disc = 'BD';
+
+-- B ---------------------------------------
+-- delete from alunos where mat > 2015010109; ERRO DE FK
+-- update alunos set mat = 0 where mat > 2015010109; ERRO DE FK
+update alunos set nome = null, endereco = null, cidade = null where mat > 2015010109;
+select * from alunos where mat > 2015010109;
+
+
+-- UDPATE -----------------------------------
 -- A ----------------------------------------
+update historico set nota + 0.5 where 
 
 
 show tables;
