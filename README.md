@@ -5484,15 +5484,36 @@ HISTORICO WHERE COD_DISC = 'BD');
 
 1. Fazer um relatório para mostrar os dados dos alunos que tiraram 
 nota = 10. 
+~~~~ sql
+-- SUBSELECT
+select 
+	mat,
+	nome,
+	endereco,
+	cidade
+from alunos 
+	where mat in (
+	select 
+		mat
+	from historico
+		where nota = 10);
+-- com JOIN
+select 
+	* 
+from alunos a  
+	inner join historico h
+		on a.mat = h.mat
+where h.nota = 10;
+~~~~
 
-2. Fazer um relatório que mostre todos os dados do aluno e do 
+1. Fazer um relatório que mostre todos os dados do aluno e do 
 histórico, quando a nota for maior que 7. 
 
-3. Fazer um relatório que mostre o nome dos professores e a 
+1. Fazer um relatório que mostre o nome dos professores e a 
 quantidade de turmas que eles ministram aula, somente para 
 quando a quantidade de turmas for maior que 1. 
 
-4. Fazer um relatório para mostrar o nome dos alunos, o código da 
+1. Fazer um relatório para mostrar o nome dos alunos, o código da 
 disciplina, a nota e a média geral, mostrar somente os dados dos 
 alunos que tiraram nota com valor maior ou igual a média geral.
 

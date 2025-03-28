@@ -185,3 +185,43 @@ select
 	nota
 from historico
 	where mat = 2015010102 and cod_disc like "POO";
+
+-- PARTE 03 ---------------------------------
+-- A ----------------------------------------
+select 
+	nome 
+from alunos 
+	where mat in (
+	select
+		mat 
+	from historico 
+		where cod_disc = "BD");
+
+-- 1 ----------------------------------------
+
+-- SUBSELECT
+select 
+	mat,
+	nome,
+	endereco,
+	cidade
+from alunos 
+	where mat in (
+	select 
+		mat
+	from historico
+		where nota = 10);
+-- com JOIN
+select 
+	* 
+from alunos a  
+	inner join historico h
+		on a.mat = h.mat
+where h.nota = 10;
+	
+
+select * from alunos;
+select * from disciplinas;
+select * from turma;
+select * from professores;
+select * from historico;
