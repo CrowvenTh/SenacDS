@@ -247,10 +247,16 @@ from professores p
 		on p.cod_prof = t.cod_prof
 group by 1
 having count(cod_turma) > 1;
-	
 
-select * from alunos;
-select * from disciplinas;
-select * from turma;
-select * from professores;
-select * from historico;
+-- 4 ----------------------------------------
+select 
+	a.nome,
+	d.cod_disc,
+	avg(h.nota), 
+	round((select avg(h.nota) from historico h)) as "media geral"
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc
+group by 1, 2;

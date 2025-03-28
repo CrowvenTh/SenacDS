@@ -5532,11 +5532,30 @@ from alunos a
 3. Fazer um relatório que mostre o nome dos professores e a 
 quantidade de turmas que eles ministram aula, somente para 
 quando a quantidade de turmas for maior que 1. 
+~~~~ sql
+select
+	p.nome,
+	count(cod_turma) as turmas
+from professores p
+	inner join turma t
+		on p.cod_prof = t.cod_prof
+group by 1
+having count(cod_turma) > 1;
+~~~~ 
 
 4. Fazer um relatório para mostrar o nome dos alunos, o código da 
 disciplina, a nota e a média geral, mostrar somente os dados dos 
 alunos que tiraram nota com valor maior ou igual a média geral.
-
+~~~~ sql
+select 
+	*
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc;
+	
+~~~~ 
 <p align="center"> 27/03/25 <p>
 </details>
 
