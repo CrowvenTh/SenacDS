@@ -265,13 +265,49 @@ group by 1, 2;
 -- INNER JOIN ---------------------------------------
 
 -- 1
+select
+	a.nome, 
+	d.nome_disc,
+	h.nota
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc
+where nota > 7 and ano = 2015;
+
 -- 2
+select
+	p.nome,
+	d.nome_disc,
+	t.horario
+from professores p
+	inner join turma t
+		on p.cod_prof = t.cod_prof
+	inner join disciplinas d
+		on d.cod_disc = t.cod_disc
+where t.ano = 2015;
+
 -- 3
+
+
 -- 4
+
+
 -- 5
+
+
 -- 6
+
+
 -- 7
+
+
 -- 8
+
+
 -- 9
+
+
 -- 10
 

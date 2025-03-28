@@ -5571,35 +5571,47 @@ group by 1, 2;
 ## Exercícios de SQL com INNER JOIN
 (Banco de Dados: Universidade)
 
-### 1. Liste o nome dos alunos, a disciplina e a nota, para todos os alunos que tiveram nota
-maior que 7 em qualquer disciplina no ano de 2015.
+### 1. Liste o nome dos alunos, a disciplina e a nota, para todos os alunos que tiveram nota maior que 7 em qualquer disciplina no ano de 2015.
+~~~~ sql
+select
+	a.nome, 
+	d.nome_disc,
+	h.nota
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc
+where nota > 7 and ano = 2015;
+~~~~
+### 2. Mostre o nome do professor, o nome da disciplina e o horário das turmas que cada professor ministrou em 2015.
+~~~~ sql
+select
+	p.nome,
+	d.nome_disc,
+	t.horario
+from professores p
+	inner join turma t
+		on p.cod_prof = t.cod_prof
+	inner join disciplinas d
+		on d.cod_disc = t.cod_disc
+where t.ano = 2015;
+~~~~
+### 3. Encontre todos os alunos que estudaram com o professor Nickerson Ferreira, mostrando o nome do aluno, a disciplina e o ano.
 
-### 2. Mostre o nome do professor, o nome da disciplina e o horário das turmas que cada
-professor ministrou em 2015.
+### 4. Liste os alunos de Natal que tiveram frequência menor que 5 em qualquer disciplina, mostrando o nome do aluno, nome da disciplina e a frequência.
 
-### 3. Encontre todos os alunos que estudaram com o professor Nickerson Ferreira,
-mostrando o nome do aluno, a disciplina e o ano.
+### 5. Mostre a média de notas por disciplina para cada cidade de origem dos alunos, ordenado pela disciplina e depois pela média decrescente.
 
-### 4. Liste os alunos de Natal que tiveram frequência menor que 5 em qualquer disciplina,
-mostrando o nome do aluno, nome da disciplina e a frequência.
+### 6. Encontre os professores que ministraram disciplinas com carga horária superior a 70 horas, mostrando o nome do professor e o nome da disciplina.
 
-### 5. Mostre a média de notas por disciplina para cada cidade de origem dos alunos,
-ordenado pela disciplina e depois pela média decrescente.
+### 7. Liste todos os alunos que tiveram nota acima da média em Banco de Dados, mostrando o nome do aluno e a nota.
 
-### 6. Encontre os professores que ministraram disciplinas com carga horária superior a 70
-horas, mostrando o nome do professor e o nome da disciplina.
+### 8. Mostre a quantidade de alunos por professor em 2015, ordenado pela quantidade em ordem decrescente.
 
-### 7. Liste todos os alunos que tiveram nota acima da média em Banco de Dados,
-mostrando o nome do aluno e a nota.
+### 9. Encontre os alunos que cursaram mais de uma disciplina com o mesmo professor, mostrando o nome do aluno, nome do professor e a quantidade de disciplinas.
 
-### 8. Mostre a quantidade de alunos por professor em 2015, ordenado pela quantidade em
-ordem decrescente.
-
-### 9. Encontre os alunos que cursaram mais de uma disciplina com o mesmo professor,
-mostrando o nome do aluno, nome do professor e a quantidade de disciplinas.
-
-### 10. Liste as disciplinas que tiveram alunos de todas as cidades representadas no banco
-de dados, mostrando o nome da disciplina.
+### 10. Liste as disciplinas que tiveram alunos de todas as cidades representadas no banco de dados, mostrando o nome da disciplina.
 
 > Observações:
 > 
