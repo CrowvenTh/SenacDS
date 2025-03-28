@@ -5562,6 +5562,55 @@ group by 1, 2;
 <p align="center"> 27/03/25 <p>
 </details>
 
+<details>
+<summary> 💠 Aula 30 - 📝 Banco de Dados - INNER JOIN </summary>
+
+<br>
+<p> 28/03/25 <p>
+
+## Exercícios de SQL com INNER JOIN
+(Banco de Dados: Universidade)
+
+### 1. Liste o nome dos alunos, a disciplina e a nota, para todos os alunos que tiveram nota
+maior que 7 em qualquer disciplina no ano de 2015.
+
+### 2. Mostre o nome do professor, o nome da disciplina e o horário das turmas que cada
+professor ministrou em 2015.
+
+### 3. Encontre todos os alunos que estudaram com o professor Nickerson Ferreira,
+mostrando o nome do aluno, a disciplina e o ano.
+
+### 4. Liste os alunos de Natal que tiveram frequência menor que 5 em qualquer disciplina,
+mostrando o nome do aluno, nome da disciplina e a frequência.
+
+### 5. Mostre a média de notas por disciplina para cada cidade de origem dos alunos,
+ordenado pela disciplina e depois pela média decrescente.
+
+### 6. Encontre os professores que ministraram disciplinas com carga horária superior a 70
+horas, mostrando o nome do professor e o nome da disciplina.
+
+### 7. Liste todos os alunos que tiveram nota acima da média em Banco de Dados,
+mostrando o nome do aluno e a nota.
+
+### 8. Mostre a quantidade de alunos por professor em 2015, ordenado pela quantidade em
+ordem decrescente.
+
+### 9. Encontre os alunos que cursaram mais de uma disciplina com o mesmo professor,
+mostrando o nome do aluno, nome do professor e a quantidade de disciplinas.
+
+### 10. Liste as disciplinas que tiveram alunos de todas as cidades representadas no banco
+de dados, mostrando o nome da disciplina.
+
+> Observações:
+> 
+> • Todas as consultas devem utilizar INNER JOIN para relacionar as tabelas.
+> 
+> • Considere a estrutura do banco de dados "Universidade" conforme definido
+anteriormente.
+
+<p align="center"> 28/03/25 <p>
+</details>
+
 ---
 
 <br>
