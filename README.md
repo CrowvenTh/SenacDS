@@ -5260,9 +5260,7 @@ Utilize a função **IF** para esta distinção. As colunas presentes no resulta
 - **DESCONTO** (Percentual de Desconto)
 - **DESCONTO_STATUS** (Status do Desconto).
 
-Os status possíveis para o desconto são **"Desconto Acima da Média", "Desconto Médio" e "Desconto Abaixo da Média"**.
-
-<img src="algoritmo/Atividades/BD/A27_25-03-25/Questão O.png">
+Os status possíveis para o desconto são **"Desconto Acima da Média", "Desconto Médio" e "Desconto Abaixo da Média"**
 
 ~~~~ sql
 select
@@ -5289,6 +5287,8 @@ select
 - Histórico (<u>MAT, COD_DISC, COD_TURMA, COD_PROF, ANO</u>, frequência, nota)
   - MAT referencia Alunos
   - COD_DISC, COD_TURMA, COD_PROF, ANO referencia Turma
+
+<img src="algoritmo/Atividades/BD/A27_25-03-25/Universidade/DERML_universidade.png">
 
 INSIRA OS SEGUINTES REGISTROS:
 ALUNOS:
@@ -5372,6 +5372,11 @@ select
 from alunos 
 	where cidade != 'NATAL';
 ~~~~
+---
+
+## DER MODELO LÓGICO 
+
+<img src="algoritmo/Atividades/BD/A27_25-03-25/Universidade/DERML_universidade.png">
 
 <p align="center"> 25/03/25 <p>
 </details>

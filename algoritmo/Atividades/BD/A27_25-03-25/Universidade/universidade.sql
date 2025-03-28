@@ -145,7 +145,7 @@ insert into alunos (mat,nome,endereco,cidade) values
 -- B ----------------------------------------
 insert into professores (cod_prof, nome, endereco, cidade) values
 (777888,'ANTONIO SOARES','RIACHO FUNDO II','BRASÍLIA'),
-(121721,'THIAGO ANTONIO','RIACHO FUNDO I','BRASÍLIA')
+(121721,'THIAGO ANTONIO','RIACHO FUNDO I','BRASÍLIA'),
 (123968,'BRENA COSTA','NÚCLEO BANDEIRANTE','BRASÍLIA');
 
 insert into turma(cod_disc, cod_turma, cod_prof, ano, horario) values 
@@ -177,7 +177,6 @@ select * from alunos where mat > 2015010109;
 update historico set nota = nota + 0.5 where cod_disc = 'ENG' and cod_turma = 2;
 
 select nota from historico where cod_disc = 'ENG' and cod_turma = 2;
-
 -- B ----------------------------------------
 update historico set nota = 10 where mat = 2015010102 and cod_disc = "POO";
 
@@ -185,12 +184,4 @@ select
 	mat, 
 	nota
 from historico
-	where mat = 2015010102;
-
-show tables;
-
-select * from alunos;
-select * from disciplinas;
-select * from historico;
-select * from professores;
-select * from turma;
+	where mat = 2015010102 and cod_disc like "POO";
