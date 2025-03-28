@@ -5391,27 +5391,76 @@ from alunos
 1. INSERIR OS DADOS NO BANCO DE DADOS DB_UNIVERSIDADE  
   
 - a) CADASTRAR 4 ALUNOS NO BANCO DE DADOS DA UNIVERSIDADE;  
+~~~~ sql
+insert into alunos (mat,nome,endereco,cidade) values
+(2015010107, 'AUGUSTO ALEGRE','RUA MANGUEIRÃO','BELÉM'),
+(2015010108, 'PEDRO ROCHA','AVENIDA NAZARÉ','BELÉM'),
+(2015010109, 'ALEXA DIAS','TAGUATINGA','BRASÍLIA'),
+(2015010110, 'RAISSA ANDREIA','SAMAMBAIA','BRASÍLIA');
+~~~~
 - b) CADASTRAR PROFESSORES PARA AS DISCIPLINAS DE WEB E ENG, QUE SERÃO  
 ATRIBUÍDOS A TURMA 2;  
+~~~~ sql
+insert into professores (cod_prof, nome, endereco, cidade) values
+(777888,'ANTONIO SOARES','RIACHO FUNDO II','BRASÍLIA'),
+(121721,'THIAGO ANTONIO','RIACHO FUNDO I','BRASÍLIA'),
+(123968,'BRENA COSTA','NÚCLEO BANDEIRANTE','BRASÍLIA');
+
+insert into turma(cod_disc, cod_turma, cod_prof, ano, horario) values 
+('WEB',2,777888,2025,'9H-10H'),
+('ENG',2,121721,2025,'12H-13H'),
+('POO',2,123968,2025,'10H-11H');
+~~~~
 - c) INSERIR OS DADOS DOS 4 ALUNOS NO HISTÓRICO:  
   - PERTENCEM A TURMA 02  
   - ESTÃO CURSANDO AS MATÉRIAS DE: BD, WEB E ENG(CERTIFICAR QUE TEM 
 PROFESSORES CADASTRADOS EM TODAS ESSAS DISCIPLINAS NA TURMA 2).  
+~~~~ sql
+insert into historico(mat, cod_disc, cod_turma, cod_prof, ano, frequencia, nota) values
+(2015010107,'POO',2,123968,2025,8,8.8),
+(2015010107,'WEB',2,777888,2025,9,7.8),
+(2015010108,'ENG',2,121721,2025,5,5.4),
+(2015010109,'WEB',2,777888,2025,10,8.0),
+(2015010110,'ENG',2,121721,2025,7,9.2);
+~~~~
   
 1. DELETE   
 - a) EXCLUIR TODOS OS ALUNOS QUE FORAM MATRICULADOS NA TURMA 2 E QUE ESTÃO 
 CURSANDO A MATÉRIA DE BANCO DE DADOS.  
+~~~~ sql
+delete from historico where cod_turma = 2 and cod_disc = 'BD';
+~~~~
   
 - b) EXCLUIR TODOS OS REGISTROS DE ALUNOS QUE FORAM INSERIDOS APÓS A 
 MATRÍCULA 2015010109.  
-  
-3. UPDATE  
+~~~~ sql 
+ -- delete from alunos where mat > 2015010109; ERRO DE FK
+-- update alunos set mat = 0 where mat > 2015010109; ERRO DE FK
+update alunos set nome = null, endereco = null, cidade = null where mat > 2015010109;
+select * from alunos where mat > 2015010109;
+~~~~ 
+
+1. UPDATE  
 - a) ALTERAR A NOTA DE TODOS OS ALUNOS DA DISCIPLINA DE ENG MATRICULADOS NA 
 TURMA 2, ACRESCENTAR 0,5 NAS NOTAS.  
+~~~~ sql
+update historico set nota = nota + 0.5 where cod_disc = 'ENG' and cod_turma = 2;
+
+select nota from historico where cod_disc = 'ENG' and cod_turma = 2;
+~~~~
   
 - b) ALTERAR A NOTA DO ALUNO JOÃO PAULO DA DISCIPLINA DE POO PARA 10 E DEPOIS  
 REALIZE UMA CONSULTA PARA SABER SE O RESULTADO FOI ALTERADO 
-CORRETAMENTE;  
+CORRETAMENTE;
+~~~~ sql  
+update historico set nota = 10 where mat = 2015010102 and cod_disc = "POO";
+
+select 
+	mat, 
+	nota
+from historico
+	where mat = 2015010102 and cod_disc like "POO";
+~~~~  
 
 <p align="center"> 26/03/25 <p>
 </details>
