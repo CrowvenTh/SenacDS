@@ -289,8 +289,20 @@ from professores p
 where t.ano = 2015;
 
 -- 3
-
-
+select
+	a.nome,
+	d.nome_disc as disciplina,
+	t.ano
+	from alunos a
+		inner join historico h
+			on a.mat = h.mat
+		inner join disciplinas d
+			on d.cod_disc = h.cod_disc
+		inner join turma t
+			on d.cod_disc = t.cod_disc
+		inner join professores p
+			on t.cod_prof = p.cod_prof
+where p.nome like "NICKERSON FERREIRA";
 -- 4
 
 

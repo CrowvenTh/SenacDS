@@ -5598,6 +5598,22 @@ from professores p
 where t.ano = 2015;
 ~~~~
 ### 3. Encontre todos os alunos que estudaram com o professor Nickerson Ferreira, mostrando o nome do aluno, a disciplina e o ano.
+~~~~ sql
+select
+	a.nome,
+	d.nome_disc as disciplina,
+	t.ano
+	from alunos a
+		inner join historico h
+			on a.mat = h.mat
+		inner join disciplinas d
+			on d.cod_disc = h.cod_disc
+		inner join turma t
+			on d.cod_disc = t.cod_disc
+		inner join professores p
+			on t.cod_prof = p.cod_prof
+where p.nome like "NICKERSON FERREIRA";
+~~~~ 
 
 ### 4. Liste os alunos de Natal que tiveram frequência menor que 5 em qualquer disciplina, mostrando o nome do aluno, nome da disciplina e a frequência.
 
