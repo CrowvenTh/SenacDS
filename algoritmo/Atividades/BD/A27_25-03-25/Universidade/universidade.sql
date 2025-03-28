@@ -238,6 +238,15 @@ from alunos a
 		on a.mat = h.mat 
 	where nota > 7;
 
+-- 3 ----------------------------------------
+select
+	p.nome,
+	count(cod_turma) as turmas
+from professores p
+	inner join turma t
+		on p.cod_prof = t.cod_prof
+group by 1
+having count(cod_turma) > 1;
 	
 
 select * from alunos;
