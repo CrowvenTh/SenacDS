@@ -5548,13 +5548,16 @@ disciplina, a nota e a média geral, mostrar somente os dados dos
 alunos que tiraram nota com valor maior ou igual a média geral.
 ~~~~ sql
 select 
-	*
+	a.nome,
+	d.cod_disc,
+	avg(h.nota), 
+	round((select avg(h.nota) from historico h)) as "media geral"
 from alunos a
 	inner join historico h
 		on a.mat = h.mat
 	inner join disciplinas d
-		on d.cod_disc = h.cod_disc;
-	
+		on d.cod_disc = h.cod_disc
+group by 1, 2;
 ~~~~ 
 <p align="center"> 27/03/25 <p>
 </details>
