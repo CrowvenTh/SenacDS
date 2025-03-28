@@ -218,6 +218,26 @@ from alunos a
 	inner join historico h
 		on a.mat = h.mat
 where h.nota = 10;
+
+-- 2 ----------------------------------------
+-- SUBSELECT
+select 
+	* 
+from alunos 
+	where mat in (
+	select 
+		mat
+	from historico 
+		where nota >7);
+
+-- com JOIN
+select
+	*
+from alunos a 
+	inner join historico h
+		on a.mat = h.mat 
+	where nota > 7;
+
 	
 
 select * from alunos;
