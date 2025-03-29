@@ -303,23 +303,95 @@ select
 		inner join professores p
 			on t.cod_prof = p.cod_prof
 where p.nome like "NICKERSON FERREIRA";
--- 4
 
+-- 4
+select 
+	a.nome,
+	d.nome_disc,
+	h.frequencia
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on h.cod_disc = d.cod_disc
+where a.cidade like "NATAL" and h.frequencia < 5;
 
 -- 5
-
-
+select 
+	d.nome_disc,
+	a.cidade,
+	round(avg(h.nota), 2) as "média"
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc
+group by 1, 2
+order by nome_disc and avg(h.nota) desc;
+	 
 -- 6
+select 
+	p.nome,
+	d.nome_disc as disciplina
+from professores p
+	join turma t
+		on t.cod_prof = p.cod_prof
+	join disciplinas d
+		on d.cod_disc = t.cod_disc
+where d.carga_hor > 70;
 
-
--- 7
-
+-- 7 -- CORRIGIR
+select 
+	a.nome,
+	h.nota
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+where h.cod_disc like "BD"
+having h.nota > AVG(h.nota);
 
 -- 8
+select
+	p.nome,
+	count(a.mat) as alunos
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc
+	inner join turma t
+		on t.cod_disc = d.cod_disc
+	inner join professores p
+		on p.cod_prof = t.cod_prof
+where t.ano = 2015
+group by 1
+order by 2 desc;
 
-
--- 9
-
+-- 9 -- CORRIGIR
+select
+	a.nome as aluno,
+	p.nome as professor,
+	count(d.cod_disc) as disciplinas
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc
+	inner join turma t
+		on t.cod_disc = d.cod_disc
+	inner join professores p
+		on p.cod_prof = t.cod_prof
+where t.ano = 2015 and a.nome is not null
+group by 1, 2
+having count(d.cod_disc) > 1;
 
 -- 10
-
+select
+	d.nome_disc as disciplinas,
+	a.cidade
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc
+group by 1, 2;

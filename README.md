@@ -5616,18 +5616,111 @@ where p.nome like "NICKERSON FERREIRA";
 ~~~~ 
 
 ### 4. Liste os alunos de Natal que tiveram frequência menor que 5 em qualquer disciplina, mostrando o nome do aluno, nome da disciplina e a frequência.
-
+~~~~ sql 
+select 
+	a.nome,
+	d.nome_disc,
+	h.frequencia
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on h.cod_disc = d.cod_disc
+where a.cidade like "NATAL" and h.frequencia < 5;
+~~~~  
 ### 5. Mostre a média de notas por disciplina para cada cidade de origem dos alunos, ordenado pela disciplina e depois pela média decrescente.
+~~~~ sql 
+select 
+	d.nome_disc,
+	a.cidade,
+	round(avg(h.nota), 2) as "média"
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc
+group by 1, 2
+order by nome_disc and avg(h.nota) desc;
+~~~~  
 
 ### 6. Encontre os professores que ministraram disciplinas com carga horária superior a 70 horas, mostrando o nome do professor e o nome da disciplina.
+~~~~ sql 
+select 
+	p.nome,
+	d.nome_disc as disciplina
+from professores p
+	join turma t
+		on t.cod_prof = p.cod_prof
+	join disciplinas d
+		on d.cod_disc = t.cod_disc
+where d.carga_hor > 70;
+~~~~  
 
 ### 7. Liste todos os alunos que tiveram nota acima da média em Banco de Dados, mostrando o nome do aluno e a nota.
+~~~~ sql 
+-- CORRIGIR
+select 
+	a.nome,
+	h.nota
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+where h.cod_disc like "BD"
+having h.nota > AVG(h.nota);
+~~~~  
 
 ### 8. Mostre a quantidade de alunos por professor em 2015, ordenado pela quantidade em ordem decrescente.
+~~~~ sql 
+select
+	p.nome,
+	count(a.mat) as alunos
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc
+	inner join turma t
+		on t.cod_disc = d.cod_disc
+	inner join professores p
+		on p.cod_prof = t.cod_prof
+where t.ano = 2015
+group by 1
+order by 2 desc;
+~~~~  
 
 ### 9. Encontre os alunos que cursaram mais de uma disciplina com o mesmo professor, mostrando o nome do aluno, nome do professor e a quantidade de disciplinas.
+~~~~ sql 
+-- CORRIGIR
+select
+	a.nome as aluno,
+	p.nome as professor,
+	count(d.cod_disc) as disciplinas
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc
+	inner join turma t
+		on t.cod_disc = d.cod_disc
+	inner join professores p
+		on p.cod_prof = t.cod_prof
+where t.ano = 2015 and a.nome is not null
+group by 1, 2
+having count(d.cod_disc) > 1;
+~~~~  
 
 ### 10. Liste as disciplinas que tiveram alunos de todas as cidades representadas no banco de dados, mostrando o nome da disciplina.
+~~~~ sql 
+select
+	d.nome_disc as disciplinas,
+	a.cidade
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on d.cod_disc = h.cod_disc
+group by 1, 2;
+~~~~  
 
 > Observações:
 > 
