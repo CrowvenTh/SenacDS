@@ -352,7 +352,7 @@ group by 1;
 
 -- 8
 select
-	p.nome,
+	p.nome as professor,
 	count(a.mat) as alunos
 from alunos a
 	inner join historico h
@@ -368,7 +368,7 @@ group by 1
 order by 2 desc;
 
 -- 9 -- CORRIGIR
-select
+select 
 	a.nome as aluno,
 	p.nome as professor,
 	count(d.cod_disc) as disciplinas
@@ -395,3 +395,5 @@ from alunos a
 	inner join disciplinas d
 		on d.cod_disc = h.cod_disc
 group by 1, 2;
+
+select distinct cidade from alunos;
