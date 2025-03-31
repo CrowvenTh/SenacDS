@@ -5661,12 +5661,11 @@ where d.carga_hor > 70;
 -- CORRIGIR
 select 
 	a.nome,
-	h.nota
+round(avg(h.nota), 2) as nota
 from alunos a
 	inner join historico h
 		on a.mat = h.mat
-where h.cod_disc like "BD"
-having h.nota > AVG(h.nota);
+group by 1;
 ~~~~  
 
 ### 8. Mostre a quantidade de alunos por professor em 2015, ordenado pela quantidade em ordem decrescente.
