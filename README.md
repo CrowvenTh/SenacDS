@@ -5665,6 +5665,7 @@ round(avg(h.nota), 2) as nota
 from alunos a
 	inner join historico h
 		on a.mat = h.mat
+where h.cod_disc = "BD"
 group by 1;
 ~~~~  
 
