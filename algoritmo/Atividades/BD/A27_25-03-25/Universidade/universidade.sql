@@ -567,3 +567,10 @@ from disciplinas d
 		on d.cod_disc = t.cod_disc
 	right join professores p
 		on t.cod_prof = p.cod_prof;
+
+-- 2 
+select 
+	*
+from historico h
+	right join alunos a
+		on h.mat = a.mat;
