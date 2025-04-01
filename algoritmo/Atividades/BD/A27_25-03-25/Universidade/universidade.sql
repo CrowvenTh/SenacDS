@@ -469,5 +469,15 @@ from alunos a
 where h.nota > 7 and h.ano = 2015; 
 
 -- 2
+select 
+	p.nome as Professor,
+	d.nome_disc as Disciplina,
+	t.horario as Horário
+from professores p
+	inner join turma t
+		on p.cod_prof = t.cod_prof
+	inner join disciplinas d
+		on d.cod_disc = t.cod_disc
+where t.ano = 2015;
 
 -- 3
