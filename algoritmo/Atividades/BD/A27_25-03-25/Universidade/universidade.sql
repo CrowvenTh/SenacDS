@@ -481,3 +481,15 @@ from professores p
 where t.ano = 2015;
 
 -- 3
+select
+	a.nome as Alunos
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join turma t
+		on h.cod_turma = t.cod_turma
+	inner join professores p
+		on t.cod_prof = p.cod_prof
+where p.nome = "NICKERSON FERREIRA";
+
+-- 4
