@@ -519,3 +519,27 @@ from professores p
 		on d.cod_disc = t.cod_disc
 where d.carga_hor > 70;
 
+-- lista 2 --
+-- 1 
+select 
+	a.nome as Aluno,
+	d.nome_disc as Disciplina
+from alunos a
+	left join historico h
+		on a.mat = h.mat
+	left join turma t 
+		on t.cod_turma = h.cod_turma
+	left join disciplinas d 
+		on d.cod_disc = t.cod_disc
+group by 1, 2
+order by 1 asc;
+
+-- 2
+select 
+	p.nome as Professor,
+	d.nome_disc as Disciplinas
+from professores p
+	left join turma t
+		on p.cod_prof = t.cod_prof
+	left join disciplinas d
+		on d.cod_disc = t.cod_disc;
