@@ -455,4 +455,19 @@ INSERT INTO Alunos (MAT, nome, endereco, cidade) VALUES
 (99999994, 'NOVATO SEM MATRÍCULA', 'BECO SEM NOTAS, 4', 'JOÃO PESSOA'),
 (99999995, 'CALOURO SEM REGISTROS', 'ALAMEDA VAZIA, 5', 'NATAL');
 
-select * from alunos inner join 
+-- lista 1 --
+-- 1
+select 
+	a.nome as Aluno, 
+	d.nome_disc as Disciplina,
+	h.nota as Nota
+from alunos a	
+	inner join historico h
+		on a.mat = h.mat
+	inner join disciplinas d
+		on h.cod_disc = d.cod_disc
+where h.nota > 7 and h.ano = 2015; 
+
+-- 2
+
+-- 3
