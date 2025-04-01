@@ -543,3 +543,16 @@ from professores p
 		on p.cod_prof = t.cod_prof
 	left join disciplinas d
 		on d.cod_disc = t.cod_disc;
+
+-- 3 
+select 
+	d.nome_disc as Disciplina,
+	a.nome as Aluno
+from disciplinas d
+	left join turma t
+		on d.cod_disc = t.cod_disc
+	left join historico h
+		on t.cod_turma = h.cod_turma
+	left join alunos a
+		on h.mat = a.mat
+group by 1, 2;
