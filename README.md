@@ -5732,6 +5732,42 @@ anteriormente.
 <p align="center"> 28/03/25 <p>
 </details>
 
+<details>
+<summary> 💠 Aula 31 - 📝 Banco de Dados - LEFT JOIN</summary>
+<br>
+<p> 01/04/25 </p>
+
+## Lista 1: Exercícios com INNER JOIN
+1. Liste o nome dos alunos, a disciplina e a nota para alunos com nota > 7 em 2015.
+
+2. Mostre professores, disciplinas e horários das turmas de 2015.
+
+3. Encontre alunos que estudaram com o professor "Nickerson Ferreira".
+
+4. Calcule a média de notas por disciplina e cidade de origem, ordenando por disciplina e média.
+
+5. Liste professores que ministraram disciplinas com carga horária > 70 horas.
+
+## Lista 2: Exercícios com LEFT JOIN
+1. Liste todos os alunos e suas disciplinas (incluindo quem não cursou nenhuma).
+
+2. Mostre todos os professores e as disciplinas que ministraram (incluindo quem não ministrou).
+
+3. Liste todas as disciplinas e alunos que as cursaram (incluindo disciplinas sem alunos).
+
+## Lista 3: Exercícios com RIGHT JOIN
+1. Mostre todas as disciplinas e seus professores (incluindo disciplinas não
+ministradas).
+
+2. Liste registros de histórico com dados completos dos alunos (incluindo
+históricos sem aluno, se houver).
+
+## Lista 4: Exercícios com FULL OUTER JOIN (simulado)
+1. Liste todos os alunos e todas as disciplinas, mostrando relações existentes.
+
+<p align="center"> 01/04/25 <p>
+</details>
+
 ---
 
 <br>
