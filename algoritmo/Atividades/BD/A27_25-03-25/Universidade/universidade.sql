@@ -493,3 +493,18 @@ from alunos a
 where p.nome = "NICKERSON FERREIRA";
 
 -- 4
+select
+	round(avg(h.nota), 2) as Nota,
+	d.nome_disc as Disciplina,
+	a.cidade as Cidade
+from alunos a
+	inner join historico h
+		on a.mat = h.mat
+	inner join turma t
+		on h.cod_turma = t.cod_turma
+	inner join disciplinas d
+		on t.cod_disc = d.cod_disc
+group by 2, 3
+order by 2, 1; 
+
+-- 5
