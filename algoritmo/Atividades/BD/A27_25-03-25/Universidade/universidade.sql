@@ -508,3 +508,14 @@ group by 2, 3
 order by 2, 1; 
 
 -- 5
+select
+	p.nome as Professor,
+	d.nome_disc as Disciplina,
+	d.carga_hor as "Carga Horária"
+from professores p
+	inner join turma t
+		on p.cod_prof = t.cod_prof
+	inner join disciplinas d
+		on d.cod_disc = t.cod_disc
+where d.carga_hor > 70;
+
