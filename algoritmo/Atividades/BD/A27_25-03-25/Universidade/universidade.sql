@@ -11,7 +11,7 @@ create table alunos(
 );
 
 create table disciplinas(
-	cod_disc varchar(5),
+	cod_disc varchar(10),
 	nome_disc varchar(100), 
 	carga_hor int,
 		primary key (cod_disc)
@@ -26,7 +26,7 @@ create table professores(
 );
 
 create table turma(
-	cod_disc varchar(5), 
+	cod_disc varchar(10), 
 	cod_turma int, 
 	cod_prof int, 
 	ano year, 
@@ -38,7 +38,7 @@ create table turma(
 
 create table historico(
 	mat int, 
-	cod_disc varchar(5),
+	cod_disc varchar(10),
 	cod_turma int,
 	cod_prof int,
 	ano year,
@@ -368,7 +368,7 @@ group by 1
 order by 2 desc;
 
 -- 9 -- CORRIGIR
-select 
+select
 	a.nome as aluno,
 	p.nome as professor,
 	count(d.cod_disc) as disciplinas
@@ -396,4 +396,61 @@ from alunos a
 		on d.cod_disc = h.cod_disc
 group by 1, 2;
 
-select distinct cidade from alunos;
+-- Universidade 5 --------------------------------
+
+-- Inserções adicionais para criar cenários mais complexos
+
+-- Novas disciplinas
+INSERT INTO Disciplinas VALUES
+('REDES', 'REDES DE COMPUTADORES', 60),
+('SO', 'SISTEMAS OPERACIONAIS', 80),
+('IA', 'INTELIGÊNCIA ARTIFICIAL', 90);
+
+-- Novos professores
+INSERT INTO Professores VALUES
+(312141, 'MARIA FERNANDA', 'AVENIDA ENGENHEIRO ROBERTO FREIRE', 'NATAL'),
+(422142, 'CARLOS EDUARDO', 'RUA DO CATETE', 'RECIFE');
+
+-- Novas turmas
+INSERT INTO Turma VALUES
+('BD', 3, 122135, 2016, '14H-15H'),
+('POO', 2, 192011, 2016, '09H-10H'),
+('REDES', 1, 312141, 2016, '16H-17H'),
+('SO', 1, 422142, 2016, '13H-14H'),
+('IA', 1, 422142, 2016, '15H-16H');
+
+INSERT INTO Alunos VALUES
+(2015010111, 'ALUNO SEM HISTÓRICO', 'RUA TESTE', 'NATAL'),
+(2015010112, 'OUTRO ALUNO SEM NOTAS', 'AVENIDA TESTE', 'RECIFE');
+
+INSERT INTO Disciplinas VALUES
+('TESTE', 'DISCIPLINA SEM TURMA', 40),
+('LAB', 'LABORATÓRIO SEM PROFESSOR', 60);
+
+INSERT INTO Professores VALUES
+(999991, 'PROFESSOR SEM TURMA', 'RUA SEM AULA', 'NATAL'),
+(999992, 'OUTRO PROFESSOR INATIVO', 'AVENIDA SEM DISCIPLINA', 'JOÃO PESSOA');
+
+INSERT INTO Turma VALUES
+('BD', 9, 212131, 2016, '18H-19H'),  -- Turma sem alunos
+('WEB', 5, 192011, 2016, '19H-20H'); -- Turma sem registros
+
+-- Disciplinas que não possuem turmas cadastradas
+INSERT INTO Disciplinas (COD_DISC, nome_disc, carga_hor) VALUES
+('DSWEB', 'DESENVOLVIMENTO WEB', 80),
+('MOBILE', 'PROGRAMAÇÃO MOBILE', 60),
+('CLOUD', 'COMPUTAÇÃO EM NUVEM', 70);
+
+-- Professores que não ministram nenhuma disciplina/turma
+INSERT INTO Professores (COD_PROF, nome, endereco, cidade) VALUES
+(505050, 'PROFESSOR SEM AULA', 'RUA DOS TESTES, 123', 'NATAL'),
+(606060, 'DOCENTE SEM TURMA', 'AVENIDA DOS EXERCÍCIOS, 456', 'RECIFE'),
+(707070, 'INSTRUTOR INATIVO', 'TRAVESSA DOS JOINs, 789', 'FORTALEZA');
+
+-- Alunos totalmente isolados (sem relação com nenhuma outra tabela)
+INSERT INTO Alunos (MAT, nome, endereco, cidade) VALUES
+(99999991, 'ALUNO ISOLADO 1', 'RUA SEM RELAÇÃO, 1', 'NATAL'),
+(99999992, 'ALUNO SEM VÍNCULOS', 'AV. SEM JOIN, 2', 'RECIFE'),
+(99999993, 'ESTUDANTE SEM HISTÓRICO', 'TRAV. SEM DADOS, 3', 'FORTALEZA'),
+(99999994, 'NOVATO SEM MATRÍCULA', 'BECO SEM NOTAS, 4', 'JOÃO PESSOA'),
+(99999995, 'CALOURO SEM REGISTROS', 'ALAMEDA VAZIA, 5', 'NATAL');
