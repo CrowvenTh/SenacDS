@@ -455,7 +455,7 @@ INSERT INTO Alunos (MAT, nome, endereco, cidade) VALUES
 (99999994, 'NOVATO SEM MATRÍCULA', 'BECO SEM NOTAS, 4', 'JOÃO PESSOA'),
 (99999995, 'CALOURO SEM REGISTROS', 'ALAMEDA VAZIA, 5', 'NATAL');
 
--- lista 1 --
+-- Lista 1 --
 -- 1
 select 
 	a.nome as Aluno, 
@@ -519,7 +519,7 @@ from professores p
 		on d.cod_disc = t.cod_disc
 where d.carga_hor > 70;
 
--- lista 2 --
+-- Lista 2 --
 -- 1 
 select 
 	a.nome as Aluno,
@@ -556,3 +556,14 @@ from disciplinas d
 	left join alunos a
 		on h.mat = a.mat
 group by 1, 2;
+
+-- Lista 3 --
+-- 1
+select 
+	d.nome_disc as Disciplina,
+	p.nome as Professor
+from disciplinas d
+	right join turma t
+		on d.cod_disc = t.cod_disc
+	right join professores p
+		on t.cod_prof = p.cod_prof;
