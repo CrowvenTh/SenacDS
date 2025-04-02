@@ -5737,6 +5737,7 @@ anteriormente.
 <br>
 <p> 01/04/25 </p>
 
+## Exericio 5 Universidade
 ## Lista 1: Exercícios com INNER JOIN
 1. Liste o nome dos alunos, a disciplina e a nota para alunos com nota > 7 em 2015.
 

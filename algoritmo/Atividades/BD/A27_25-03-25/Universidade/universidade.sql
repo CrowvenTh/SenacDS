@@ -535,7 +535,7 @@ group by 1, 2
 order by 1 asc;
 
 -- 2
-select 
+select distinct
 	p.nome as Professor,
 	d.nome_disc as Disciplinas
 from professores p
@@ -543,6 +543,8 @@ from professores p
 		on p.cod_prof = t.cod_prof
 	left join disciplinas d
 		on d.cod_disc = t.cod_disc;
+
+select * from professores;
 
 -- 3 
 select 
@@ -556,6 +558,7 @@ from disciplinas d
 	left join alunos a
 		on h.mat = a.mat
 group by 1, 2;
+
 
 -- Lista 3 --
 -- 1
@@ -574,3 +577,24 @@ select
 from historico h
 	right join alunos a
 		on h.mat = a.mat;
+
+-- Lista 4 --
+-- 1
+select 
+	a.mat, h.cod_disc
+from 
+	alunos a
+	left join historico h
+		on a.mat = h.mat
+	left join disciplinas d
+		on d.cod_disc = h.cod_disc
+union
+select 
+	a.mat, d.cod_disc
+from 
+	alunos a
+	right join historico h
+		on a.mat = h.mat
+	right join disciplinas d
+		on d.cod_disc = h.cod_disc
+group by 1, 2;
