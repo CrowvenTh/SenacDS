@@ -598,3 +598,68 @@ from
 	right join disciplinas d
 		on d.cod_disc = h.cod_disc
 group by 1, 2;
+
+-- Lista 5 --
+-- 1
+select distinct
+	*
+from alunos a
+	cross join historico h
+		on h.mat = a.mat
+	cross join turma t
+		on h.cod_turma = t.cod_turma
+	cross join disciplinas d
+		on d.cod_disc = t.cod_disc;
+	
+-- Lista 6 --
+-- 1
+SELECT A1.MAT AS MAT_Aluno1, A1.nome AS Nome_Aluno1,
+       A2.MAT AS MAT_Aluno2, A2.nome AS Nome_Aluno2,
+       A1.cidade
+FROM Alunos A1
+JOIN Alunos A2 ON A1.cidade = A2.cidade AND A1.MAT < A2.MAT; -- ou AND A1.MAT != A2.MAT
+
+select 
+	nome, cidade 
+from alunos
+group by 1, 2
+order by 2 asc;
+
+-- Lista 7 --
+-- 1 
+select
+	a.nome as Aluno,
+	d.nome_disc as Disciplina,
+	p.nome as Professor
+from alunos a
+	left join historico h
+		on a.mat = h.mat
+	left join turma t
+		on t.cod_turma = h.cod_turma
+	left join disciplinas d
+		on t.cod_disc = d.cod_disc
+	left join professores p
+		on p.cod_prof = t.cod_prof
+group by 1, 2, 3
+order by 2 asc;
+
+-- 2 
+select 
+	d.nome_disc as Disciplina,
+	p.nome as Professor,
+	t.cod_turma as Turma
+from disciplinas d 
+	left join turma t
+		on d.cod_disc = t.cod_disc
+	left join professores p
+		on p.cod_prof = t.cod_prof;
+
+-- 3 
+select 
+	p.nome as Professor,
+	d.nome_disc as Disciplina
+from professores p
+	join turma t
+	join  disciplinas d
+		on p.cod_prof = t.cod_prof and d.cod_disc = t.cod_disc;
+	

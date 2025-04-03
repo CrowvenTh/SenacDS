@@ -5733,7 +5733,7 @@ anteriormente.
 </details>
 
 <details>
-<summary> 💠 Aula 31 - 📝 Banco de Dados - LEFT JOIN</summary>
+<summary> 💠 Aula 31 - 📝 Banco de Dados - JOINs</summary>
 <br>
 <p> 01/04/25 </p>
 
@@ -5765,6 +5765,24 @@ históricos sem aluno, se houver).
 
 ## Lista 4: Exercícios com FULL OUTER JOIN (simulado)
 1. Liste todos os alunos e todas as disciplinas, mostrando relações existentes.
+
+## Lista 5: Exercícios com CROSS JOIN 
+1. Crie uma lista de todas as combinações possíveis entre alunos e disciplinas. 
+ 
+## Lista 6: Exercícios com SELF JOIN 
+1. Encontre alunos que moram na mesma cidade (pares distintos). 
+ 
+## Lista 7: Exercícios Combinados (Múltiplos JOINs) 
+1. Liste alunos, disciplinas cursadas e professores (incluindo alunos sem 
+disciplinas). 
+2. Mostre todas as disciplinas, professores que poderiam ministrá-las e turmas já 
+formadas. 
+3. Liste todas as combinações professor-disciplina, marcando quais já ocorreram. 
+ 
+> Como usar: 
+> 1. Para soluções, utilize a estrutura do banco "Universidade" definida anteriormente. 
+> 
+> 2. Dica: Em MySQL, substitua FULL OUTER JOIN por UNION de LEFT e RIGHT  JOIN. 
 
 <p align="center"> 01/04/25 <p>
 </details>
