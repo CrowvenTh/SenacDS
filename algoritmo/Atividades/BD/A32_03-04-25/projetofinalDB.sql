@@ -159,3 +159,8 @@ from clientes cl
 group by 1;
 
 -- B
+select
+	tipo_conta as 'Tipo de conta',
+	round(avg(saldo), 2) as 'Saldo médio'
+from contas
+group by 1;
