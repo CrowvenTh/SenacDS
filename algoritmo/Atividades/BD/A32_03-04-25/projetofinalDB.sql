@@ -164,3 +164,16 @@ select
 	round(avg(saldo), 2) as 'Saldo médio'
 from contas
 group by 1;
+
+-- C
+select
+	tr.tipo_transacao,
+	tr.valor,
+	tr.data_transacao,
+	tr.descricao
+from clientes cl
+	inner join contas co
+		on cl.cliente_id = co.cliente_id
+	inner join transacoes tr 
+		on tr.conta_origem_id and tr.conta_origem_id = co.conta_id
+where cl.cliente_id = 1;
