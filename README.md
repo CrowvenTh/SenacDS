@@ -5787,6 +5787,50 @@ formadas.
 <p align="center"> 01/04/25 <p>
 </details>
 
+<details>
+<summary> 💠 Aula 32 - 📝 Banco de Dados - Final I</summary>
+<br>
+<p> 01/04/25 </p>
+
+## Instruções para o Projeto Final de Banco de Dados – MySQL 
+ 
+### Objetivo do Projeto 
+Você deverá criar um sistema bancário completo no MySQL, incluindo: 
+1. Criação do banco de dados e tabelas 
+2. Inserção de dados de exemplo 
+3. Consultas SQL para extrair informações importantes 
+4. Normalização de dados - Até a 3° forma normal (Atividade Extra) 
+5. Triggers para automatizar processos (Atividade Extra) 
+ 
+### Requisitos Técnicos 
+- Todos os scripts devem ser compatíveis com MySQL 
+- Use o caractere ; para encerrar cada comando SQL 
+- Comente seu código com -- para linhas únicas ou /* */ para blocos 
+ 
+1. Especificações das Tabelas 
+#### a. Tabela Clientes 
+Armazena informações dos clientes do banco: 
+- cliente_id (INT, PK, AUTO_INCREMENT): Identificador único 
+- nome : Nome completo do cliente 
+- cpf : CPF formatado (ex: 123.456.789-01) 
+- data_nascimento (DATE): Data de nascimento 
+- telefone Telefone com DDD 
+- email E-mail do cliente 
+- endereco Endereço completo 
+- data_cadastro (DATETIME): Data/hora do cadastro (default 
+CURRENT_TIMESTAMP) 
+
+#### Inserir Clientes 
+~~~~ sql
+INSERT INTO Clientes (nome, cpf, data_nascimento, telefone, email, endereco) 
+VALUES 
+('João Silva', '123.456.789-01', '1980-05-15', '(11) 98765-4321', 
+'joao@email.com', 'Rua A, 100 - Centro'), 
+~~~~
+
+<p align="center"> 01/04/25 <p>
+</details>
+
 ---
 
 <br>
