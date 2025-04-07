@@ -149,3 +149,13 @@ INSERT INTO PagamentosEmprestimos (emprestimo_id, numero_parcela, valor_pago, da
 
 -- CONSULTAS --
 
+-- A
+select 
+	cl.nome,
+	sum(co.saldo) as 'Saldo Total'
+from clientes cl
+	inner join contas co
+		on cl.cliente_id = co.cliente_id
+group by 1;
+
+-- B
