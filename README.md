@@ -5828,6 +5828,89 @@ VALUES
 'joao@email.com', 'Rua A, 100 - Centro'), 
 ~~~~
 
+
+#### b. Tabela Agencias
+Armazena as agências do banco:
+- agencia_id (INT, PK, AUTO_INCREMENT): Identificador único
+- nome : Nome da agência
+- endereco : Endereço completo
+- telefone : Telefone da agência
+
+#### Inserir Agências
+~~~~ sql
+INSERT INTO Agencias (nome, endereco, telefone) VALUES
+('Agência Centro', 'Rua Principal, 123 - Centro', '(11) 1234-5678')
+~~~~
+
+### c. Tabela Contas
+Armazena as contas bancárias:
+- conta_id (INT, PK, AUTO_INCREMENT): Identificador único
+- cliente_id : Referência ao cliente
+- agencia_id : Referência à agência
+- tipo_conta (ENUM): 'Corrente', 'Poupança' ou 'Salário'
+- saldo : Saldo atual (default 0.00)
+- data_abertura (DATE): Data de abertura da conta
+- status (ENUM): 'Ativa', 'Inativa' ou 'Bloqueada' (default 'Ativa')
+
+#### Inserir Contas
+~~~~ sql
+INSERT INTO Contas (cliente_id, agencia_id, tipo_conta, saldo, data_abertura, status)
+VALUES
+(1, 1, 'Corrente', 5000.00, '2020-01-10', 'Ativa')
+~~~~
+
+#### d. Tabela Transacoes
+
+Registra todas as movimentações financeiras:
+- transacao_id (INT, PK, AUTO_INCREMENT): Identificador único
+- conta_origem_id (INT, FK, NULL): Conta de origem (NULL para depósitos)
+- conta_destino_id (INT, FK, NULL): Conta de destino (NULL para saques)
+- tipo_transacao (ENUM): 'Depósito', 'Saque', 'Transferência', 'Pagamento'
+- valor Valor da transação
+- data_transacao (DATETIME): Data/hora (default CURRENT_TIMESTAMP)
+- descricao : Descrição opcional
+
+#### Inserir Transações
+~~~~ sql
+INSERT INTO Transacoes (conta_origem_id, conta_destino_id, tipo_transacao, valor,
+descricao) VALUES
+(1, NULL, 'Depósito', 1000.00, 'Depósito inicial'),
+(NULL, 2, 'Depósito', 2000.00, 'Depósito inicial')
+~~~~
+
+#### e. Tabela Emprestimos
+Registra os empréstimos contratados:
+- emprestimo_id (INT, PK, AUTO_INCREMENT): Identificador único
+- conta_id (INT, FK): Conta associada ao empréstimo
+- valor (DECIMAL(15,2)): Valor total do empréstimo
+- taxa_juros (DECIMAL(5,2)): Taxa de juros mensal
+- parcelas (INT): Número total de parcelas
+- valor_parcela (DECIMAL(15,2)): Valor de cada parcela
+- data_contratacao (DATE): Data de contratação
+- status (ENUM): 'Ativo', 'Quitado', 'Inadimplente' (default 'Ativo')
+
+#### Inserir Empréstimos
+~~~~ sql
+INSERT INTO Emprestimos (conta_id, valor, taxa_juros, parcelas, valor_parcela,
+data_contratacao) VALUES
+(1, 10000.00, 1.5, 12, 916.67, '2022-01-15')
+~~~~
+
+#### f. Tabela PagamentosEmprestimos
+Registra os pagamentos de empréstimos:
+- pagamento_id (INT, PK, AUTO_INCREMENT): Identificador único
+- emprestimo_id (INT, FK): Empréstimo associado
+- numero_parcela : Número da parcela
+- valor_pago : Valor efetivamente pago
+- data_pagamento : Data do pagamento
+
+#### Inserir Pagamentos de Empréstimos
+~~~~ sql
+INSERT INTO PagamentosEmprestimos (emprestimo_id, numero_parcela, valor_pago,
+data_pagamento) VALUES
+(1, 1, 916.67, '2022-02-15')
+~~~~
+
 <p align="center"> 01/04/25 <p>
 </details>
 
