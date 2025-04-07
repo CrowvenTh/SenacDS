@@ -5911,6 +5911,19 @@ data_pagamento) VALUES
 (1, 1, 916.67, '2022-02-15')
 ~~~~
 
+### Parte III
+
+#### 3. Consultas 
+- a) Liste todos os clientes com suas contas e saldos totais 
+- b) Mostre o saldo médio por tipo de conta 
+- c) Liste todas as transações de uma conta específica (use o ID 1 como 
+- exemplo) 
+- d) Calcule o total de transações por tipo no último mês 
+- e) Liste os clientes que têm mais de uma conta 
+- f) Mostre o total de empréstimos por agência 
+- g) Liste os empréstimos ativos com parcelas em atraso (considerando que hoje 
+é a data (Questão extra) 
+ 
 <p align="center"> 01/04/25 <p>
 </details>
 

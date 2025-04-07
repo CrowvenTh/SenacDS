@@ -102,3 +102,50 @@ create table pagamentosEmprestimos(
 INSERT INTO PagamentosEmprestimos (emprestimo_id, numero_parcela, valor_pago,
 data_pagamento) VALUES
 (1, 1, 916.67, '2022-02-15');
+
+-- PARTE III --
+
+-- Inserir Agências
+INSERT INTO Agencias (nome, endereco, telefone) VALUES
+('Agência Centro', 'Rua Principal, 123 - Centro', '(11) 1234-5678'),
+('Agência Norte', 'Avenida Secundária, 456 - Zona Norte', '(11) 2345-6789'),
+('Agência Sul', 'Praça Terciária, 789 - Zona Sul', '(11) 3456-7890');
+
+-- Inserir Clientes
+INSERT INTO Clientes (nome, cpf, data_nascimento, telefone, email, endereco) VALUES
+('João Silva', '123.456.789-01', '1980-05-15', '(11) 98765-4321', 'joao@email.com', 'Rua A, 100 - Centro'),
+('Maria Oliveira', '234.567.890-12', '1985-08-20', '(11) 87654-3210', 'maria@email.com', 'Av. B, 200 - Norte'),
+('Carlos Souza', '345.678.901-23', '1990-11-25', '(11) 76543-2109', 'carlos@email.com', 'Praça C, 300 - Sul'),
+('Ana Pereira', '456.789.012-34', '1975-03-10', '(11) 65432-1098', 'ana@email.com', 'Rua D, 400 - Centro'),
+('Pedro Costa', '567.890.123-45', '1995-07-30', '(11) 54321-0987', 'pedro@email.com', 'Av. E, 500 - Norte');
+
+-- Inserir Contas
+INSERT INTO Contas (cliente_id, agencia_id, tipo_conta, saldo, data_abertura, status) VALUES
+(1, 1, 'Corrente', 5000.00, '2020-01-10', 'Ativa'),
+(2, 2, 'Poupança', 8000.00, '2019-05-15', 'Ativa'),
+(3, 3, 'Salário', 3000.00, '2021-03-20', 'Ativa'),
+(4, 1, 'Corrente', 10000.00, '2018-11-05', 'Ativa'),
+(5, 2, 'Poupança', 15000.00, '2020-07-30', 'Ativa'),
+(1, 3, 'Poupança', 2000.00, '2021-02-18', 'Ativa');
+
+-- Inserir Transações
+INSERT INTO Transacoes (conta_origem_id, conta_destino_id, tipo_transacao, valor, descricao) VALUES
+(1, NULL, 'Depósito', 1000.00, 'Depósito inicial'),
+(NULL, 2, 'Depósito', 2000.00, 'Depósito inicial'),
+(1, 2, 'Transferência', 500.00, 'Transferência para Maria'),
+(3, NULL, 'Saque', 300.00, 'Saque em caixa eletrônico'),
+(4, 5, 'Transferência', 1000.00, 'Pagamento de serviço');
+
+-- Inserir Empréstimos
+INSERT INTO Emprestimos (conta_id, valor, taxa_juros, parcelas, valor_parcela, data_contratacao) VALUES
+(1, 10000.00, 1.5, 12, 916.67, '2022-01-15'),
+(3, 5000.00, 2.0, 6, 883.33, '2022-02-20');
+
+-- Inserir Pagamentos de Empréstimos
+INSERT INTO PagamentosEmprestimos (emprestimo_id, numero_parcela, valor_pago, data_pagamento) VALUES
+(1, 1, 916.67, '2022-02-15'),
+(1, 2, 916.67, '2022-03-15'),
+(2, 1, 883.33, '2022-03-20');
+
+-- CONSULTAS --
+
