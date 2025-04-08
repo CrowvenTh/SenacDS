@@ -177,3 +177,14 @@ from clientes cl
 	inner join transacoes tr 
 		on tr.conta_origem_id and tr.conta_origem_id = co.conta_id
 where cl.cliente_id = 1;
+
+-- D
+select
+	tipo_transacao,
+	sum(valor) as total
+from transacoes
+where month(data_transacao) = month(curdate())
+group by 1;
+
+-- E
+
