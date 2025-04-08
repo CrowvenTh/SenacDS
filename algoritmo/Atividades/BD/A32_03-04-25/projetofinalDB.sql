@@ -195,3 +195,14 @@ from clientes cl
 		on cl.cliente_id = co.cliente_id
 		group by 1
 having count(co.tipo_conta) > 1;
+
+-- F
+select 
+	ag.nome as Agencia,
+	count(em.emprestimo_id) as emprestimos
+from emprestimos em
+	inner join contas co
+		on em.conta_id = co.conta_id
+	inner join agencias ag
+		on ag.agencia_id = co.agencia_id
+group by 1;
