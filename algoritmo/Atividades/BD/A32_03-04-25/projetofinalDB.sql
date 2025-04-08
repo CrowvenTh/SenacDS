@@ -206,3 +206,14 @@ from emprestimos em
 	inner join agencias ag
 		on ag.agencia_id = co.agencia_id
 group by 1;
+
+-- G -- incompleto
+select distinct
+	em.conta_id,
+	em.valor,
+	em.parcelas,
+	em.data_contratacao,
+	pe.data_pagamento
+from emprestimos em
+	inner join pagamentosemprestimos pe
+		on em.emprestimo_id = pe.emprestimo_id;
