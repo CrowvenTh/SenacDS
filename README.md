@@ -5923,6 +5923,80 @@ data_pagamento) VALUES
 - f) Mostre o total de empréstimos por agência 
 - g) Liste os empréstimos ativos com parcelas em atraso (considerando que hoje 
 é a data (Questão extra) 
+
+---
+## **Exercícios com Trigger**
+
+Sintaxe da Trigger
+~~~~ sql
+CREATE TRIGGER nome momento evento(BEFORE (antes)
+e AFTER (depois))
+ON tabela
+FOR EACH ROW
+BEGIN
+/*corpo do código*/
+END
+~~~~
+
+### **Os registros NEW e OLD**
+Os `triggers`, são executados em conjunto com operações de inclusão
+e exclusão, esse acesso é feito através das palavras *NEW* e *OLD*.
+A palavra reservada *NEW* dá acesso ao novo registro. Pode-se
+acessar as colunas da tabela como atributo do registro *NEW*.
+O operador *OLD* dá acesso ao registro que está sendo removido.
+
+#### **DELIMITER //**
+altera o delimitador atual para `//`, que no nosso caso é o `;`
+
+### **Exercícios**
+1. Criar as tabelas que serão utilizadas
+~~~~ sql
+CREATE DATABASE Produto;
+USE Produto;
+
+CREATE TABLE Produtos (
+Codigo VARCHAR(3) PRIMARY KEY,
+Descricao VARCHAR(50) UNIQUE,
+Estoque INT NOT NULL DEFAULT 0
+);
+
+INSERT INTO Produtos VALUES ('001', 'Computador', 15);
+INSERT INTO Produtos VALUES ('002', 'Monitor', 25);
+INSERT INTO Produtos VALUES ('003', 'Teclado', 45);
+
+CREATE TABLE ItensVenda(
+Venda INT,
+Cod_Produto VARCHAR(3),
+Quantidade INT
+);
+~~~~
+
+1. Criar um Trigger que ao inserir um registro da tabela
+ItensVenda, o estoque do produto referenciado deve ser
+alterado na tabela Produtos
+~~~~ sql
+DELIMITER $
+CREATE TRIGGER Tgr_ItensVenda_Insert AFTER INSERT
+ON ItensVenda
+FOR EACH ROW
+BEGIN
+UPDATE Produtos SET Estoque = Estoque - NEW.Quantidade
+WHERE Codigo = NEW.Cod_Produto;
+END$
+DELIMITER;
+~~~~
+
+#### **Testando os valores do estoque**
+~~~~ sql
+INSERT INTO ItensVenda VALUES (1, '002',3);
+INSERT INTO ItensVenda VALUES (1, '002',1);
+INSERT INTO ItensVenda VALUES (1, '003',5);
+~~~~
+
+#### 1. Completar a TRIGGER
+Criar um Trigger que ao inserir ou excluir um registro
+da tabela ItensVenda, o estoque do produto referenciado
+deve ser alterado na tabela Produtos
  
 <p align="center"> 01/04/25 <p>
 </details>
