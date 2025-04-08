@@ -187,4 +187,11 @@ where month(data_transacao) = month(curdate())
 group by 1;
 
 -- E
-
+select
+	cl.nome as Cliente,
+	count(co.tipo_conta) as qtd	
+from clientes cl
+	inner join contas co
+		on cl.cliente_id = co.cliente_id
+		group by 1
+having count(co.tipo_conta) > 1;
