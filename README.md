@@ -6035,7 +6035,7 @@ SELECT conta_id, saldo FROM Contas WHERE conta_id = 1;
 <br>
 <p> 09/04/25 </p>
 
-# Criando a Primeira tela
+# AtiExercicio 01 - Criando a Primeira tela com Tkinter 
 ### Importando a biblioteca tkinter
 ### Usamos 'as tk' para abreviar o nome na hora de usar
 ~~~ python
@@ -6079,6 +6079,35 @@ janela.title("Primeira tela")
 janela.geometry("600x400")
 janela.mainloop()
 ~~~~ 
+
+# Exercicio 02 - 
+~~~ python
+import tkinter as tk
+
+def dizer_ola():
+    print("Olá, Mundo!")  # Isso aparece no terminal, não na janela
+
+janela = tk.Tk()
+janela.title("Janela com Botão")
+
+# Criando um botão
+botao = tk.Button(
+    janela,  # Indica que o botão pertence à janela
+    text="Clique aqui",  # Texto que aparece no botão
+    command=dizer_ola  # Função que será chamada ao clicar
+)
+
+# Empacotando o botão na janela (isso o exibe)
+botao.pack()
+
+janela.mainloop()
+~~~
+
+### Criamos uma função dizer_ola() que será chamada quando o botão for clicado.
+- tk.Button() cria um botão com texto e ação
+- .pack() é um gerenciador de layout simples que coloca o widget na janela
+### Atividade:
+Mostrar no terminal uma frase de saudação, por exemplo: "Bem vindo(a)!"
 
 <p align="center"> 09/04/25 <p>
 </details>
