@@ -1,14 +1,14 @@
 import tkinter as tk
 
 def Ola():
-    print("Olá, mundo!")
+    print("Bem Vindo(a)!")
 
 janela = tk.Tk()
 janela.title("Janela com botão")
 
 botao = tk.Button(
     janela,
-    text = "Bem vindo(a)!",
+    text = "Clique aqui",
     command = Ola
 )
 
