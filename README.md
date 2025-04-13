@@ -6126,9 +6126,33 @@ botao.pack()
 
 janela.mainloop()
 ~~~~
+# Exercício 03 - Contador de cliques
 
 ### Atividade:
 - Personalizar uma mensagem ao clicar em dizer_ola
+
+📘Crie uma janela com um botão e um rótulo. O rótulo deve contar e mostrar quantas vezes o botão foi clicado.
+
+🧭 Instruções:
+
+- Crie uma variável contador começando com 0.
+- Toda vez que o botão for clicado, aumente contador em 1.
+- Atualize o texto do Label com o novo valor.
+- Use a palavra global dentro da função para indicar que você quer usar a variável de fora da função.
+~~~~ python
+contador = 0
+def contar():
+     global contador  # permite usar a variável "contador" de fora da função    
+     contador += 1    # aumenta o valor em 1    
+     label_contador.config(text=f"Cliques: {contador}")
+~~~~
+
+
+### Label mostrando o número de cliques
+~~~~ python
+label_contador = tk.Label(janela, text="Cliques: 0")
+label_contador.pack(pady=10)
+~~~~
 
 <p align="center"> 09/04/25 <p>
 </details>
