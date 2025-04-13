@@ -6030,6 +6030,59 @@ SELECT conta_id, saldo FROM Contas WHERE conta_id = 1;
 <p align="center"> 08/04/25 <p>
 </details>
 
+<details>
+<summary> 💠 Aula 35 - 📝 TKINTER</summary>
+<br>
+<p> 09/04/25 </p>
+
+# Criando a Primeira tela
+### Importando a biblioteca tkinter
+### Usamos 'as tk' para abreviar o nome na hora de usar
+~~~ python
+import tkinter as tk
+~~~
+
+### Criando a janela principal
+~~~ python
+janela = tk.Tk()  # Tk() é a função que cria a janela principal
+~~~
+
+### Definindo um título para a janela
+~~~ python
+janela.title("Minha Primeira Janela")
+~~~
+
+### Definindo o tamanho da janela (largura x altura)
+~~~ python
+janela.geometry("400x300")
+~~~
+
+### Iniciando o loop principal da aplicação
+~~~ python
+janela.mainloop()  # Isso mantém a janela aberta
+~~~
+- import tkinter as tk - Importa a biblioteca com um apelido mais curto
+- tk.Tk() - Cria a janela principal
+- .title() - Define o título da janela
+- .geometry() - Define o tamanho (400 pixels de largura, 300 de altura)
+- .mainloop() - Mantém a janela aberta e responde a eventos
+
+### Atividade 01:
+- Modifique o tamanho da janela para 600x400.
+
+### Resolução:
+~~~~ python
+import tkinter as tk
+
+janela = tk.Tk()
+janela.title("Primeira tela")
+janela.geometry("600x400")
+janela.mainloop()
+~~~~ 
+
+<p align="center"> 09/04/25 <p>
+</details>
+
 ---
 
 <br>
