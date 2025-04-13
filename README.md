@@ -6035,7 +6035,7 @@ SELECT conta_id, saldo FROM Contas WHERE conta_id = 1;
 <br>
 <p> 09/04/25 </p>
 
-# AtiExercicio 01 - Criando a Primeira tela com Tkinter 
+# Exercicio 01 - Criando a Primeira tela com Tkinter 
 ### Importando a biblioteca tkinter
 ### Usamos 'as tk' para abreviar o nome na hora de usar
 ~~~ python
@@ -6080,7 +6080,7 @@ janela.geometry("600x400")
 janela.mainloop()
 ~~~~ 
 
-# Exercicio 02 - 
+# Exercicio 02 - Button
 ~~~ python
 import tkinter as tk
 
@@ -6108,6 +6108,27 @@ janela.mainloop()
 - .pack() é um gerenciador de layout simples que coloca o widget na janela
 ### Atividade:
 Mostrar no terminal uma frase de saudação, por exemplo: "Bem vindo(a)!"
+
+# Exercício 03 - Tkinter Button
+~~~~ python
+import tkinter as tk
+
+def dizer_ola():
+    # Criando um rótulo (label) para exibir o texto
+    label_ola = tk.Label(janela, text="Olá, Mundo!")
+    label_ola.pack()
+
+janela = tk.Tk()
+janela.title("Olá Mundo na Janela")
+
+botao = tk.Button(janela, text="Clique aqui", command=dizer_ola)
+botao.pack()
+
+janela.mainloop()
+~~~~
+
+### Atividade:
+- Personalizar uma mensagem ao clicar em dizer_ola
 
 <p align="center"> 09/04/25 <p>
 </details>
