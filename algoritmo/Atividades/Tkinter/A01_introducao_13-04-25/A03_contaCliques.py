@@ -11,5 +11,3 @@ janela.title("Window")
 janela.mainloop()
 label_cont = tk.Label(janela, text="Cliques: 0")
 label_cont.pack(pady=10)
-
-
